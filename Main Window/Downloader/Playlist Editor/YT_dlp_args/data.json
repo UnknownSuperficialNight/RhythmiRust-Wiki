@@ -1,0 +1,25 @@
+{
+	"title": "Advanced YT-dlp args guide",
+	"contents": [
+        { "Text": "[[[hyperlink:Yt-dlp][https://github.com/yt-dlp/yt-dlp]]]is a external program used to download and parse certain information" },
+
+        { "Header2": "Why use yt-dlp instead of making my own?" },
+        { "Text": "Yt-dlp has thousands of people working on it to keep it up to date one sole developer could never do this" },
+        { "Text": "that is why for flexibility for supported websites yt-dlp is used" },
+        { "Text": "and this will keep this program relevant for a long time" },
+        { "Separator": null },
+
+        { "Header2": "Args:" },
+        { "Text": "Args are passed to yt-dlp in order for it to know what/how to download" },
+        { "Text": "Here are links to pages in yt-dlp wiki to read args" },
+        { "Text": "•[[[hyperlink:Usage and Options][https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#usage-and-options]]]- Used to get a idea of how it works" },
+        { "Text": "•[[[hyperlink:Output Template][https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#output-template]]]- Used to specify a folders output format (Warning about removing the id at the end of the template this is used in the deduplicate detector)" },
+        { "Text": "•[[[hyperlink:Post-processing Options][https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#post-processing-options]]]- Used to show more flags useful to understand structure of the default args" },
+
+        { "Text": "From this point onwards it assumes you have used yt-dlp before and understand how to interface with it" },
+        { "Text": "now the next best thing to do is look at the default args in the settings menu" },
+        { "Text": "then look at the args on the site and add or remove args you want to add with testing in commandline/terminal before hand" },
+        { "Text": "this allows you to be able to customize the args to fit your needs you can even hardcode formats into the args" },
+        { "Text": "so you can download mp3 using -f mp4 in the args as a example then use that on a playlist you want to download in mp4" }
+    ]
+}

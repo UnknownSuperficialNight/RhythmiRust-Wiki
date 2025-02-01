@@ -1,0 +1,69 @@
+{
+	"title": "Favourites",
+	"contents": [
+		{ "Text": "The favourites is a menu to save searches/artists/songs permanently." },
+		{ "Separator": null },
+
+		{
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]]≈ Select Key" },
+		{ "Text": "[[[underline:Soft Yellow]]]≈ Dropdown" },
+		{ "Text": "[[[underline:Dark Blue]]]≈ Dropdown Body" },
+        { "Text": "[[[underline:Light Green]]]≈ NULL Value" },
+		{ "Separator": null },
+
+		{ "Header": "Overview of Each UI Element" },
+
+		{ "Header2": "Select Key" },
+		{ "Text": "Allows the user to manage (Add,Remove) dropdowns and dropdown body's" },
+		{ "Text": "Use this link[[[button:Select Key][Select Key]]]to go into more detail" },
+		{
+			"Image": {
+				"path": "Select Key.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Dropdown" },
+		{ "Text": "Used to show the Dropdown Body's results and show playlists name" },
+		{
+			"Image": {
+				"path": "Dropdown.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Dropdown Body" },
+		{ "Text": "Displays the searches saved" },
+		{ "Text": "Clicking on an item searches it again" },
+		{ "Text": "Right clicking deletes it the same way it does in[[[button:History][../History]]]" },
+		{
+			"Image": {
+				"path": "Dropdown Body.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "NULL Value" },
+		{ "Text": "This \"NULL\" value is here since the user has not inputted a[[[button:Custom Item][Select Key]]]" },
+		{ "Text": "The user needs to fill this value with something otherwise next restart the \"Artist1\" will be removed" },
+		{
+			"Image": {
+				"path": "NULL Value.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		}
+	]
+}

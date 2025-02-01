@@ -1,0 +1,82 @@
+{
+	"title": "Downloader Settings",
+	"contents": [
+		{
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Download Dir" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Download Threads" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Deduplicate detector" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Spotify" },
+		{ "Text": "[[[underline:Pale Orange]]] ≈ Import/Export" },
+		{ "Separator": null },
+
+		{ "Header": "Overview of Each UI Element" },
+
+		{ "Header2": "Download Dir" },
+		{ "Text": "This is the directory songs will be downloaded into" },
+		{
+			"Image": {
+				"path": "Download Dir.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Download Threads" },
+		{ "Text": "The number of simultaneous downloads that can occur" },
+		{
+			"Image": {
+				"path": "Download Threads.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Deduplicate detector" },
+		{ "Text": "The Deduplicate Detector employs sophisticated techniques to identify songs that sound similar or are duplicates." },
+		{ "Text": "While it is highly effective, there may be occasional instances where it detects songs that are not truly duplicates; however, such occurrences are quite rare." },
+		{ "Text": "To improve the accuracy of the detection process, it is beneficial to retain the unique ID of each song at the end of the downloaded files." },
+		{ "Text": "Although preserving the ID is not strictly necessary, it can contribute to enhanced matching accuracy." },
+		{ "Text": "By default it uses ids at the end of the song name to change this refer to[[[button:Settings][../../Settings]]]" },
+		{
+			"Image": {
+				"path": "Deduplicate detector.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Spotify" },
+		{ "Text": "These are the same as the fields in [[[button:Key and below in Playlist Editor][../Playlist Editor]]]" },
+		{ "Text": "Spotfetch_download_selection: This selects what you want to download from spotify:" },
+        { "Text": "• Liked: Download only users liked" },
+        { "Text": "• Playlist: Download only playlists" },
+        { "Text": "• Liked,Playlist: Both" },
+		{
+			"Image": {
+				"path": "Spotify.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Import/Export" },
+		{ "Text": "[[[button:Import or Export][Import_Export]]] your playlists to a json file" },
+		{
+			"Image": {
+				"path": "History Body.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		}
+	]
+}

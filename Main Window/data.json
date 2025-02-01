@@ -1,0 +1,48 @@
+{
+	"title": "Main Window",
+	"contents": [
+		{ "Text": "The main window is the central hub of RhythmiRust, providing access to all major features and controls." },
+		{ "Separator": null },
+
+		{
+			"Image": {
+				"path": "main_window.png",
+				"max_width": 800.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header": "Core Components" },
+		{ "Text": "Buttons on the taskbar at the top of the screen in order from left to right are:" },
+
+		{ "Header2": "Search" },
+		{ "Text": "Where you can enter queries and view search results for your music." },
+		{ "Text": "[[[button:Learn more about Search][Search]]]" },
+		{ "Separator": null },
+
+		{ "Header2": "Favourites" },
+		{ "Text": "Save and organise your frequently played tracks for quick access." },
+		{ "Text": "[[[button:Learn more about Favourites][Favourites]]]" },
+		{ "Separator": null },
+
+		{ "Header2": "History" },
+		{ "Text": "View your recently played tracks and previous sessions." },
+		{ "Text": "[[[button:Learn more about History][History]]]" },
+		{ "Separator": null },
+
+		{ "Header2": "Music Player" },
+		{ "Text": "Control playback, view currently playing track, and manage your song queue." },
+		{ "Text": "[[[button:Learn more about Music Player][Music Player]]]" },
+		{ "Separator": null },
+
+		{ "Header2": "Downloader" },
+		{ "Text": "Download music directly from supported websites." },
+		{ "Text": "[[[button:Learn more about Downloader][Downloader]]]" },
+		{ "Separator": null },
+
+		{ "Header2": "Settings" },
+		{ "Text": "Configure app preferences and customize your experience." },
+		{ "Text": "[[[button:Learn more about Settings][Settings]]]" }
+	]
+}

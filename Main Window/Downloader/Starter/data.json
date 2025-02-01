@@ -1,0 +1,86 @@
+{
+	"title": "Starter",
+	"contents": [
+        {
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Start" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Regenerate list" },
+        { "Text": "[[[underline:Dark Blue]]] ≈ Custom Order" },
+        { "Text": "[[[underline:Light Green]]] ≈ Cursor skip multiplier" },
+        { "Text": "[[[underline:Pale Orange]]] ≈ Cursor Mover" },
+		{ "Separator": null },
+
+        { "Header": "Overview of Each UI Element" },
+
+        { "Header2": "Start" },
+		{ "Text": "Starts the download process" },
+		{ "Text": "Will be disabled apon download start (to avoid confusion about why there is a button that does nothing while downloading)" },
+        {
+			"Image": {
+				"path": "Start.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Regenerate list" },
+		{ "Text": "Regenerates the \"Custom Order\" list new results at the bottom of the list" },
+        { "Text": "Becomes Red indicating that the list needs to be regenerated before starting the download" },
+        {
+			"Image": {
+				"path": "Regenerate list.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Custom Order" },
+		{ "Text": "Arrange your music by organizing a scrollable list of playlists or songs." },
+        { "Text": "This feature deduplicates URLs, preventing duplicates across multiple sources such as artists and playlists." },
+        { "Text": "To achieve this:" },
+        { "Text": "•Click on an item to select it (known as the cursor)." },
+        { "Text": "•Use the \"Cursor Mover\" buttons to rearrange the order." },
+        { "Text": "•Ensures that any duplicate songs are downloaded into their respective artist folders instead of generic playlist folders." },
+        { "Text": "•Keep in mind that placing an artist above a playlist means that duplicates within lower sources will be removed leaving the artist with the url before the download process begins, saving time and internet bandwidth." },
+        { "Text": "Note: Duplicate songs in the downloaded music list will only be removed from the source above it in the order during the download process." },
+        {
+			"Image": {
+				"path": "Custom Order.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Cursor skip multiplier" },
+		{ "Text": "This multiplier affects the \"Cursor Mover\"" },
+        { "Text": "if the number is 2 when moving up and down using the \"Cursor Mover\"" },
+        { "Text": "it will move that many spaces in the \"Custom Order\"" },
+        { "Text": "Just change the number to how many spaces you want to move to speed up traversing in large lists" },
+        {
+			"Image": {
+				"path": "Cursor skip multiplier.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Cursor Mover" },
+		{ "Text": "This moves selected items up or down in \"Custom Order\"" },
+        {
+			"Image": {
+				"path": "Cursor Mover.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		}
+    ]
+}

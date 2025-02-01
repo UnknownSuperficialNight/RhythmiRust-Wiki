@@ -1,0 +1,30 @@
+{
+	"title": "Settings Guide",
+	"contents": [
+		{
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header": "Core Menus" },
+
+		{ "Header2": "Config" },
+		{ "Text": "Where you can manage the config and args." },
+		{ "Text": "[[[button:Learn more about \"Config\"][Config]]]" },
+		{ "Separator": null },
+
+		{ "Header2": "Colours" },
+		{ "Text": "Adjust ui colours." },
+		{ "Text": "[[[button:Learn more about \"Colours\"][Colours]]]" },
+		{ "Separator": null },
+
+        { "Header2": "Image" },
+		{ "Text": "Manage image rendering and effects." },
+		{ "Text": "[[[button:Learn more about \"Image\"][Image]]]" },
+		{ "Separator": null }
+	]
+}

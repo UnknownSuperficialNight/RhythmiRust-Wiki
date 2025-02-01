@@ -1,0 +1,184 @@
+{
+	"title": "Music Player",
+	"contents": [
+		{
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Playback Controls" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Music Player Settings" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Queue of songs" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Volume Slider" },
+		{ "Text": "[[[underline:Pale Orange]]] ≈ Playback Bar" },
+		{ "Separator": null },
+
+		{ "Header": "Overview of Each UI Element ≈ Left to Right" },
+
+		{ "Header2": "Playback Controls" },
+		{ "Text": "Starts music playback then Pause/Unpause afterwards" },
+		{
+			"ImageGroup": [
+				{
+					"path": "_playback_assets/pause.png",
+					"max_width": 50.0,
+					"max_height": 50.0
+				},
+				{
+					"path": "_playback_assets/play.png",
+					"max_width": 50.0,
+					"max_height": 50.0
+				}
+			]
+		},
+
+		{ "Text": "Stop all music and clear queue" },
+		{
+			"Image": {
+				"path": "_playback_assets/stop.png",
+				"max_width": 75.0,
+				"max_height": 75.0
+			}
+		},
+
+		{ "Text": "Skip current song" },
+		{
+			"Image": {
+				"path": "_playback_assets/forward.png",
+				"max_width": 75.0,
+				"max_height": 75.0
+			}
+		},
+
+		{ "Text": "Toggle repeat (default:off -> Repeat Once -> Infinite Repeat)" },
+		{
+			"ImageGroup": [
+				{
+					"path": "_playback_assets/disable_repeat.png",
+					"max_width": 50.0,
+					"max_height": 50.0
+				},
+				{
+					"path": "_playback_assets/repeat-1-classic-regular.png",
+					"max_width": 50.0,
+					"max_height": 50.0
+				},
+				{
+					"path": "_playback_assets/repeat-classic-regular.png",
+					"max_width": 50.0,
+					"max_height": 50.0
+				}
+			]
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Music Player Settings" },
+		{ "Text": "Clicked - Gear icon" },
+		{
+			"Image": {
+				"path": "/_hidden_global_assets/gear_icon.png",
+				"max_width": 50.0,
+				"max_height": 50.0
+			}
+		},
+		{ "Text": "Soft Yellow ≈ Toggle Music Player Settings" },
+		{ "Text": "Dark Blue ≈ Togglable settings" },
+		{
+			"Image": {
+				"path": "Music Player Settings.png",
+				"max_width": 400.0,
+				"max_height": 400.0
+			}
+		},
+		{ "Header3": "Current Settings" },
+		{ "Text": "Automatic Gain Control (AGC):" },
+		{ "Text": "AGC dynamically modifies audio volume, enhancing or reducing it in real-time" },
+		{ "Text": "based on the current loudness of the music to maintain optimal listening levels." },
+		{ "Separator": null },
+
+		{ "Header2": "Queue of songs" },
+		{
+			"Image": {
+				"path": "Queue of songs.png",
+				"max_width": 400.0,
+				"max_height": 400.0
+			}
+		},
+		{ "Text": "This is the body where songs will be added to via:" },
+		{ "Text": "•[[[button:Search Menu][../Search]]]" },
+		{ "Text": "•[[[button:History][../History]]]" },
+		{ "Text": "•[[[button:Favourites][../Favourites]]]" },
+		{ "Separator": null },
+
+		{ "Header2": "Volume Slider" },
+		{
+			"Image": {
+				"path": "Volume Slider.png",
+				"max_width": 400.0,
+				"max_height": 400.0
+			}
+		},
+		{ "Text": "The volume slider starts in the middle at 1.0, which is the default volume level." },
+		{ "Text": "Moving the slider down decreases the volume, reaching a minimum of 0.1, which is the lowest sound." },
+		{ "Text": "At 0.0, the sound is completely muted." },
+		{ "Text": "Sliding the slider up increases the volume, with a maximum setting of 2.0." },
+		{ "Text": "This higher setting amplifies soft songs, but it risks clipping." },
+		{ "Separator": null },
+
+		{ "Header2": "Playback Bar" },
+		{
+			"Image": {
+				"path": "Playback bar.png",
+				"max_width": 400.0,
+				"max_height": 400.0
+			}
+		},
+		{ "Header2": "States: (left to right)" },
+
+		{ "Header3": "Default State" },
+		{
+			"Image": {
+				"path": "_playback_bar_assets/Playback bar state default.png",
+				"max_width": 400.0,
+				"max_height": 400.0
+			}
+		},
+		{ "Text": "This is the default state." },
+		{ "Text": "It features a button labeled 'Seek' that opens the playback bar for further interaction." },
+
+		{ "Header3": "Non Refresh State" },
+		{
+			"Image": {
+				"path": "_playback_bar_assets/Playback bar state 1.png",
+				"max_width": 400.0,
+				"max_height": 400.0
+			}
+		},
+		{ "Text": "In the Non Refresh State, the UI includes several components:" },
+		{ "Text": "**Close Button:** This button closes the UI and returns to the Default State." },
+		{ "Text": "If the user right-clicks it, the UI transitions to the Continuous Refresh State." },
+		{ "Text": "Additionally, clicking the Close Button and reopening the Seek will set the slider to the current playback time." },
+		{ "Text": "**Slider:** This slider allows users to adjust the playback position." },
+		{ "Text": "The time is displayed in hh:mm:ss format." },
+		{ "Text": "Users can also input time directly into a small box next to the slider." },
+		{ "Text": "The input can be in various formats:" },
+		{ "Text": "- If only seconds are provided, it must be a number without colons." },
+		{ "Text": "- If minutes and seconds are provided, it must be in mm:ss format." },
+		{ "Text": "- If hours are included, it must be in hh:mm:ss format." },
+		{ "Text": "**Go Button:** This button seeks to the specific time set on the slider or in the text input." },
+
+		{ "Header3": "Continuous Refresh State" },
+		{
+			"Image": {
+				"path": "_playback_bar_assets/Playback bar state 1.png",
+				"max_width": 400.0,
+				"max_height": 400.0
+			}
+		},
+		{ "Text": "The Continuous Refresh State mirrors the Non Refresh State but without the Go Button." },
+		{ "Text": "Each adjustment to the slider is applied immediately, providing real-time feedback." },
+		{ "Text": "However, this mode may consume slightly more CPU resources as it refreshes the screen with each slider movement." }
+	]
+}

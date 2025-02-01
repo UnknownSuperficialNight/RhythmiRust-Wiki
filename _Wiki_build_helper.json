@@ -1,0 +1,73 @@
+{
+	"title": "",
+	"image": {
+        "path": "icon.png",
+        "max_width": 200.0,
+        "max_height": 200.0,
+        "offset": 200.0
+    },
+	"contents": [
+		{ "Header": "" },
+		{ "Header2": "" },
+		{ "Header3": "" },
+
+		{ "Text": "" },
+		{ "TextCustom": { "space_size": 10.5, "content": "RhythmiRust - Your Music, Your Way" } },
+
+		{
+			"Image": {
+				"path": ".png",
+				"max_width": 100.0,
+				"max_height": 100.0
+			}
+		},
+
+		{
+			"Image": {
+				"path": "/_hidden_global_assets/gear_icon.png",
+				"max_width": 75.0,
+				"max_height": 75.0
+			}
+		},
+
+		{ "Separator": null },
+
+		{
+			"ImageGroup": [
+				{
+					"path": ".png",
+					"max_width": 300.0,
+					"max_height": 300.0
+				},
+				{
+					"path": ".png",
+					"max_width": 300.0,
+					"max_height": 300.0
+				}
+			]
+		},
+		{ "Text": "Soft Purple: #D1C4E9" },
+		{ "Text": "Soft Yellow: #F9EBAE" },
+		{ "Text": "Dark Blue: #3465a4" },
+		{ "Text": "Light Green: #B7E4C7" },
+		{ "Text": "Pale Orange: #f2c94c" },
+		{ "Text": "Soft Peach: #F8BBD0" },
+		{ "Text": "Deep Green: #008040" },
+		{ "Text": "Cyan Blue: #55AFEC" },
+		{ "Text": "Crimson Red: #770000" },
+
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Remove Bar" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Remove Bar" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Remove Bar" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Remove Bar" },
+		{ "Text": "[[[underline:Pale Orange]]] ≈ Remove Bar" },
+		{ "Text": "[[[underline:Soft Peach]]] ≈ Remove Bar" },
+
+		{ "Text": "" },
+		{ "Text": "•[[[button:][]]]- [[[strikethrough:]]]" },
+		{ "Text": "•[[[button:][start_from_current_dir]]]" },
+		{ "Text": "•[[[button:][/start_from_root]]]" },
+		{ "Text": "•[[[button:][../start_from_parent]]]" },
+		{ "Text": "•[[[hyperlink:][]]]- [[[underline:]]]" }
+	]
+}

@@ -1,0 +1,82 @@
+{
+	"title": "Config",
+	"contents": [
+		{
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Directory Path" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Download Dir" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Accepted codecs" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Advanced Settings" },
+		{ "Separator": null },
+
+		{ "Header": "Overview of Each UI Element" },
+
+		{ "Header2": "Directory Path" },
+		{ "Text": "Directory you want to search" },
+		{
+			"Image": {
+				"path": "Directory Path.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Download Dir" },
+		{ "Text": "Directory you want to download to" },
+		{
+			"Image": {
+				"path": "Download Dir.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Accepted codecs" },
+		{ "Text": "Codecs you want to search also is used for duplicate detector, Web Codec Checker" },
+		{ "Text": "and is used during download for detection of failed downloads" },
+		{
+			"Image": {
+				"path": "Accepted codecs.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Text": "This image shows the \"Accepted codecs\" list and a add button at the bottom if clicked it opens a input bar" },
+		{ "Text": "it also shows a disclaimer make sure to read it" },
+		{
+			"Image": {
+				"path": "body_add_button.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Text": "Input your codec then press enter to add it" },
+		{ "Text": "Right click on the bar to close it" },
+		{
+			"Image": {
+				"path": "Input_bar.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Advanced Settings" },
+		{ "Text": "This area is for advanced actions that may result in data loss (be careful what you click as all actions are final)" },
+		{ "Text": "This section is big so here is a separate page on it[[[button:Advanced Settings Page][Advanced Settings]]]" },
+		{
+			"Image": {
+				"path": "Advanced Settings.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		}
+	]
+}

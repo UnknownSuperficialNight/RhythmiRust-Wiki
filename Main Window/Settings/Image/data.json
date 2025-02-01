@@ -1,0 +1,46 @@
+{
+	"title": "Image",
+	"contents": [
+        {
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header": "Core Menus" },
+
+        { "Header2": "Display album art while playing music" },
+		{ "Text": "This will enable album art to be shown" },
+		{ "Separator": null },
+
+        { "Header2": "Display album art in the center" },
+		{ "Text": "Enabled: This will put album art in the center of the screen" },
+		{ "Text": "Disabled: This will put album art on the sidebar" },
+		{ "Separator": null },
+
+        { "Header2": "Retain Images" },
+		{ "Text": "Enabled: keeps displaying a image after a songs ends until a new song is queued" },
+		{ "Text": "Disabled: clear images from memory on music stop" },
+		{ "Separator": null },
+
+        { "Header2": "Auto-Hide Art on Music Stop" },
+		{ "Text": "Enabled: Hides image from being displayed by does not clear memory" },
+		{ "Text": "Disabled: Shows image" },
+		{ "Separator": null },
+
+        { "Header2": "Image Padding" },
+		{ "Text": "This pads images to center them and adds a effect on the padding area" },
+		{ "Text": "Click to open selections" },
+        { "Text": "\"HorizontalGlitch\" is my favourite :)" },
+        {
+			"Image": {
+				"path": "Image Padding.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		}
+    ]
+}

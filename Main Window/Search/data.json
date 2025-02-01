@@ -1,0 +1,95 @@
+{
+    "title": "Search Window",
+	"contents": [
+        {
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+        { "Text": "[[[underline:Soft Purple]]] ≈ Search Bar" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Search Button" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Matches found" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Search Result" },
+		{ "Text": "[[[underline:Pale Orange]]] ≈ Search Directory" },
+        { "Text": "[[[underline:Soft Peach]]] ≈ Shuffle" },
+		{ "Text": "[[[underline:Alice Blue]]] ≈ [[[button:Multi Shuffle Mode][Multi Shuffle Mode]]]" },
+		{ "Separator": null },
+
+        { "Header": "Overview of Each UI Element ≈ Left to Right" },
+
+        { "Header2": "Search Bar:" },
+		{ "Text": "Searches directory defined in (Search Directory)" },
+		{ "Text": "Press enter to search or click the Search Button" },
+		{ "Text": "The Search Bar supports Boolean expressions. You can mix them as follows:" },
+		{ "Text": "- exact match case sensitive: \"search query\"" },
+		{ "Text": "- word match: 'search query'" },
+		{ "Text": "- and (intersection): \"search query1\" && \"search query2\"" },
+		{ "Text": "- or (union): search query1 || search query1" },
+		{ "Text": "The search bar, by default, performs a comprehensive search that includes the 'full path' of files and folders." },
+		{ "Text": "This means that if you search for the letter 'A', it will return results for both songs containing that letter and folders that include it as well" },
+		{ "Text": "The reason for this is if you search a artists name and have a folder with the artists name all songs in it recursively will be returned" },
+		{ "Text": "Example i have a structure like this: {/British/artist_here/song1.mp3}" },
+		{ "Text": "If i search British it will get return all songs with British in the name and all songs inside the British folder" },
+        {
+			"Image": {
+				"path": "_search_assets/Search Bar.png",
+				"max_width": 421.0,
+				"max_height": 33.0
+			}
+		},
+
+        { "Header2": "Search Button:" },
+		{ "Text": "Start a search" },
+        {
+			"Image": {
+				"path": "_search_assets/Search Button.png",
+				"max_width": 72.0,
+				"max_height": 33.0
+			}
+		},
+        
+        { "Header2": "Matches found:" },
+		{ "Text": "Shows the amount of results from a search" },
+        {
+			"Image": {
+				"path": "_search_assets/Matches found.png",
+				"max_width": 143.0,
+				"max_height": 20.0
+			}
+		},
+
+        { "Header2": "Search Result:" },
+		{ "Text": "Shows the results from a search" },
+		{ "Text": "Left click to add to[[[button:Queue of songs][../Music Player]]]" },
+		{ "Text": "Right click to get that songs path copied to the clipboard" },
+        {
+			"Image": {
+				"path": "Search Result.png",
+				"max_width": 400.0,
+				"max_height": 400.0
+			}
+		},
+
+        { "Header2": "Search Directory:" },
+		{ "Text": "What directory do we search" },
+        {
+			"Image": {
+				"path": "_search_assets/Search Directory.png",
+				"max_width": 414.0,
+				"max_height": 24.0
+			}
+		},
+
+        { "Header2": "Shuffle:" },
+		{ "Text": "Shuffles the entire (Search Result) then adds it to [[[button:Queue of songs][../Music Player]]]" },
+        {
+			"Image": {
+				"path": "_search_assets/Shuffle.png",
+				"max_width": 171.0,
+				"max_height": 22.0
+			}
+		}
+    ]
+}

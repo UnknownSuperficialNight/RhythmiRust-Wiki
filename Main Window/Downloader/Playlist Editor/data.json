@@ -1,0 +1,185 @@
+{
+	"title": "Playlist Editor",
+	"contents": [
+        {
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Manage Keys" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Save Changes to disc" },
+        { "Text": "[[[underline:Dark Blue]]] ≈ Key" },
+        { "Text": "[[[underline:Light Green]]] ≈ Active" },
+        { "Text": "[[[underline:Pale Orange]]] ≈ Executable" },
+        { "Text": "[[[underline:Soft Peach]]] ≈ Codec" },
+        { "Text": "[[[underline:Deep Green]]] ≈ YT_dlp_args" },
+        { "Text": "[[[underline:Cyan Blue]]] ≈ Main" },
+        { "Text": "[[[underline:Crimson Red]]] ≈ Main Keys" },
+		{ "Separator": null },
+
+        { "Header": "Overview of Each UI Element" },
+
+        { "Header2": "Manage Keys" },
+		{ "Text": "Allows the user to manage (Add,Remove) dropdowns and dropdown body's" },
+        {
+			"Image": {
+				"path": "Manage Keys.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+
+        { "Text": "This adds a new Key/Playlist" },
+        {
+			"Image": {
+				"path": "Add Key.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+
+        { "Text": "This removes selected Key/Playlist" },
+        {
+			"Image": {
+				"path": "Remove key.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+
+        { "Text": "This hides the add/remove dropdown" },
+        {
+			"Image": {
+				"path": "Closed Dropdown.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Save Changes to disk" },
+		{ "Text": "Simply saves all changes made to disk (apon changes the button colour is set to red)" },
+        {
+			"Image": {
+				"path": "Save Changes to disk.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Key" },
+        { "Text": "Key holds the name and data of a playlist or list of urls" },
+        {
+			"Image": {
+				"path": "Key.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Active" },
+		{ "Text": "This enables or disables the key for download" },
+        { "Text": "(disabled means it will not download anything in the disabled key)" },
+        {
+			"Image": {
+				"path": "Active.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Executable" },
+		{ "Text": "This is the executable for helping with the download process" },
+        { "Text": "This field is no longer needed but is here for flexibility in the future" },
+        {
+			"Image": {
+				"path": "Executable.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+        { "Separator": null },
+
+        { "Header2": "Codec" },
+		{ "Text": "This is the container/format you will save the songs into" },
+        {
+			"Image": {
+				"path": "Codec.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+
+        { "Text": "Lossy vs Lossless:" },
+        { "Text": "Lossy codecs: compress audio by removing some data, resulting in smaller file sizes but reduced quality." },
+        { "Text": "Lossless codecs: retain all original audio data, providing higher quality at the cost of larger file sizes." },
+        { "Text": "Codecs to choose from" },
+        { "Text": "- AAC: Lossy codec with better quality than MP3." },
+        { "Text": "- ALAC: Apple's lossless codec for high-quality playback." },
+        { "Text": "- FLAC: Lossless codec for audiophile-grade music." },
+        { "Text": "- M4A: Container for AAC or ALAC audio, primarily used in Apple ecosystem." },
+        { "Text": "- MP3: Classic lossy codec with decent quality but outdated." },
+        { "Text": "- Opus: Advanced codec for optimal quality-to-efficiency ratio with variable bitrates." },
+        { "Text": "- Vorbis (Ogg): Open-source lossy codec with good quality at low bitrates; the 'grandpa' of Opus." },
+        { "Text": "- WAV: Uncompressed format for highest audio quality, but large file sizes." },
+		{ "Text": "NOTE: Opus and m4a are not natively supported by \"RhythmiRust\"" },
+		{ "Text": "since there is no opus,m4a decoder published yet so these two formats use a fallback when playing them" },
+        {
+			"Image": {
+				"path": "Codec Dropdown.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+        { "Separator": null },
+
+        { "Header2": "YT_dlp_args" },
+		{ "Text": "This are customizable arguments on how you want to download" },
+        { "Text": "This is a very advanced subject so for normal users starting from 0 top to bottom use option 1 (with thumbnails) or 3 (without thumbnails)" },
+        { "Text": "For those advanced users who want to customize or understand these in depth here is the page for that[[[button:Advanced args page][YT_dlp_args]]]" },
+		{ "Text": "However i will mention arguments in YT_dlp args that \"RhythmiRust\" added:" },
+		{ "Text": "file_path_clone: Is replaced with the path of the target directory where a song will be downloaded into" },
+		{ "Text": "item_clone: This is the \"URL\" that will be passed to yt-dlp" },
+		{ "Text": "codec: Is replaced with the songs codec" },
+		{ "Text": "ffmpeg-path: Target of the ffmpeg binary in the config (so the user does not need to install ffmpeg manually and so \"RhythmiRust\" can manage ffmpeg itself)" },
+        {
+			"Image": {
+				"path": "YT_dlp_args.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+        { "Separator": null },
+
+        { "Header2": "Main" },
+		{ "Text": "This holds the list of urls/keys" },
+        {
+			"Image": {
+				"path": "Main_obj.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+        { "Separator": null },
+
+        { "Header2": "Main Keys" },
+		{ "Text": "This is a Key/url where you save information into" },
+        { "Text": "test1 if the item name of another key" },
+        { "Text": "\"Add Name here\" is the what the playlist folder will be called in the download folder" },
+		{ "Text": "For example you input a name of \"playlist/hi\" then it will make a dir called \"playlist\" then inside make a dir called \"hi\" then it will download into \"hi\"" },
+        { "Text": "\"Add url here\" is where you add the urls you want to download into that folder" },
+        { "Text": "Hit \"save\" once you are done then \"save changes\" to finalize them" },
+        {
+			"Image": {
+				"path": "Main_obj_keys.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		}
+    ]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "Multi Shuffle Mode",
+	"contents": [
+		{
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Search Result" },
+
+		{ "Header2": "Search Result" },
+		{ "Text": "When you search from either" },
+		{ "Text": "• Search Menu" },
+		{ "Text": "•[[[button:History][../../History]]]" },
+		{ "Text": "•[[[button:Favourites][../../Favourites]]]" },
+
+		{ "Text": "When you select a search from one of these menus," },
+		{ "Text": "it should display in the \"Search Result\" section." },
+		{ "Text": "As you gather all your desired searches, click on the \"Shuffle and add all\" button." },
+		{ "Text": "This will initiate a comprehensive search of all queued entries," },
+		{ "Text": "merge them into a unified list, and then shuffle the results." },
+		{ "Text": "Upon shuffling, these searches will be added to your music player queue." },
+
+		{ "Header3": "Pro tip" },
+		{ "Text": "Use alt+x to toggle this feature on and off" }
+	]
+}

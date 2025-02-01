@@ -1,0 +1,43 @@
+{
+	"title": "Colours",
+	"contents": [
+        {
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Save Button" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Colour fields" },
+		{ "Separator": null },
+
+		{ "Header": "Overview of Each UI Element" },
+
+		{ "Header2": "Save Button" },
+		{ "Text": "Left click this button saves the current state of Colour fields to disk" },
+        { "Text": "Right click to reset to default colours" },
+		{
+			"Image": {
+				"path": "Save Button.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+        { "Text": "In the above image" },
+        { "Text": "•Soft Purple: Dropdown to show the args without editing them" },
+        { "Text": "•Soft Yellow: used to edit the args" },
+        { "Text": "•Dark Blue: This is the add menu to add new args" },
+		{ "Separator": null },
+
+        { "Header2": "Colour fields" },
+		{ "Text": "Click on the colour for the associated field you want to edit then use the colour picker until satisfied" },
+		{
+			"Image": {
+				"path": "Colour fields.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		}
+    ]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "Welcome to RhythmiRust Wiki",
+	"image": {
+        "path": "icon.png",
+        "max_width": 200.0,
+        "max_height": 200.0,
+        "offset": 205.0
+    },
+	"subheading": "Welcome to RhythmiRust! This wiki will help you learn how to use the programme effectively.",
+	"contents": [
+		{ "Header2": "How to navigate the wiki" },
+		{ "Text": "•[[[button:Wiki Navigation][Wiki Navigation]]]- Click here to understand the wiki layout" },
+		{ "Separator": null },
+
+		{ "Header2": "Interface Guide" },
+		{ "Text": "Everything about RhythmiRust's interface:" },
+		{ "Text": "•[[[button:Main Window][Main Window]]]- The heart of RhythmiRust's UI" },
+		{ "Text": "•[[[button:Search][Main Window/Search]]]- Where you can enter queries and view search results for your music" },
+		{ "Text": "•[[[button:Favourites][Main Window/Favourites]]]- Save and organise your frequently played tracks for quick access" },
+		{ "Text": "•[[[button:History][Main Window/History]]]- View your recently played tracks and previous sessions" },
+		{ "Text": "•[[[button:Music Player][Main Window/Music Player]]]- Control playback, view currently playing track, and manage your song queue" },
+		{ "Text": "•[[[button:Downloader][Main Window/Downloader]]]- Download music directly from supported websites" },
+		{ "Text": "•[[[button:Settings][Main Window/Settings]]]- Configure app preferences and customize your experience" },
+		{ "Separator": null },
+
+		{ "Header2": "Guides" },
+		{ "Text": "Learn how to make the most of RhythmiRust:" },
+		{ "Text": "•[[[button:Optimise Performance][Guides/Optimise Performance]]]- Optimise for low-end hardware" },
+		{ "Separator": null },
+
+		{ "Header2": "Help/Support/FAQ" },
+		{ "Text": "Need help?" },
+		{ "Text": "•[[[button:Troubleshooting][/Help/Troubleshooting]]]-[[[strikethrough:Solve common issues]]]" },
+		{ "Text": "•[[[button:FAQ][Help/FAQ]]]- Frequently asked questions" },
+		{ "Separator": null },
+
+		{ "Text": "RhythmiRust - Your Music, Your Way" },
+		{ "Text": "A feature-rich music player with an efficient, distraction-free interface." },
+		{ "Text": "Powerful functionality meets minimalist design - search, download, and manage your music without the bloat." },
+		{ "Separator": null },
+		
+		{ "Header2": "Developer FAQ" },
+		{ "Text": "•[[[button:Developer/About][About]]]" }
+	]
+}

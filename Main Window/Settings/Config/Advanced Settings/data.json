@@ -1,0 +1,90 @@
+{
+	"title": "Advanced Settings",
+	"contents": [
+        {
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Yt-dlp args" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Cache" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Dependencies" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Config location" },
+        { "Text": "[[[underline:Pale Orange]]] ≈ Irreversible actions" },
+		{ "Separator": null },
+
+		{ "Header": "Overview of Each UI Element" },
+
+		{ "Header2": "Yt-dlp args" },
+		{ "Text": "This is where the download arguments are stored refer to the[[[button:Yt-dlp page][../../../Downloader/Playlist Editor/YT_dlp_args]]]for more info on args" },
+		{
+			"Image": {
+				"path": "Yt-dlp args.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+        { "Text": "In the above image" },
+        { "Text": "•Soft Purple: Dropdown to show the args without editing them" },
+        { "Text": "•Soft Yellow: used to edit the args" },
+        { "Text": "•Dark Blue: This is the add menu to add new args" },
+		{ "Separator": null },
+
+		{ "Header2": "Cache" },
+		{ "Text": "This involves actions to the downloader cache" },
+        { "Text": "Graveyard Cache: This is where dead/broken links are stored to never be used again" },
+        { "Text": "Graveyard Temp: This holds links that have failed but not failed enough to qualify to be merged into \"Graveyard Cache\"" },
+		{ "Text": "Both buttons clear their respective caches forcing redownloads of failed or potentially failed urls" },
+        { "Text": "Warning: You probably don't want to do this unless you tried to download offline" },
+        { "Text": "as downloading offline would make all downloads fail this false positives are added in here" },
+        { "Text": "if you do clear \"Graveyard Cache\" expect a large amount of urls attempting to be downloaded" },
+        {
+			"Image": {
+				"path": "Cache.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Dependencies" },
+		{ "Text": "This forces Yt-dlp to be updated on next launch of RhythmiRust" },
+        { "Text": "This is done once a week automatically but if a emergency update is pushed to Yt-dlp" },
+        { "Text": "You can use this to get updated right away" },
+		{
+			"Image": {
+				"path": "Dependencies.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Config location" },
+		{ "Text": "This moves the config from being portable to global stored locations are:" },
+		{ "Text": "Windows: localappdata\\RhythmiRust" },
+        { "Text": "Linux: ~/.config/RhythmiRust" },
+		{
+			"Image": {
+				"path": "Config location.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Irreversible actions" },
+		{ "Text": "This as actions for mass deletion (Warning: These actions are final and cannot be reversed)" },
+        { "Text": "Prune History for Dead Searches: This will search each thing in \"History\" and if the search is empty remove it from history" },
+        { "Text": "Clear History: This will full remove everything from history" },
+		{
+			"Image": {
+				"path": "Irreversible actions.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		}
+    ]
+}

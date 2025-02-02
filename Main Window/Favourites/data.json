@@ -20,6 +20,7 @@
 
 		{ "Header2": "Category" },
 		{ "Text": "Where categories are shown/selected" },
+		{ "Text": "Insider Tip: You can queue/shuffle a entire category but pressing \"Alt+X\" to enable[[[button:Multi Shuffle Mode][../Search/Multi Shuffle Mode]]]then left clicking on a category or multiple" },
 		{ "Text": "To make a new category go see[[[button:Dropdown][Dropdown]]] " },
 		{
 			"Image": {

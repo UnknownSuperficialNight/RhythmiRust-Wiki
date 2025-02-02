@@ -1,0 +1,36 @@
+{
+	"title": "Discord RPC",
+	"contents": [
+        {
+			"Image": {
+				"path": "Main.png",
+				"max_width": 800.0,
+				"max_height": 800.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Enable Discord RPC" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Options for Discord RPC" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Delimiter" },
+		{ "Separator": null },
+
+		{ "Header": "Overview of Each UI Element ≈ Left to Right" },
+
+
+        { "Header2": "Enable Discord RPC" },
+		{ "Text": "This will enable Discord Rich Presence and show the rest on the options." },
+		{ "Separator": null },
+
+        { "Header2": "Options for Discord RPC" },
+		{ "Text": "This contains options to customise the look of RPC." },
+		{ "Text": "This includes if RPC will hide the \"current playing song\" and if it will show \"Discord RPC\" when \"Paused/Idle\"." },
+		{ "Separator": null },
+
+        { "Header2": "Delimiter" },
+		{ "Text": "This allows the user to add delimiters to the Discord Rich Presence." },
+		{ "Text": "Delimiters are used to cut out the song identifier from the end of the song name." },
+		{ "Text": "By default the delimiter is \" # \" & \" | \"" },
+		{ "Text": "Right clicking on one of the delimiters will remove it." }
+    ]
+}

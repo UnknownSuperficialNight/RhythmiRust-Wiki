@@ -25,6 +25,10 @@
         { "Header2": "Image" },
 		{ "Text": "Manage image rendering and effects." },
 		{ "Text": "[[[button:Learn more about \"Image\"][Image]]]" },
-		{ "Separator": null }
+		{ "Separator": null },
+
+		{ "Header2": "Discord RPC" },
+		{ "Text": "Enable Discord Rich Presence." },
+		{ "Text": "[[[button:Learn more about \"Discord RPC\"][Discord RPC]]]" }
 	]
 }

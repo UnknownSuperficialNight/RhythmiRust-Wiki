@@ -9,6 +9,10 @@ def recreate_directory_structure(source_dir, target_dir):
 
     # Walk through the source directory
     for root, dirs, files in os.walk(source_dir):
+        # Skip .git directory
+        if '.git' in dirs:
+            dirs.remove('.git')  # This prevents os.walk from traversing into .git
+
         # Determine the relative path from the source directory
         relative_path = os.path.relpath(root, source_dir)
         # Create the corresponding directory in the target directory

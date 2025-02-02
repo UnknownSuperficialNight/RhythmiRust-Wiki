@@ -1,0 +1,55 @@
+{
+	"title": "",
+	"contents": [
+        {
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Add New Entry to Current Page" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Create New Category" },
+        { "Text": "[[[underline:Dark Blue]]] ≈ Remove Category" },
+        { "Text": "[[[underline:Light Green]]] ≈ Closed" },
+		{ "Separator": null },
+
+        { "Header": "Overview of Each UI Element" },
+
+        { "Header2": "Add New Entry to Current Page" },
+		{ "Text": "Add a new entry to the current selected page" },
+        {
+			"Image": {
+				"path": "Add New Entry to Current Page.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Create New Category" },
+		{ "Text": "Creates a new category" },
+        {
+			"Image": {
+				"path": "Create New Category.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+        { "Header2": "Remove Category" },
+		{ "Text": "Removes Category" },
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Shows tickboxes to select categories to remove" },
+        { "Text": "[[[underline:Soft Yellow]]] ≈ Remove all selected categories" },
+        {
+			"Image": {
+				"path": "Remove Category.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+        { "Header3": "Closed" },
+        { "Text": "Closes/Hides the dropdown" }
+    ]
+}

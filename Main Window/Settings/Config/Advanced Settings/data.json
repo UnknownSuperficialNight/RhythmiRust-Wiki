@@ -27,19 +27,21 @@
 			}
 		},
         { "Text": "In the above image" },
-        { "Text": "•Soft Purple: Dropdown to show the args without editing them" },
-        { "Text": "•Soft Yellow: used to edit the args" },
-        { "Text": "•Dark Blue: This is the add menu to add new args" },
+        { "Text": "•Soft Purple: Button/Heading to select what arguments you want to edit (left click to edit | right click to deselect)" },
+        { "Text": "•Soft Yellow: Displays the arguments currently selected for editing in a editor" },
+        { "Text": "•Dark Blue: save the current state of the arguments, close the argument editing window, or remove the selected argument entirely." },
 		{ "Separator": null },
 
 		{ "Header2": "Cache" },
 		{ "Text": "This involves actions to the downloader cache" },
-        { "Text": "Graveyard Cache: This is where dead/broken links are stored to never be used again" },
-        { "Text": "Graveyard Temp: This holds links that have failed but not failed enough to qualify to be merged into \"Graveyard Cache\"" },
-		{ "Text": "Both buttons clear their respective caches forcing redownloads of failed or potentially failed urls" },
+        { "Text": "•Graveyard Cache: This is where dead/broken links are stored to never be used again" },
+        { "Text": "•Graveyard Temp: This holds links that have failed but not failed enough to qualify to be merged into \"Graveyard Cache\"" },
+		{ "Text": "Both buttons clear their respective caches forcing re-downloads of failed or potentially failed urls" },
         { "Text": "Warning: You probably don't want to do this unless you tried to download offline" },
         { "Text": "as downloading offline would make all downloads fail this false positives are added in here" },
-        { "Text": "if you do clear \"Graveyard Cache\" expect a large amount of urls attempting to be downloaded" },
+        { "TextCustom": { "space_size": 12.5, "content": "if you do clear \"Graveyard Cache\" expect a large amount of urls attempting to be downloaded" } },
+		{ "Text": "•Clear Cache: This Clears all previously downloaded URLs, effectively resetting the downloader" },
+		{ "Text": "This forces all successful URLs to be downloaded again. Use only if a complete reset is necessary" },
         {
 			"Image": {
 				"path": "Cache.png",

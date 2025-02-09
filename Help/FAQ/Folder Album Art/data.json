@@ -2,6 +2,7 @@
 	"title": "Folder Album Art",
 	"contents": [
         { "Text": "You can add album art to a entire folder by making a file in the folder called 'album_art.png'." },
+        { "Text": "Alternatively: You can add album art directory called 'album_art' and any images with the supported formats will be randomised and used as album art." },
         { "Text": "Supported formats are (png, jpg, jpeg, webp)." },
         { "Text": "Recommended image is 'png' as this is what the other formats are converted to internally." }
     ]

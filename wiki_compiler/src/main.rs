@@ -1,22 +1,27 @@
+use rayon::ThreadPoolBuilder;
 use std::env;
 use std::fs;
-use std::path::{Path, PathBuf};
-use std::process::Command;
+use std::path::PathBuf;
+use std::sync::Arc;
+use std::time::Instant;
 use walkdir::WalkDir;
+
+mod render;
+use crate::render::*;
 
 /// Recreate the directory structure based on relevant files
 fn recreate_directory_structure(
-    source_dir: &Path,
-    target_dir: &Path,
+    source_dir: &Arc<PathBuf>,
+    target_dir: &Arc<PathBuf>,
 ) -> Result<(), Box<dyn std::error::Error>> {
     // Remove the target directory if it exists
     if target_dir.exists() {
-        fs::remove_dir_all(target_dir)?;
+        fs::remove_dir_all(target_dir.as_path())?;
     }
 
     // Collect all relevant files and their parent directories
     let mut relevant_files = Vec::new();
-    for entry in WalkDir::new(source_dir) {
+    for entry in WalkDir::new(source_dir.as_path()) {
         let entry = entry?;
         let path = entry.path();
 
@@ -30,8 +35,7 @@ fn recreate_directory_structure(
             if let Some(file_name) = path.file_name().and_then(|f| f.to_str()) {
                 if file_name == "data.json"
                     || file_name.ends_with(".png")
-                    || file_name.ends_with(".odg")
-                    || file_name.ends_with(".pdf")
+                    || file_name.ends_with(".svg")
                 {
                     relevant_files.push(path.to_path_buf());
                 }
@@ -39,61 +43,82 @@ fn recreate_directory_structure(
         }
     }
 
-    // Create directories and copy relevant files
-    for file_path in relevant_files {
-        // Compute the relative path
-        let relative_path = file_path.strip_prefix(source_dir)?;
-        let target_path = target_dir.join(relative_path);
+    let pool = ThreadPoolBuilder::new()
+        .num_threads(num_cpus::get())
+        .build()
+        .unwrap();
 
-        // Create the parent directory if it doesn't exist
-        if let Some(parent) = target_path.parent() {
-            fs::create_dir_all(parent)?;
+    let start = Instant::now();
+    pool.scope(|scope| {
+        for file_path in relevant_files {
+            let source_dir = source_dir.clone();
+            let target_dir = target_dir.clone();
+            scope.spawn(move |_| {
+                // Compute the relative path
+                let relative_path = match file_path.strip_prefix(source_dir.as_path()) {
+                    Ok(path) => path,
+                    Err(e) => {
+                        eprintln!("Error computing relative path: {}", e); // Log the error
+                        return; // Exit the closure or function if necessary
+                    }
+                };
+                let target_path = target_dir.join(relative_path);
+
+                // Create the parent directory if it doesn't exist
+                if let Some(parent) = target_path.parent() {
+                    if let Err(e) = fs::create_dir_all(parent) {
+                        eprintln!("Error creating directory: {}", e);
+                    }
+                }
+
+                // Copy or convert the file
+                if let Some(file_name) = file_path.file_name().and_then(|f| f.to_str()) {
+                    match file_name {
+                        "data.json" => {
+                            // Copy data.json files
+                            if let Err(e) = fs::copy(&file_path, &target_path) {
+                                eprintln!("Error copying data.json: {}", e);
+                            }
+                        }
+                        file if file.ends_with(".png") => {
+                            // Copy PNG files
+                            match fs::copy(&file_path, &target_path) {
+                                Ok(_) => {
+                                    if let Err(e) = optimise_png(&target_path) {
+                                        eprintln!("Error optimising PNG file: {}", e);
+                                    }
+                                }
+                                Err(e) => eprintln!("Error copying PNG file: {}", e),
+                            }
+                        }
+                        file if file.ends_with(".svg") => {
+                            // Render and optimise svg files
+                            let start = Instant::now();
+
+                            if let Err(e) =
+                                render_svg_to_png(&file_path, &target_path.with_extension("png"))
+                            {
+                                eprintln!("Error rendering SVG to PNG: {}", e);
+                            }
+
+                            // Get the end time
+                            println!(
+                                "Time taken: {:?} for file: {}",
+                                start.elapsed(),
+                                file_path.file_name().unwrap().to_str().unwrap()
+                            );
+                        }
+                        _ => {}
+                    }
+                }
+            })
         }
+    });
 
-        // Copy or convert the file
-        if let Some(file_name) = file_path.file_name().and_then(|f| f.to_str()) {
-            match file_name {
-                "data.json" => {
-                    // Copy data.json files
-                    fs::copy(&file_path, &target_path)?;
-                }
-                file if file.ends_with(".png") => {
-                    // Copy PNG files
-                    fs::copy(&file_path, &target_path)?;
-                }
-                file if file.ends_with(".odg") => {
-                    // Convert ODG files to PNG
-                    let parent = target_path.parent().unwrap();
-                    convert_odg_to_png(&file_path, parent)?;
-                }
-                file if file.ends_with(".pdf") => {
-                    // Copy PDF files
-                    fs::copy(&file_path, &target_path)?;
-                }
-                _ => {}
-            }
-        }
-    }
+    // Get the end time
+    println!("Time taken total: {:?}", start.elapsed());
 
-    Ok(())
-}
-
-/// Convert ODG files to PNG using LibreOffice
-fn convert_odg_to_png(
-    odg_file_path: &Path,
-    output_dir: &Path,
-) -> Result<(), Box<dyn std::error::Error>> {
-    let mut command = Command::new("libreoffice");
-    command
-        .arg("--headless")
-        .arg("--convert-to")
-        .arg("png")
-        .arg("--outdir")
-        .arg(output_dir)
-        .arg(odg_file_path);
-
-    command.output()?;
-
+    println!("All tasks completed.");
     Ok(())
 }
 
@@ -109,7 +134,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     if helper_file_path.exists() {
         // If the file exists, proceed to render the wiki
         let target_dir = current_dir.join("Wiki");
-        recreate_directory_structure(&current_dir, &target_dir)?;
+        recreate_directory_structure(&Arc::new(current_dir), &Arc::new(target_dir))?;
     } else {
         // If the file is not found, print an error message
         eprintln!(

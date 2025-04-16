@@ -33,18 +33,16 @@ def recreate_directory_structure(source_dir, target_dir):
                 convert_odg_to_png(source_file_path, target_path)
 
 def convert_odg_to_png(odg_file_path, output_dir):
-    # Use LibreOffice to convert .odg to .png
+    # Use LibreOffice to convert .odg to .png (i've tried to make this multi-threaded however you cannot have more than one libreoffice at a time.)
     subprocess.run([
         'libreoffice', '--headless', '--convert-to', 'png',
         '--outdir', output_dir, odg_file_path
     ], check=True)
 
 if __name__ == "__main__":
-    # Get the current script directory
-    script_dir = os.path.dirname(os.path.abspath(__file__))
 
     # Define the source and target directories using relative paths
-    wiki_source_dir = script_dir  # Current directory where the script is located
-    wiki_dir = os.path.join(script_dir, '..', 'Wiki')  # One level up, in 'wiki'
+    wiki_source_dir = os.path.dirname(os.path.abspath(__file__)) # Get the current script directory
+    wiki_dir = os.path.join(wiki_source_dir, '..', 'Wiki')  # One level up, in 'wiki'
 
     recreate_directory_structure(wiki_source_dir, wiki_dir)

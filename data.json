@@ -1,11 +1,11 @@
 {
 	"title": "Welcome to RhythmiRust Wiki",
 	"image": {
-        "path": "icon.png",
-        "max_width": 200.0,
-        "max_height": 200.0,
-        "offset": 205.0
-    },
+		"path": "icon.png",
+		"max_width": 200.0,
+		"max_height": 200.0,
+		"offset": 205.0
+	},
 	"subheading": "Welcome to RhythmiRust! This wiki will help you learn how to use the programme effectively.",
 	"contents": [
 		{ "Header2": "How to navigate the wiki" },
@@ -38,8 +38,10 @@
 		{ "Text": "A feature-rich music player with an efficient, distraction-free interface." },
 		{ "Text": "Powerful functionality meets minimalist design - search, download, and manage your music without the bloat." },
 		{ "Separator": null },
-		
+
 		{ "Header2": "Developer FAQ" },
-		{ "Text": "•[[[button:Developer/About][About]]]" }
+		{ "Text": "•[[[button:Developer/About][About]]]" },
+		{ "Separator": null },
+		{ "Text": "If you are interested in helping develop the wiki, please visit the [[[hyperlink:Contribution Guide][https://github.com/UnknownSuperficialNight/RhythmiRust-Wiki]]] on GitHub for more details." }
 	]
 }

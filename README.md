@@ -17,8 +17,8 @@ We welcome contributions from everyone! If you find an area that could be improv
 
 To get started with the RhythmiRust-Wiki:
 1. Clone the repository to your local machine.
-2. Explore **_Wiki_build_helper.json** to see example building blocks of the wiki.
-3. Copy/Reference from **_Wiki_build_helper.json** and design the page as you see fit.
+2. Explore [**_Wiki_build_helper.json**](./_Wiki_build_helper.json) to see example building blocks of the wiki.
+3. Copy/Reference from [**_Wiki_build_helper.json**](./_Wiki_build_helper.json) and design the page as you see fit.
 
 ## How to Use
 

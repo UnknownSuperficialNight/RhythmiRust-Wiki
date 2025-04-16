@@ -5,7 +5,7 @@ Thank you for visiting the **RhythmiRust-Wiki** repository! This project is dedi
 ## Overview
 
 This repository contains:
-- A [Python script](./wiki_compiler.py) that converts ODG (Open Document Graphics) files into PNG (Portable Network Graphics) format and copies other files to generate the final wiki directory. **Note:** The wiki compiler requires [**LibreOffice**](https://www.libreoffice.org/about-us/who-are-we) as it uses it to convert the ODG files.
+- A [Compiler](./wiki_compiler) that converts SVG (Scalable Vector Graphics) files into PNG (Portable Network Graphics) format and copies other files to generate the final wiki directory
 - JSON files that store wiki pages/layouts, which my program uses to render content into wiki pages.
 - Images referenced in the JSON files, allowing the wiki to display them appropriately within the rendered pages.
 
@@ -17,12 +17,24 @@ We welcome contributions from everyone! If you find an area that could be improv
 
 To get started with the RhythmiRust-Wiki:
 1. Clone the repository to your local machine.
+2. Navigate to the [Compiler](./wiki_compiler) and compile it using [Rust](https://www.rust-lang.org/tools/install) Commands given in [Quick Start](#quick-start).
 2. Explore [**_Wiki_build_helper.json**](./_Wiki_build_helper.json) to see example building blocks of the wiki.
 3. Copy/Reference from [**_Wiki_build_helper.json**](./_Wiki_build_helper.json) and design the page as you see fit.
 
-## How to Use
+## Quick Start
 
-- Run the Python script to generate the final wiki directory. This directory can be placed in the **RhythmiRust_config** folder and should be rendered once in place.
+Setup and generate the wiki:
+```bash
+git clone https://github.com/UnknownSuperficialNight/RhythmiRust-Wiki
+cd RhythmiRust-Wiki/wiki_compiler
+cargo build --release
+mv "./target/release/compile_wiki" "../compile_wiki"
+cargo clean
+cd ..
+./compile_wiki
+```
+
+Now the production wiki should have been generated in the `./Wiki` directory.
 
 ## License
 

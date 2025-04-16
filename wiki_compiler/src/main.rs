@@ -126,12 +126,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Get the current directory where the binary is executed
     let current_dir = env::current_dir()?;
 
+    let parent_dir = current_dir.parent().unwrap();
+
     // Define the expected file name
     let helper_file_name = "_Wiki_build_helper.json";
     let helper_file_path = current_dir.join(helper_file_name);
 
     // Check if the file exists in the current directory
-    if helper_file_path.exists() {
+    if helper_file_path.exists() && parent_dir.to_str().unwrap() == "RhythmiRust-Wiki" {
         // If the file exists, proceed to render the wiki
         let target_dir = current_dir.join("Wiki");
         recreate_directory_structure(&Arc::new(current_dir), &Arc::new(target_dir))?;

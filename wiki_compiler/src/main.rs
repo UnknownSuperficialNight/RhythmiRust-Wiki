@@ -82,6 +82,8 @@ fn recreate_directory_structure(
                         }
                         file if file.ends_with(".png") => {
                             // Copy PNG files
+                            let start = Instant::now();
+
                             match fs::copy(&file_path, &target_path) {
                                 Ok(_) => {
                                     if let Err(e) = optimise_png(&target_path) {
@@ -90,6 +92,13 @@ fn recreate_directory_structure(
                                 }
                                 Err(e) => eprintln!("Error copying PNG file: {}", e),
                             }
+
+                            // Get the end time
+                            println!(
+                                "Time taken: {:?} for file: {}",
+                                start.elapsed(),
+                                file_path.file_name().unwrap().to_str().unwrap()
+                            );
                         }
                         file if file.ends_with(".svg") => {
                             // Render and optimise svg files
@@ -126,7 +135,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Get the current directory where the binary is executed
     let current_dir = env::current_dir()?;
 
-    let parent_dir = current_dir.parent().unwrap();
+    // Ger the directory name for safety checks
+    let parent_dir = current_dir.file_name().unwrap();
 
     // Define the expected file name
     let helper_file_name = "_Wiki_build_helper.json";

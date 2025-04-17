@@ -23,7 +23,7 @@ To get started with the RhythmiRust-Wiki:
 
 ## Quick Start
 
-> [!WARNING]  
+> [!IMPORTANT]
 > NOTE: This assumes you have [Rust](https://www.rust-lang.org/tools/install) and [git](https://git-scm.com/downloads) installed and available in your $PATH environmental variables.
 
 Setup and generate the wiki:

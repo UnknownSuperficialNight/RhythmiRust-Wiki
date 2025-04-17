@@ -42,6 +42,6 @@
 		{ "Header2": "Developer FAQ" },
 		{ "Text": "•[[[button:Developer/About][About]]]" },
 		{ "Separator": null },
-		{ "Text": "If you are interested in helping develop the wiki, please visit the [[[hyperlink:Contribution Guide][https://github.com/UnknownSuperficialNight/RhythmiRust-Wiki]]] on GitHub for more details." }
+		{ "Text": "If you are interested in helping develop the wiki, please visit the[[[hyperlink:Contribution Guide][https://github.com/UnknownSuperficialNight/RhythmiRust-Wiki]]]on GitHub for more details." }
 	]
 }

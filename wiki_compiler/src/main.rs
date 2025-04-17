@@ -58,8 +58,8 @@ fn recreate_directory_structure(
                 let relative_path = match file_path.strip_prefix(source_dir.as_path()) {
                     Ok(path) => path,
                     Err(e) => {
-                        eprintln!("Error computing relative path: {}", e); // Log the error
-                        return; // Exit the closure or function if necessary
+                        eprintln!("Error computing relative path: {}", e);
+                        return;
                     }
                 };
                 let target_path = target_dir.join(relative_path);
@@ -142,17 +142,27 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let helper_file_name = "_Wiki_build_helper.json";
     let helper_file_path = current_dir.join(helper_file_name);
 
+    // Check if the helper file exists in the current directory
+    if !helper_file_path.exists() {
+        eprintln!(
+            "Error: '{}' not found. The compiler needs to be at the top level of the Wiki directory, \
+             on the same level as '{}'.",
+            helper_file_name, helper_file_name
+        );
+        return Err("Required file not found".into());
+    }
+
     // Check if the file exists in the current directory
-    if helper_file_path.exists() && parent_dir.to_str().unwrap() == "RhythmiRust-Wiki" {
+    if parent_dir.to_str().unwrap() == "RhythmiRust-Wiki" {
         // If the file exists, proceed to render the wiki
         let target_dir = current_dir.join("Wiki");
         recreate_directory_structure(&Arc::new(current_dir), &Arc::new(target_dir))?;
     } else {
         // If the file is not found, print an error message
         eprintln!(
-            "Error: '{}' not found. The compiler needs to be at the top level of the Wiki directory, \
-                on the same level as '{}'.",
-            helper_file_name, helper_file_name
+            "Error: The compiler must be in the top-level 'Wiki' directory. \
+                Current parent directory: '{}'.",
+            parent_dir.to_str().unwrap()
         );
         return Err("Required file not found".into());
     }

@@ -5,8 +5,8 @@ edition = "2024"
 
 [dependencies]
 walkdir = "2.5.0"
-usvg = "0.45.0"
-resvg = "0.45.0"
+usvg = { version = "0.45.1", features = [], default-features = false }
+resvg = { version = "0.45.1", features = ["raster-images"], default-features = false }
 tiny-skia = "0.11.4"
 oxipng = { version = "9.1.4", features = ["parallel", "filetime"], default-features = false }
 rayon = "1.10.0"

@@ -5,7 +5,7 @@ Thank you for visiting the **RhythmiRust-Wiki** repository! This project is dedi
 ## Overview
 
 This repository contains:
-- A [Compiler](./wiki_compiler) that converts SVG (Scalable Vector Graphics) files into PNG (Portable Network Graphics) format and copies other files to generate the final wiki directory
+- A [Compiler](./wiki_compiler) that converts SVG (Scalable Vector Graphics) files into PNG (Portable Network Graphics) format, copies and optimises other files to generate the final wiki directory
 - JSON files that store wiki pages/layouts, which my program uses to render content into wiki pages.
 - Images referenced in the JSON files, allowing the wiki to display them appropriately within the rendered pages.
 

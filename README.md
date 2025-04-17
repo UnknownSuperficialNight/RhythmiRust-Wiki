@@ -23,7 +23,12 @@ To get started with the RhythmiRust-Wiki:
 
 ## Quick Start
 
+> [!WARNING]  
+> NOTE: This assumes you have [Rust](https://www.rust-lang.org/tools/install) and [git](https://git-scm.com/downloads) installed and available in your $PATH environmental variables.
+
 Setup and generate the wiki:
+
+**Bash/Linux**
 ```bash
 git clone https://github.com/UnknownSuperficialNight/RhythmiRust-Wiki
 cd RhythmiRust-Wiki/wiki_compiler
@@ -32,6 +37,17 @@ mv "./target/release/compile_wiki" "../compile_wiki"
 cargo clean
 cd ..
 ./compile_wiki
+```
+
+**Powershell/Windows**
+```powershell
+git clone https://github.com/UnknownSuperficialNight/RhythmiRust-Wiki.git
+Set-Location RhythmiRust-Wiki\wiki_compiler
+cargo build --release
+Move-Item ".\target\release\compile_wiki.exe" "../compile_wiki.exe"
+cargo clean
+Set-Location ..
+./compile_wiki.exe
 ```
 
 Now the production wiki should have been generated in the `./Wiki` directory.

@@ -1,4 +1,6 @@
 use rayon::ThreadPoolBuilder;
+use serde_json::Value;
+use serde_json::to_string;
 use std::env;
 use std::fs;
 use std::path::PathBuf;
@@ -75,10 +77,31 @@ fn recreate_directory_structure(
                 if let Some(file_name) = file_path.file_name().and_then(|f| f.to_str()) {
                     match file_name {
                         "data.json" => {
-                            // Copy data.json files
-                            if let Err(e) = fs::copy(&file_path, &target_path) {
-                                eprintln!("Error copying data.json: {}", e);
+                            let start = Instant::now();
+
+                            // Read the json source content
+                            let json_content =
+                                fs::read_to_string(&file_path).expect("Failed to read JSON");
+
+                            // Parse the JSON content into a serde_json::Value
+                            let json_value: Value =
+                                serde_json::from_str(&json_content).expect("Failed to parse JSON");
+
+                            // Minify the JSON file
+                            let minified_json =
+                                to_string(&json_value).expect("Failed to minify JSON");
+
+                            // Write the minified JSON to the target file
+                            if let Err(e) = fs::write(&target_path, minified_json) {
+                                eprintln!("Error writing minified JSON: {}", e);
                             }
+
+                            // Get the end time
+                            println!(
+                                "Time taken: {:?} for file: {}",
+                                start.elapsed(),
+                                file_path.file_name().unwrap().to_str().unwrap()
+                            );
                         }
                         file if file.ends_with(".png") => {
                             // Copy PNG files

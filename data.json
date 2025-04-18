@@ -26,13 +26,13 @@
 
 		{ "Header2": "Guides" },
 		{ "Text": "Learn how to make the most of RhythmiRust:" },
-		{ "Text": "•[[[button:Optimise Performance][Guides/Optimise Performance]]]- Optimise for low-end hardware" },
+		{ "Text": "•[[[button:Optimise Performance][_Guides/Optimise Performance]]]- Optimise for low-end hardware" },
 		{ "Separator": null },
 
 		{ "Header2": "Help/Support/FAQ" },
 		{ "Text": "Need help?" },
 		{ "Text": "•[[[button:Troubleshooting][/Help/Troubleshooting]]]-[[[strikethrough:Solve common issues]]]" },
-		{ "Text": "•[[[button:FAQ][Help/FAQ]]]- Frequently asked questions" },
+		{ "Text": "•[[[button:FAQ][_Help/FAQ]]]- Frequently asked questions" },
 		{ "Separator": null },
 
 		{ "Text": "RhythmiRust - Your Music, Your Way" },

@@ -1,0 +1,16 @@
+{
+	"title": "Memory",
+	"contents": [
+		{
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Reset UI Layout & Size" },
+		{ "Text": "This will reset the UI layout and size to the default values and will also reset all other remembered UI states." }
+	]
+}

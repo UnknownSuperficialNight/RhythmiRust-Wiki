@@ -1,9 +1,8 @@
 {
 	"title": "Main Window",
 	"contents": [
-		{ "Text": "The main window is the central hub of RhythmiRust, providing access to all major features and controls." },
+		{ "Text": "The main window is the central hub of RhythmiRust, providing access to all major features and controls. (Shoutout Ultrakill this is artwork from it)" },
 		{ "Separator": null },
-
 		{
 			"Image": {
 				"path": "main_window.png",
@@ -15,6 +14,11 @@
 
 		{ "Header": "Core Components" },
 		{ "Text": "Buttons on the taskbar at the top of the screen in order from left to right are:" },
+
+		{ "Header2": "Metadata Editor" },
+		{ "Text": "Where you can edit the metadata of your tracks." },
+		{ "Text": "[[[button:Learn more about \"Metadata Editor\"][Metadata Editor]]]" },
+		{ "Separator": null },
 
 		{ "Header2": "Search" },
 		{ "Text": "Where you can enter queries and view search results for your music." },

@@ -40,7 +40,7 @@ cd ..
 ```
 
 **Powershell/Windows**
-```powershell
+```PowerShell
 git clone https://github.com/UnknownSuperficialNight/RhythmiRust-Wiki.git
 Set-Location RhythmiRust-Wiki\wiki_compiler
 cargo build --release

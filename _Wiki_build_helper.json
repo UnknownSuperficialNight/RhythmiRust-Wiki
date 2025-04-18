@@ -1,19 +1,25 @@
 {
+	"_Comment_TITLE": "Add a title to the page in this case empty",
 	"title": "",
+	"_Comment_IMAGE": "Add a image to the top of the page",
 	"image": {
-        "path": "icon.png",
-        "max_width": 200.0,
-        "max_height": 200.0,
-        "offset": 200.0
-    },
+		"path": "icon.png",
+		"max_width": 200.0,
+		"max_height": 200.0,
+		"offset": 200.0
+	},
+	"_Comment": "Contents/body of the page",
 	"contents": [
+		{ "_Comment": "Add a header to the page" },
 		{ "Header": "" },
 		{ "Header2": "" },
 		{ "Header3": "" },
 
+		{ "_Comment": "Add normal text or a custom text with added spacing" },
 		{ "Text": "" },
 		{ "TextCustom": { "space_size": 10.5, "content": "RhythmiRust - Your Music, Your Way" } },
 
+		{ "_Comment": "Add a image with a relative path" },
 		{
 			"Image": {
 				"path": ".png",
@@ -22,6 +28,7 @@
 			}
 		},
 
+		{ "_Comment": "Add a image with a path from root" },
 		{
 			"Image": {
 				"path": "/_hidden_global_assets/gear_icon.png",
@@ -30,8 +37,10 @@
 			}
 		},
 
+		{ "_Comment": "Add a separator" },
 		{ "Separator": null },
 
+		{ "_Comment": "Group of horizontal images" },
 		{
 			"ImageGroup": [
 				{
@@ -46,6 +55,8 @@
 				}
 			]
 		},
+
+		{ "_Comment": "These are the colours i use for the svg images" },
 		{ "Text": "Soft Purple: #D1C4E9" },
 		{ "Text": "Soft Yellow: #F9EBAE" },
 		{ "Text": "Dark Blue: #3465a4" },
@@ -56,6 +67,7 @@
 		{ "Text": "Cyan Blue: #55AFEC" },
 		{ "Text": "Crimson Red: #770000" },
 
+		{ "_Comment": "underlined text for under the images" },
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Remove Bar" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Remove Bar" },
 		{ "Text": "[[[underline:Dark Blue]]] ≈ Remove Bar" },
@@ -63,7 +75,7 @@
 		{ "Text": "[[[underline:Pale Orange]]] ≈ Remove Bar" },
 		{ "Text": "[[[underline:Soft Peach]]] ≈ Remove Bar" },
 
-		{ "Text": "" },
+		{ "_Comment": "This is how to include button types from striked out to linking to other pages" },
 		{ "Text": "•[[[button:][]]]- [[[strikethrough:]]]" },
 		{ "Text": "•[[[button:][start_from_current_dir]]]" },
 		{ "Text": "•[[[button:][/start_from_root]]]" },

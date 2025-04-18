@@ -1,7 +1,7 @@
 {
 	"title": "Advanced Settings",
 	"contents": [
-        {
+		{
 			"Image": {
 				"path": "Main.png",
 				"max_width": 600.0,
@@ -12,7 +12,7 @@
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Cache" },
 		{ "Text": "[[[underline:Dark Blue]]] ≈ Dependencies" },
 		{ "Text": "[[[underline:Light Green]]] ≈ Config location" },
-        { "Text": "[[[underline:Pale Orange]]] ≈ Irreversible actions" },
+		{ "Text": "[[[underline:Pale Orange]]] ≈ Irreversible actions" },
 		{ "Separator": null },
 
 		{ "Header": "Overview of Each UI Element" },
@@ -26,23 +26,30 @@
 				"max_height": 446.0
 			}
 		},
-        { "Text": "In the above image" },
-        { "Text": "•Soft Purple: Button/Heading to select what arguments you want to edit (left click to edit | right click to deselect)" },
-        { "Text": "•Soft Yellow: Displays the arguments currently selected for editing in a editor" },
-        { "Text": "•Dark Blue: save the current state of the arguments, close the argument editing window, or remove the selected argument entirely." },
+		{ "Text": "In the above image" },
+		{ "Text": "•Soft Purple: Button/Heading to select what arguments you want to edit (left click to edit | right click to deselect)" },
+		{ "Text": "•Soft Yellow: Edit the arguments of the selected (save to finalize; close to cancel; Remove to remove the entire argument entry)" },
+		{ "Text": "•Dark Blue: Other Buttons/Headings to select what you want to edit like soft purple" },
+		{ "Text": "•Add new argument: This shares the same memory as the edit arguments do this enables quick duplication of previous arguments just click on a argument you want to duplicate" },
+		{ "Text": "then click the add button this will open the ui you see in the image then edit the comment and args then click save to finalize" },
+		{ "Text": "after than hit close of the Button/Heading and that should return the Button/Heading to the original state thus duplicating it" },
 		{ "Separator": null },
 
 		{ "Header2": "Cache" },
 		{ "Text": "This involves actions to the downloader cache" },
-        { "Text": "•Graveyard Cache: This is where dead/broken links are stored to never be used again" },
-        { "Text": "•Graveyard Temp: This holds links that have failed but not failed enough to qualify to be merged into \"Graveyard Cache\"" },
+		{ "Text": "•Manually Regenerate Search Cache: This triggers a regneration of the search cache but does not clear it" },
+		{ "Text": "This is useful if you added new files and want to add them to the search cache" },
+		{ "Text": "•Graveyard Cache: This is where dead/broken links are stored to never be used again" },
+		{ "Text": "•Graveyard Temp: This holds links that have failed but not failed enough to qualify to be merged into \"Graveyard Cache\"" },
 		{ "Text": "Both buttons clear their respective caches forcing re-downloads of failed or potentially failed urls" },
-        { "Text": "Warning: You probably don't want to do this unless you tried to download offline" },
-        { "Text": "as downloading offline would make all downloads fail this false positives are added in here" },
-        { "TextCustom": { "space_size": 12.5, "content": "if you do clear \"Graveyard Cache\" expect a large amount of urls attempting to be downloaded" } },
-		{ "Text": "•Clear Cache: This Clears all previously downloaded URLs, effectively resetting the downloader" },
+		{ "Text": "Warning: You probably don't want to do this unless you tried to download offline" },
+		{ "Text": "as downloading offline would make all downloads fail this false positives are added in here" },
+		{ "TextCustom": { "space_size": 12.5, "content": "if you do clear \"Graveyard Cache\" expect a large amount of urls attempting to be downloaded" } },
+		{ "Text": "•Clear Regenerate Search Cache: This Clears the search cache that is used in the new search implementation" },
+		{ "Text": "This forces all searches to be re-generated" },
+		{ "Text": "•Clear Download Cache: This Clears all previously downloaded URLs, effectively resetting the downloader" },
 		{ "Text": "This forces all successful URLs to be downloaded again. Use only if a complete reset is necessary" },
-        {
+		{
 			"Image": {
 				"path": "Cache.png",
 				"max_width": 401.0,
@@ -53,8 +60,8 @@
 
 		{ "Header2": "Dependencies" },
 		{ "Text": "This forces Yt-dlp to be updated on next launch of RhythmiRust" },
-        { "Text": "This is done once a week automatically but if a emergency update is pushed to Yt-dlp" },
-        { "Text": "You can use this to get updated right away" },
+		{ "Text": "This is done once a week automatically but if a emergency update is pushed to Yt-dlp" },
+		{ "Text": "You can use this to get updated right away" },
 		{
 			"Image": {
 				"path": "Dependencies.png",
@@ -64,10 +71,10 @@
 		},
 		{ "Separator": null },
 
-        { "Header2": "Config location" },
+		{ "Header2": "Config location" },
 		{ "Text": "This moves the config from being portable to global stored locations are:" },
 		{ "Text": "Windows: localappdata\\RhythmiRust" },
-        { "Text": "Linux: ~/.config/RhythmiRust" },
+		{ "Text": "Linux: ~/.config/RhythmiRust" },
 		{
 			"Image": {
 				"path": "Config location.png",
@@ -79,8 +86,8 @@
 
 		{ "Header2": "Irreversible actions" },
 		{ "Text": "This as actions for mass deletion (Warning: These actions are final and cannot be reversed)" },
-        { "Text": "Prune History for Dead Searches: This will search each thing in \"History\" and if the search is empty remove it from history" },
-        { "Text": "Clear History: This will full remove everything from history" },
+		{ "Text": "Prune History for Dead Searches: This will search each thing in \"History\" and if the search is empty remove it from history" },
+		{ "Text": "Clear History: This will full remove everything from history" },
 		{
 			"Image": {
 				"path": "Irreversible actions.png",
@@ -88,5 +95,5 @@
 				"max_height": 446.0
 			}
 		}
-    ]
+	]
 }

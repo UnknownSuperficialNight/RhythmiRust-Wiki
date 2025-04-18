@@ -57,9 +57,9 @@
 		{ "Header2": "Spotify" },
 		{ "Text": "These are the same as the fields in [[[button:Key and below in Playlist Editor][../Playlist Editor]]]" },
 		{ "Text": "Spotfetch_download_selection: This selects what you want to download from spotify:" },
-        { "Text": "• Liked: Download only users liked" },
-        { "Text": "• Playlist: Download only playlists" },
-        { "Text": "• Liked,Playlist: Both" },
+		{ "Text": "• Liked: Download only users liked" },
+		{ "Text": "• Playlist: Download only playlists" },
+		{ "Text": "• Liked,Playlist: Both" },
 		{
 			"Image": {
 				"path": "Spotify.png",
@@ -70,13 +70,6 @@
 		{ "Separator": null },
 
 		{ "Header2": "Import/Export" },
-		{ "Text": "[[[button:Import or Export][Import_Export]]] your playlists to a json file" },
-		{
-			"Image": {
-				"path": "History Body.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
-		}
+		{ "Text": "[[[button:Import or Export][Import_Export]]] your playlists to a json file" }
 	]
 }

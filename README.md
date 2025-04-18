@@ -2,6 +2,8 @@
 
 Thank you for visiting the **RhythmiRust-Wiki** repository! This project is dedicated to providing a comprehensive wiki for RhythmiRust.
 
+![2025-04-19_00-56](https://github.com/user-attachments/assets/54528ca4-7fb5-4343-abed-3dcaf2557d1f)
+
 ## Overview
 
 This repository contains:

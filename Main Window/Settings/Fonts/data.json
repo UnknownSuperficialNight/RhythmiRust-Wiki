@@ -1,0 +1,65 @@
+{
+	"title": "Fonts",
+	"contents": [
+		{
+			"Image": {
+				"path": "Main.png",
+				"max_width": 600.0,
+				"max_height": 600.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Enable dynamic fonts" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Enabled dynamic font" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Editing a dynamic font" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Disabled dynamic fonts" },
+		{ "Separator": null },
+
+		{ "Header": "Overview of Each UI Element" },
+
+		{ "Header2": "Enable dynamic fonts" },
+		{ "Text": "Enabled: This shows the ui to toggle individual dynamic fonts." },
+		{ "Text": "Disabled: Hides the ui and disables all dynamic font loading." },
+		{
+			"Image": {
+				"path": "Enable dynamic fonts.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Enabled dynamic font" },
+		{ "Text": "This is enabling dynamic font searching/loading of the \"Japanese\" language if found it will load the font on startup. " },
+		{
+			"Image": {
+				"path": "Enabled dynamic font.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+
+		{ "Header2": "Editing a dynamic font" },
+		{ "Text": "Right click on a font to show the editing menu." },
+		{ "Text": "Edit Region: This is the region/name of the font you are editing." },
+		{ "Text": "Edit font_names: This is the font names it will search for and load if found." },
+		{ "Text": "Note: It searches the fonts in order from top to bottom so if i higher font is found it will use that and not load lower fonts." },
+		{ "Text": "Save: This will save the changes." },
+		{
+			"Image": {
+				"path": "Editing a dynamic font.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+
+		{ "Header2": "Disabled dynamic fonts" },
+		{ "Text": "These are fonts that are not ticked thus will not be searched or loaded." },
+		{
+			"Image": {
+				"path": "Disabled dynamic fonts.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		}
+	]
+}

@@ -17,18 +17,35 @@
 		{ "Text": "[[[button:Learn more about \"Config\"][Config]]]" },
 		{ "Separator": null },
 
+		{ "Header2": "Memory" },
+		{ "Text": "Where you can reset the window size to default." },
+		{ "Text": "[[[button:Learn more about \"Memory\"][Memory]]]" },
+		{ "Separator": null },
+
+		{ "Header2": "Keybindings" },
+		{ "Text": "See keybindings and their descriptions." },
+		{ "Separator": null },
+
+		{ "Header2": "Fonts" },
+		{ "Text": "Where you can enable/disable/edit dynamic font imports." },
+		{ "Text": "[[[button:Learn more about \"Fonts\"][Fonts]]]" },
+		{ "Separator": null },
+
 		{ "Header2": "Colours" },
 		{ "Text": "Adjust ui colours." },
 		{ "Text": "[[[button:Learn more about \"Colours\"][Colours]]]" },
 		{ "Separator": null },
 
-        { "Header2": "Image" },
+		{ "Header2": "Image" },
 		{ "Text": "Manage image rendering and effects." },
 		{ "Text": "[[[button:Learn more about \"Image\"][Image]]]" },
 		{ "Separator": null },
 
 		{ "Header2": "Discord RPC" },
 		{ "Text": "Enable Discord Rich Presence." },
-		{ "Text": "[[[button:Learn more about \"Discord RPC\"][Discord RPC]]]" }
+		{ "Text": "[[[button:Learn more about \"Discord RPC\"][Discord RPC]]]" },
+
+		{ "Header2": "About" },
+		{ "Text": "About page showing credits and info." }
 	]
 }

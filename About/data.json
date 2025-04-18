@@ -1,35 +1,35 @@
 {
 	"title": "The Birth of RhythmiRust",
 	"contents": [
-        { "Header2": "Community page" },
-        { "Text": "[[[button:Community link][Community]]]" },
-        { "Separator": null },
+		{ "Header2": "Community page" },
+		{ "Text": "[[[button:Community link][Community]]]" },
+		{ "Separator": null },
 
-        { "Header": "Questions:" },
-        { "Text": "Answers provided by[[[button:@UnknownSuperficialNight][_developers/UnknownSuperficialNight]]]the developer" },
+		{ "Header": "Questions:" },
+		{ "Text": "Answers provided by[[[button:@UnknownSuperficialNight][_developers/UnknownSuperficialNight]]]the developer" },
 
-        { "Header2": "The Origin of RhythmiRust" },
-        { "Text": "RhythmiRust started as 2 bash scripts one for downloading one for searching." },
-        { "Text": "Of course this became hard to manage and use, so I decided that i should probably combine them" },
-        { "Text": "into a single application that also works cross platform." },
-        { "Text": "Thus RhythmiRust was born." },
+		{ "Header2": "The Origin of RhythmiRust" },
+		{ "Text": "RhythmiRust started as 2 bash scripts one for downloading one for searching" },
+		{ "Text": "of course this became hard to manage and use, so I decided that i should probably combine them" },
+		{ "Text": "into a single application that also works cross platform." },
+		{ "Text": "Thus RhythmiRust was born." },
 
-        { "Header2": "Why make RhythmiRust" },
-        { "Text": "I wanted to make a music player due to the lack of one that offered a search feature, let alone a downloader." },
-        { "Text": "My primary aim was to make an effortless method for downloading/syncing videos from platforms like YouTube, Spotify, and Soundcloud." },
-        { "Text": "These downloaded files would then be stored locally for preservation and playback." },
-        { "Text": "Also RhythmiRust was intended to be a efficient, portable, feature-rich and lightweight application." },
-        { "Text": "This means minimal CPU and RAM usage, and a fully portable configuration" },
-        { "Text": "with album art support." },
+		{ "Header2": "Why make RhythmiRust" },
+		{ "Text": "I wanted to make a \"music player\" due to the lack of one that offered a search feature, let alone a downloader." },
+		{ "Text": "My primary aim was to make an effortless method for downloading/syncing videos from platforms like YouTube, Spotify, and Soundcloud" },
+		{ "Text": "these downloaded files would then be stored locally for preservation and playback." },
+		{ "Text": "RhythmiRust was intended to be a efficient, portable, feature-rich and lightweight application" },
+		{ "Text": "this means minimal CPU and RAM usage, and a fully portable configuration" },
+		{ "Text": "with album art support." },
 
-        { "Header2": "The Influence of Music on RhythmiRust's Development" },
-        { "Text": "As a music enthusiast with a vast collection of over 15,663 songs," },
-        { "Text": "I desired an easy method to search/play through play them and download new additions." },
-                
-        { "Header2": "The Core Values Guiding the Development of RhythmiRust" },
-        { "Text": "RhythmiRust should maintain a consistent GUI appearance." },
-        { "Text": "No elements should appear outside of the GUI (such as opening system file dialogue)." },
-        { "Text": "The application should be self-contained, requiring minimal external dependencies." },
-        { "Text": "RhythmiRust has only two external dependencies: one for network/download functionality and another for converting incompatible formats like opus and m4a to play natively." }
-    ]
+		{ "Header2": "The Influence of Music on RhythmiRust's Development" },
+		{ "Text": "As a music enthusiast with a vast collection of 16,561 songs" },
+		{ "Text": "I desired an easy method to search/play through play them and download/sync new additions." },
+
+		{ "Header2": "The Core Values Guiding the Development of RhythmiRust" },
+		{ "Text": "RhythmiRust should maintain a consistent GUI appearance." },
+		{ "Text": "No elements should appear outside of the GUI (such as opening system file dialogue)." },
+		{ "Text": "The application should be self-contained, requiring minimal external dependencies." },
+		{ "Text": "RhythmiRust has only two external dependencies: one for network/download functionality and another for converting formats." }
+	]
 }

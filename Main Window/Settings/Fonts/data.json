@@ -42,7 +42,7 @@
 		{ "Text": "Right click on a font to show the editing menu." },
 		{ "Text": "Edit Region: This is the region/name of the font you are editing." },
 		{ "Text": "Edit font_names: This is the font names it will search for and load if found." },
-		{ "Text": "Note: It searches the fonts in order from top to bottom so if i higher font is found it will use that and not load lower fonts." },
+		{ "Text": "Note: It searches the fonts in order from top to bottom so if a higher font is found it will use that and not load lower fonts." },
 		{ "Text": "Save: This will save the changes." },
 		{
 			"Image": {

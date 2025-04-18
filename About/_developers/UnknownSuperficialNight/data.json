@@ -1,12 +1,20 @@
 {
 	"title": "@UnknownSuperficialNight, Creator of RhythmiRust",
+	"image": {
+		"path": "profile_pic.png",
+		"max_width": 600.0,
+		"max_height": 600.0,
+		"offset": 0.0
+	},
 	"contents": [
 		{ "Header2": "Social Media Profiles" },
 		{ "Text": "[[[hyperlink:Github][https://github.com/UnknownSuperficialNight]]]" },
 		{ "Text": "[[[hyperlink:Email][mailto:unknownsuperficialnight.skylight770@simplelogin.fr]]]" },
 
 		{ "Header2": "Donations" },
-		{ "Text": "[[[hyperlink:Bitcoin][bitcoin:BC1Q33ZJX7LQ0LZ8E0R88EK6Z94VM9SDS7FTS7EP43?label=RhythmiRust&message=Support%20RhythmiRust%20development%20by%20direct%20donations%20to%20the%20creator.%20You%20can%20choose%20any%20amount%20to%20contribute.%20Thank%20you%20for%20the%20donations%20%3A%29]]]" },
+		{
+			"Text": "[[[hyperlink:Bitcoin][bitcoin:BC1Q33ZJX7LQ0LZ8E0R88EK6Z94VM9SDS7FTS7EP43?label=RhythmiRust&message=Support%20RhythmiRust%20development%20by%20direct%20donations%20to%20the%20creator.%20You%20can%20choose%20any%20amount%20to%20contribute.%20Thank%20you%20for%20the%20donations%20%3A%29]]]"
+		},
 		{ "Text": "[[[hyperlink:Ethereum][https://etherscan.io/address/0x84c364Dd67526793643d6033edA55989414B484B]]]" },
 		{ "Header2": "About the Developer" },
 		{ "Text": "I'm a self-taught developer who is passionate about creating programs that I would use personally." },

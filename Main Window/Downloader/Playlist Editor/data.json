@@ -175,7 +175,7 @@
 		{ "Text": "\"Add url here\" is where you add the urls you want to download into that folder" },
 		{ "Text": "Hit \"save\" once you are done then \"save changes\" to finalize them" },
 		{ "Text": "Tip: as of version \"0.1.5\" you can use \"https://soundcloud.com/username/sets\" and \"https://www.youtube.com/@username/playlists\" and these will download all thats users public playlists" },
-		{ "Text": "before it was able to download from these urls but it was only single threaded so not it will download them in batches like it does for all normal playlists" },
+		{ "Text": "before it was able to download from these urls but it was only single threaded so now it will download them in batches like it does for all normal playlists" },
 		{
 			"Image": {
 				"path": "Main_obj_keys.png",

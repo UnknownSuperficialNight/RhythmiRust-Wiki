@@ -10,6 +10,10 @@ use walkdir::WalkDir;
 
 mod render;
 use crate::render::*;
+mod registry;
+use crate::registry::*;
+
+const VERSION: &str = env!("CARGO_PKG_VERSION");
 
 /// Recreate the directory structure based on relevant files
 fn recreate_directory_structure(
@@ -149,6 +153,13 @@ fn recreate_directory_structure(
 
     // Get the end time
     println!("Time taken total: {:?}", start.elapsed());
+
+    // This saves a JSON file with the current installed Wiki version in it.
+    //
+    // This version will be checked by the main program and if its version number
+    // is not equal to the stored value in the file, delete the old Wiki directory,
+    // forcing the user to update to the Wiki for that version.
+    write_registry_to_json(target_dir)?;
 
     println!("All tasks completed.");
     Ok(())

@@ -26,28 +26,31 @@ fn recreate_directory_structure(
     }
 
     // Collect all relevant files and their parent directories
-    let mut relevant_files = Vec::new();
-    for entry in WalkDir::new(source_dir.as_path()) {
-        let entry = entry?;
-        let path = entry.path();
+    let relevant_files: Vec<PathBuf> = WalkDir::new(source_dir.as_path())
+        .into_iter()
+        .filter_map(|entry| {
+            let entry = entry.ok()?; // Handle errors gracefully
+            let path = entry.path();
 
-        // Skip the `.git` directory
-        if path.file_name().map_or(false, |name| name == ".git") {
-            continue;
-        }
+            // Skip the `.git` directory
+            if path.file_name().map_or(false, |name| name == ".git") {
+                return None;
+            }
 
-        // Check if the file is relevant
-        if path.is_file() {
-            if let Some(file_name) = path.file_name().and_then(|f| f.to_str()) {
-                if file_name == "data.json"
-                    || file_name.ends_with(".png")
-                    || file_name.ends_with(".svg")
-                {
-                    relevant_files.push(path.to_path_buf());
+            // Check if the file is relevant
+            if path.is_file() {
+                if let Some(file_name) = path.file_name().and_then(|f| f.to_str()) {
+                    if file_name == "data.json"
+                        || file_name.ends_with(".png")
+                        || file_name.ends_with(".svg")
+                    {
+                        return Some(path.to_path_buf());
+                    }
                 }
             }
-        }
-    }
+            None
+        })
+        .collect();
 
     let pool = ThreadPoolBuilder::new()
         .num_threads(num_cpus::get())

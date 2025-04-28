@@ -26,6 +26,12 @@
 		{ "Text": "Disabled: Shows image forever untill the next song starts" },
 		{ "Separator": null },
 
+		{ "Header2": "Write background image to disk" },
+		{ "Text": "Enabled: Writes the generated padding image to disk in the config directory, either next to the binary or in the global config directory (for more information see[[[button:Config location][../Config/Advanced Settings]]])" },
+		{ "Text": "Disabled: Does not write the image to disk" },
+		{ "Text": "Note: The value is temporarily stored in memory and is not saved persistently in the database. Consequently, it resets to `false` each time the program starts." },
+		{ "Separator": null },
+
 		{ "Header2": "Image Padding Mode" },
 		{ "Text": "This pads images to center them and adds a effect on the padding area" },
 		{ "Text": "Click to open selections" },
@@ -39,6 +45,7 @@
 		},
 
 		{ "Header2": "Randomizer Options" },
-		{ "Text": "Tick what options you want the randomizer to select when starting a new song" }
+		{ "Text": "Tick what options you want the randomizer to select when starting a new song" },
+		{ "Text": "This menu is hidden when the randomizer is not selected as the \"Image Padding Mode\"" }
 	]
 }

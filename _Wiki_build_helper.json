@@ -21,10 +21,35 @@
 
 		{ "_Comment": "Add a image with a relative path" },
 		{
-			"Image": {
+			"ImageHorizonal": {
 				"path": ".png",
 				"max_width": 100.0,
 				"max_height": 100.0
+			}
+		},
+
+		{ "_Comment": "Add a image with a relative path" },
+		{
+			"Image": "/_hidden_global_assets/gear_icon.png"
+		},
+
+		{ "_Comment": "Add a image with a relative path and horizontal offset" },
+		{
+			"ImageHorizonal": {
+				"path": ".png",
+				"max_width": 100.0,
+				"max_height": 100.0,
+				"offset": 20.0
+			}
+		},
+
+		{ "_Comment": "Add a image with a relative path and vertical offset" },
+		{
+			"Image": {
+				"path": ".png",
+				"max_width": 100.0,
+				"max_height": 100.0,
+				"offset": 20.0
 			}
 		},
 
@@ -66,6 +91,13 @@
 		{ "Text": "Deep Green: #008040" },
 		{ "Text": "Cyan Blue: #55AFEC" },
 		{ "Text": "Crimson Red: #770000" },
+
+		{ "_Comment": "Text styling choices" },
+		{ "Text": "[[[underline:Text here]]]" },
+		{ "Text": "[[[strikethrough:Text here]]]" },
+		{ "Text": "[[[strong:Text here]]]" },
+		{ "Text": "[[[warning:Text here]]]" },
+		{ "Text": "[[[italics:Text here]]]" },
 
 		{ "_Comment": "underlined text for under the images" },
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Remove Bar" },

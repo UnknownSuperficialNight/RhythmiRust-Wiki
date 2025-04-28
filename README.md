@@ -2,7 +2,7 @@
 
 Thank you for visiting the **RhythmiRust-Wiki** repository! This project is dedicated to providing a comprehensive wiki for RhythmiRust.
 
-![Image](https://github.com/user-attachments/assets/54528ca4-7fb5-4343-abed-3dcaf2557d1f)
+![Image](https://github.com/user-attachments/assets/b0e5e375-5a78-4c14-9013-006912f574c1)
 
 ## Overview
 

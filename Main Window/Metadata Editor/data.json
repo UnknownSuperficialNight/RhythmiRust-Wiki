@@ -4,8 +4,8 @@
 		{
 			"Image": {
 				"path": "Main.png",
-				"max_width": 1353.0,
-				"max_height": 762.0
+				"max_width": 1445.0,
+				"max_height": 813.0
 			}
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Select Directory" },
@@ -28,6 +28,28 @@
 		{ "Header2": "Select values" },
 		{ "Text": "Select columns or cells to edit." },
 		{ "Text": "Tip: Hold shift left click then scroll down in the same column and Hold shift and left click again and all cells in between will be selected." },
+		{ "Header3": "Column Modifiers" },
+		{ "Text": "[[[strong:• Four-letter code]]]- requires a standardized four-character code example: \"2015\"" },
+		{ "Text": "[[[strong:• Integer only]]]- accepts only whole numbers" },
+		{ "Text": "[[[strong:• Read-only]]]- cannot be modified by users" },
+		{ "Header3": "Column Descriptions" },
+		{ "Text": "[[[strong:• name]]]- The title or name of the audio file ([[[warning:read-only]]])" },
+		{ "Text": "[[[strong:• ext]]]- The file extension (e.g., mp3, wav, flac) ([[[warning:read-only]]])" },
+		{ "Text": "[[[strong:• played]]]- Tracks if the file has been played ([[[warning:read-only]]])" },
+		{ "Text": "[[[strong:• length]]]- Duration of the audio file ([[[warning:read-only]]])" },
+		{ "Text": "[[[strong:• artist]]]- The performing artist or creator" },
+		{ "Text": "[[[strong:• album]]]- The album or collection the file belongs to" },
+		{ "Text": "[[[strong:• genre]]]- The musical or content genre" },
+		{ "Text": "[[[strong:• language]]]- The language of the audio content" },
+		{ "Text": "[[[strong:• lyrics]]]- Contains song lyrics if available" },
+		{ "Text": "[[[strong:• year]]]- The release or recording year ([[[warning:integer only]]])" },
+		{ "Text": "[[[strong:• country]]]- Country of origin ([[[warning:four-letter code]]],[[[warning:integer only]]])" },
+		{ "Text": "[[[strong:• label]]]- The publishing or record label" },
+		{ "Text": "[[[strong:• release_type]]]- Type of release (e.g., album, single, EP)" },
+		{ "Text": "[[[strong:• tags]]]- Custom user defined tags" },
+		{ "Text": "[[[strong:• user_ratings]]]- User or community rating ([[[warning:integer only]]])" },
+		{ "Text": "[[[strong:• metadata_comments]]]- Comments included in the file's metadata" },
+		{ "Text": "[[[strong:• user_notes]]]- Personal notes added by the user" },
 		{
 			"Image": {
 				"path": "Select values.png",

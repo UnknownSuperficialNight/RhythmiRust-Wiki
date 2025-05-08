@@ -1,0 +1,63 @@
+{
+	"title": "Newb Download Guide",
+	"subheading": "Step by step guide to using the downloader for the first time",
+	"contents": [
+		{ "Header2": "Getting Started" },
+		{
+			"Text": "[[[strong:Downloader -> Settings -> Target Download Dir:]]]Set the folder the downloader will download to (You probably want this set to the same path as your search folder)"
+		},
+		{
+			"Text": "[[[strong:Downloader -> Settings -> Max Download Threads:]]]This is the amount if concurrent downloads the downloader will perform (This will be the number of songs that can be downloaded at once) max it out for the fastest download speeds"
+		},
+		{
+			"Image": "Getting Started.png"
+		},
+		{ "Separator": null },
+
+		{ "Header3": "Spotify" },
+		{ "Text": "[[[strong:Downloader -> Settings -> Spotify download all playlists and liked:]]]Enable this to download from spotify (It only downloads songs from your spotify account i.e playlists and liked songs)" },
+		{ "Text": "[[[strong:Downloader -> Settings -> Spotfetch_download_selection:]]]Set this to liked or playlists or liked,playlists depending on what you want to download from spotify" },
+		{
+			"Image": "Spotify.png"
+		},
+		{ "Separator": null },
+
+		{ "Header3": "Set up your playlists" },
+		{
+			"Text": "[[[strong:Downloader -> Playlist Editor -> Closed Dropdown:]]]Select[[[strong:Add key]]]then add the website name (Soundcloud, Youtube, etc) then set[[[strong:Add Codec]]]to your preferred codec (mp3, flac, opus, etc) then click save to add the category and close the[[[strong:Add key]]]dropdown"
+		},
+		{
+			"Text": "[[[strong:Downloader -> Playlist Editor -> Soundcloud:]]]Click on the category you just made and head to[[[strong:YT_dlp_args]]]and select the one you want to safest option is option 1 (Downloads best audio then converts to format (Slower) the click on the [[[strong:Main]]] Dropdown"
+		},
+		{
+			"Image": "Add key.png"
+		},
+		{
+			"Text": "In the[[[strong:Main]]]dropdown click[[[strong:Add]]]and enter the playlist name (This will be the name of the folder that the playlist will be downloaded into) and then enter your url (direct|playlist|profiles_playlist urls work examples check[[[strong:Main keys]]]in[[[button:Playlist Editor][/Main Window/Downloader/Playlist Editor]]])"
+		},
+		{ "Text": "Press save once both fields are filled in and then press[[[strong:Save]]]and then press[[[strong:Save Changes]]]at the very to write all the changes to the disk" },
+		{
+			"Image": "Save Changes.png"
+		},
+		{ "Separator": null },
+
+		{ "Header3": "Set precedence order" },
+		{
+			"Text": "[[[strong:Downloader -> Starter -> Regenerate list:]]]This will add the new folders to the order list (Its recommended to always[[[strong:Regenerate list]]]before each download to ensure everything is correct in the order)"
+		},
+		{
+			"Image": "Regenerate list.png"
+		},
+		{
+			"Text": "Click on the item in the list you want to move then on the right there is a up and down arrow to move the item (Folders at the top of the list will take priority over folders at the bottom so if there is the same song in both folders the one at the top it will download into skipping the bottom ones)"
+		},
+		{ "Text": "[[[warning:Note:]]]Use the arrows with the number next to it to increase the amount of spaces the selected item moves" },
+		{
+			"Image": "Order.png"
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Start the download process" },
+		{ "Text": "[[[strong:Downloader -> Starter -> Start:]]]Press the start button to start the download process and wait (if spotify is enabled it will open a sign in window in your browser)" }
+	]
+}

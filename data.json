@@ -28,6 +28,7 @@
 		{ "Text": "Learn how to make the most of RhythmiRust:" },
 		{ "Text": "•[[[button:Optimise Performance][_Guides/Optimise Performance]]]- Optimise for low-end hardware" },
 		{ "Text": "•[[[button:Search While Indexing][_Guides/Search While Indexing]]]- Search all files while the indexer is running" },
+		{ "Text": "•[[[button:Newb Download Guide][_Guides/Newb Download Guide]]]- Beginner friendly download guide" },
 		{ "Separator": null },
 
 		{ "Header2": "Help/Support/FAQ" },

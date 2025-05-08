@@ -3,11 +3,13 @@
 	"subheading": "Here are some things you can do to optimise for a few low end computer example (celeron n4000)",
 	"contents": [
 		{ "Header2": "Image Settings" },
-		{ "Text": "Settings -> Image -> Image Padding Mode: Set this setting to off this will stop any extra image padding from being rendered and speed-up image load times and lower cpu usage (downside is that images rendered will not be centred)" },
+		{
+			"Text": "[[[strong:Settings -> Image -> Image Padding Mode:]]] Set this setting to off this will stop any extra image padding from being rendered and speed-up image load times and lower cpu usage (downside is that images rendered will not be centred)"
+		},
 		{ "Text": "Alternately if you want to reduce performance hit even more then turn of images altogether:" },
-		{ "Text": "Settings -> Image -> Display album art while playing music: Off (This setting will stop all image processing/rendering altogether)" },
+		{ "Text": "[[[strong:Settings -> Image -> Display album art while playing music:]]] Off (This setting will stop all image processing/rendering altogether)" },
 
 		{ "Header2": "Downloader" },
-		{ "Text": "Downloader -> Settings -> Max Download Threads: 1 (This will only download one song at a time and will be very slow but will significantly lessen the performance burden while downloading)" }
+		{ "Text": "[[[strong:Downloader -> Settings -> Max Download Threads:]]] 1 (This will only download one song at a time and will be very slow but will significantly lessen the performance burden while downloading)" }
 	]
 }

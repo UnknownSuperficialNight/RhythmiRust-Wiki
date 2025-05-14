@@ -84,7 +84,8 @@
 			}
 		},
 		{ "Text": "Soft Yellow ≈ Toggle Music Player Settings" },
-		{ "Text": "Dark Blue ≈ Togglable settings" },
+		{ "Text": "Dark Blue ≈ Automatic Gain Control" },
+		{ "Text": "Light Green ≈ Speed Control" },
 		{
 			"Image": {
 				"path": "Music Player Settings.png",
@@ -95,7 +96,11 @@
 		{ "Header3": "Current Settings" },
 		{ "Text": "Automatic Gain Control (AGC):" },
 		{ "Text": "AGC dynamically modifies audio volume, enhancing or reducing it in real-time" },
-		{ "Text": "based on the current loudness of the music to maintain optimal listening levels." },
+		{ "Text": "based on the current loudness of the music to maintain optimal listening levels" },
+		{ "Text": "Speed Control:" },
+		{ "Text": "Enables the[[[strong:Speed Control]]]UI which allows users to adjust the playback speed" },
+		{ "Text": "[[[strong:1.00]]]is the default speed, below this is slower and above this is faster" },
+		{ "Text": "Example:[[[strong:0.85]]]is 15% slower than the default speed" },
 		{ "Separator": null },
 
 		{ "Header2": "Queue of songs" },

@@ -12,6 +12,7 @@
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Enabled dynamic font" },
 		{ "Text": "[[[underline:Dark Blue]]] ≈ Editing a dynamic font" },
 		{ "Text": "[[[underline:Light Green]]] ≈ Disabled dynamic fonts" },
+		{ "Text": "[[[underline:Pale Orange]]] ≈ Add new font region" },
 		{ "Separator": null },
 
 		{ "Header": "Overview of Each UI Element" },
@@ -40,10 +41,11 @@
 
 		{ "Header2": "Editing a dynamic font" },
 		{ "Text": "Right click on a font to show the editing menu." },
-		{ "Text": "Edit Region: This is the region/name of the font you are editing." },
-		{ "Text": "Edit font_names: This is the font names it will search for and load if found." },
-		{ "Text": "Note: It searches the fonts in order from top to bottom so if a higher font is found it will use that and not load lower fonts." },
-		{ "Text": "Save: This will save the changes." },
+		{ "Text": "[[[strong:Edit Region:]]]This is the region/name of the font you are editing." },
+		{ "Text": "[[[strong:Edit font_names:]]]This is the font names it will search for and load if found." },
+		{ "Text": "[[[warning:Note:]]]It searches the fonts in order from top to bottom so if a higher font is found it will use that and not load lower fonts." },
+		{ "Text": "[[[strong:Save:]]]This will save the changes." },
+		{ "Text": "[[[strong:Remove:]]]This will remove the entire region permanently." },
 		{
 			"Image": {
 				"path": "Editing a dynamic font.png",
@@ -57,6 +59,18 @@
 		{
 			"Image": {
 				"path": "Disabled dynamic fonts.png",
+				"max_width": 401.0,
+				"max_height": 446.0
+			}
+		},
+
+		{ "Header2": "Add new font region" },
+		{ "Text": "Click this button to add a new font region." },
+		{ "Text": "Enter the new region name then press enter to create it." },
+		{ "Text": "Click[[[strong:Close]]]to cancel and close the[[[strong:Add new font region]]]." },
+		{
+			"Image": {
+				"path": "Add new font region.png",
 				"max_width": 401.0,
 				"max_height": 446.0
 			}

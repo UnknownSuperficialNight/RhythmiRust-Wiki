@@ -16,7 +16,8 @@
 		{ "Separator": null },
 
 		{ "Header2": "Select Directory" },
-		{ "Text": "Left click to select a directory to edit." },
+		{ "Text": "[[[strong:Left-click]]]to select a directory to edit." },
+		{ "Text": "[[[strong:Right-click]]]to queue the directory for regeneration. This action removes the directory from the database and re-imports it fresh." },
 		{
 			"Image": {
 				"path": "Select Directory.png",

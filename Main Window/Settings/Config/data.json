@@ -43,7 +43,7 @@
 
 		{ "Header2": "Use Legacy Search" },
 		{ "Text": "Enabled: legacy search where it searches the directory recursively and matches to song names" },
-		{ "Text": "Disabled: uses the new search where it uses a database and allows searching explicit columns; for more info check the[[[button:Search][../../Search]]]" },
+		{ "Text": "Disabled: uses the new search where it uses a database and allows searching explicit columns; for more info check the [[[button:Search][../../Search]]]" },
 		{
 			"Image": {
 				"path": "Legacy Search.png",
@@ -108,7 +108,7 @@
 
 		{ "Header2": "Advanced Settings" },
 		{ "Text": "This area is for advanced actions that may result in data loss (be careful what you click as all actions are final)" },
-		{ "Text": "This section is big so here is a separate page on it[[[button:Advanced Settings Page][Advanced Settings]]]" },
+		{ "Text": "This section is big so here is a separate page on it [[[button:Advanced Settings Page][Advanced Settings]]]" },
 		{
 			"Image": {
 				"path": "Advanced Settings.png",

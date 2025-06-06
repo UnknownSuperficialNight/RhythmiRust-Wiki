@@ -83,7 +83,7 @@
 		},
 
 		{ "Header2": "Confirm/View changes" },
-		{ "Text": "This section is a little more complex see[[[button:Confirm/View changes][View Changes]]]for more information." },
+		{ "Text": "This section is a little more complex see [[[button:Confirm/View changes][View Changes]]] for more information." },
 		{
 			"Image": {
 				"path": "Confirm View changes.png",

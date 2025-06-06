@@ -27,7 +27,7 @@
 		{ "Separator": null },
 
 		{ "Header2": "Write background image to disk" },
-		{ "Text": "Enabled: Writes the generated padding image to disk in the config directory, either next to the binary or in the global config directory (for more information see[[[button:Config location][../Config/Advanced Settings]]])" },
+		{ "Text": "Enabled: Writes the generated padding image to disk in the config directory, either next to the binary or in the global config directory (for more information see [[[button:Config location][../Config/Advanced Settings]]])" },
 		{ "Text": "Disabled: Does not write the image to disk" },
 		{ "Text": "Note: The value is temporarily stored in memory and is not saved persistently in the database. Consequently, it resets to `false` each time the program starts." },
 		{ "Separator": null },

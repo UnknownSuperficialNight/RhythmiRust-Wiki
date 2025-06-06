@@ -24,18 +24,18 @@
 
 		{ "Header3": "Set up your playlists" },
 		{
-			"Text": "[[[strong:Downloader -> Playlist Editor -> Closed Dropdown:]]]Select[[[strong:Add key]]]then add the website name (Soundcloud, Youtube, etc) then set[[[strong:Add Codec]]]to your preferred codec (mp3, flac, opus, etc) then click save to add the category and close the[[[strong:Add key]]]dropdown"
+			"Text": "[[[strong:Downloader -> Playlist Editor -> Closed Dropdown:]]]Select [[[strong:Add key]]] then add the website name (Soundcloud, Youtube, etc) then set [[[strong:Add Codec]]] to your preferred codec (mp3, flac, opus, etc) then click save to add the category and close the [[[strong:Add key]]] dropdown"
 		},
 		{
-			"Text": "[[[strong:Downloader -> Playlist Editor -> Soundcloud:]]]Click on the category you just made and head to[[[strong:YT_dlp_args]]]and select the one you want to safest option is option 1 (Downloads best audio then converts to format (Slower) the click on the [[[strong:Main]]] Dropdown"
+			"Text": "[[[strong:Downloader -> Playlist Editor -> Soundcloud:]]]Click on the category you just made and head to [[[strong:YT_dlp_args]]] and select the one you want to safest option is option 1 (Downloads best audio then converts to format (Slower) the click on the [[[strong:Main]]] Dropdown"
 		},
 		{
 			"Image": "Add key.png"
 		},
 		{
-			"Text": "In the[[[strong:Main]]]dropdown click[[[strong:Add]]]and enter the playlist name (This will be the name of the folder that the playlist will be downloaded into) and then enter your url (direct|playlist|profiles_playlist urls work examples check[[[strong:Main keys]]]in[[[button:Playlist Editor][/Main Window/Downloader/Playlist Editor]]])"
+			"Text": "In the [[[strong:Main]]] dropdown click [[[strong:Add]]] and enter the playlist name (This will be the name of the folder that the playlist will be downloaded into) and then enter your url (direct|playlist|profiles_playlist urls work examples check [[[strong:Main keys]]] in [[[button:Playlist Editor][/Main Window/Downloader/Playlist Editor]]])"
 		},
-		{ "Text": "Press save once both fields are filled in and then press[[[strong:Save]]]and then press[[[strong:Save Changes]]]at the very to write all the changes to the disk" },
+		{ "Text": "Press save once both fields are filled in and then press [[[strong:Save]]] and then press [[[strong:Save Changes]]] at the very to write all the changes to the disk" },
 		{
 			"Image": "Save Changes.png"
 		},
@@ -43,7 +43,7 @@
 
 		{ "Header3": "Set precedence order" },
 		{
-			"Text": "[[[strong:Downloader -> Starter -> Regenerate list:]]]This will add the new folders to the order list (Its recommended to always[[[strong:Regenerate list]]]before each download to ensure everything is correct in the order)"
+			"Text": "[[[strong:Downloader -> Starter -> Regenerate list:]]]This will add the new folders to the order list (Its recommended to always [[[strong:Regenerate list]]] before each download to ensure everything is correct in the order)"
 		},
 		{
 			"Image": "Regenerate list.png"

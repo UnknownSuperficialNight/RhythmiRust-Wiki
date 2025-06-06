@@ -125,10 +125,10 @@
 		{ "Text": "- M4A: Container for AAC or ALAC audio, primarily used in Apple ecosystem." },
 		{ "Text": "- MP3: Classic lossy codec with decent quality but outdated." },
 		{ "Text": "- Opus: Advanced codec for optimal quality-to-efficiency ratio with variable bitrates." },
-		{ "Text": "- Vorbis (Ogg): Open-source lossy codec with good quality at low bitrates; the[[[strong:grandpa]]]of Opus." },
+		{ "Text": "- Vorbis (Ogg): Open-source lossy codec with good quality at low bitrates; the [[[strong:grandpa]]] of Opus." },
 		{ "Text": "- WAV: Uncompressed format for highest audio quality, but large file sizes." },
 		{ "Text": "NOTE: Opus and m4a are not natively supported by \"RhythmiRust\"" },
-		{ "Text": "since there is no native[[[strong:opus,m4a]]]decoder published yet so these two formats use a fallback decoder when playing them." },
+		{ "Text": "since there is no native [[[strong:opus,m4a]]] decoder published yet so these two formats use a fallback decoder when playing them." },
 		{
 			"Image": {
 				"path": "Codec Dropdown.png",
@@ -141,7 +141,7 @@
 		{ "Header2": "YT_dlp_args" },
 		{ "Text": "This are customizable arguments on how you want to download" },
 		{ "Text": "This is a very advanced subject so for normal users starting from 0 top to bottom use option 1 (with thumbnails) or 3 (without thumbnails)" },
-		{ "Text": "For those advanced users who want to customize or understand these in depth here is the page for that[[[button:Advanced args page][YT_dlp_args]]]" },
+		{ "Text": "For those advanced users who want to customize or understand these in depth here is the page for that [[[button:Advanced args page][YT_dlp_args]]]" },
 		{ "Text": "However i will mention arguments in YT_dlp args that \"RhythmiRust\" added:" },
 		{ "Text": "file_path_clone: Is replaced with the path of the target directory where a song will be downloaded into" },
 		{ "Text": "item_clone: This is the \"URL\" that will be passed to yt-dlp" },

@@ -67,7 +67,7 @@
 		{ "Header2": "Add new font region" },
 		{ "Text": "Click this button to add a new font region." },
 		{ "Text": "Enter the new region name then press enter to create it." },
-		{ "Text": "Click[[[strong:Close]]]to cancel and close the[[[strong:Add new font region]]]." },
+		{ "Text": "Click [[[strong:Close]]] to cancel and close the [[[strong:Add new font region]]]." },
 		{
 			"Image": {
 				"path": "Add new font region.png",

@@ -1,7 +1,7 @@
 {
 	"title": "Web Codec Checker",
 	"contents": [
-        {
+		{
 			"Image": {
 				"path": "Main.png",
 				"max_width": 600.0,
@@ -10,15 +10,15 @@
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Search Bar" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Disclaimer" },
-        { "Text": "[[[underline:Dark Blue]]] ≈ Url" },
-        { "Text": "[[[underline:Light Green]]] ≈ Codecs found" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Url" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Codecs found" },
 		{ "Separator": null },
 
-        { "Header": "Overview of Each UI Element" },
+		{ "Header": "Overview of Each UI Element" },
 
-        { "Header2": "Search Bar" },
+		{ "Header2": "Search Bar" },
 		{ "Text": "Enter a url here and wait a few seconds (playlists do not work)" },
-        {
+		{
 			"Image": {
 				"path": "Search Bar.png",
 				"max_width": 401.0,
@@ -27,9 +27,9 @@
 		},
 		{ "Separator": null },
 
-        { "Header2": "Disclaimer" },
+		{ "Header2": "Disclaimer" },
 		{ "Text": "This is a disclaimer its important to read it in the ui" },
-        {
+		{
 			"Image": {
 				"path": "Disclaimer.png",
 				"max_width": 401.0,
@@ -38,9 +38,9 @@
 		},
 		{ "Separator": null },
 
-        { "Header2": "Url" },
+		{ "Header2": "Url" },
 		{ "Text": "This is the last url searched/inputted" },
-        {
+		{
 			"Image": {
 				"path": "Url.png",
 				"max_width": 401.0,
@@ -49,16 +49,16 @@
 		},
 		{ "Separator": null },
 
-        { "Header2": "Codecs found" },
+		{ "Header2": "Codecs found" },
 		{ "Text": "These are the reported codecs of the website input" },
-        { "Text": "Read the Disclaimer for more info on what the Web Codec Checker solves" },
-        { "Text": "For more info on codecs refer to this page[[[button:Codec description in \"Playlist Editor\"][../Playlist Editor]]]" },
-        {
+		{ "Text": "Read the Disclaimer for more info on what the Web Codec Checker solves" },
+		{ "Text": "For more info on codecs refer to this page [[[button:Codec description in \"Playlist Editor\"][../Playlist Editor]]]" },
+		{
 			"Image": {
 				"path": "Codecs found.png",
 				"max_width": 401.0,
 				"max_height": 446.0
 			}
 		}
-    ]
+	]
 }

@@ -44,7 +44,7 @@
 		{ "Text": "While it is highly effective, there may be occasional instances where it detects songs that are not truly duplicates; however, such occurrences are quite rare." },
 		{ "Text": "To improve the accuracy of the detection process, it is beneficial to retain the unique ID of each song at the end of the downloaded files." },
 		{ "Text": "Although preserving the ID is not strictly necessary, it can contribute to enhanced matching accuracy." },
-		{ "Text": "By default it uses ids at the end of the song name to change this refer to[[[button:Settings][../../Settings]]]" },
+		{ "Text": "By default it uses ids at the end of the song name to change this refer to [[[button:Settings][../../Settings]]]" },
 		{
 			"Image": {
 				"path": "Deduplicate detector.png",

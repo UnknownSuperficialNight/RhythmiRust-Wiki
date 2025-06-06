@@ -125,10 +125,10 @@
 		{ "Text": "- M4A: Container for AAC or ALAC audio, primarily used in Apple ecosystem." },
 		{ "Text": "- MP3: Classic lossy codec with decent quality but outdated." },
 		{ "Text": "- Opus: Advanced codec for optimal quality-to-efficiency ratio with variable bitrates." },
-		{ "Text": "- Vorbis (Ogg): Open-source lossy codec with good quality at low bitrates; the 'grandpa' of Opus." },
+		{ "Text": "- Vorbis (Ogg): Open-source lossy codec with good quality at low bitrates; the[[[strong:grandpa]]]of Opus." },
 		{ "Text": "- WAV: Uncompressed format for highest audio quality, but large file sizes." },
 		{ "Text": "NOTE: Opus and m4a are not natively supported by \"RhythmiRust\"" },
-		{ "Text": "since there is no opus,m4a decoder published yet so these two formats use a fallback when playing them" },
+		{ "Text": "since there is no native[[[strong:opus,m4a]]]decoder published yet so these two formats use a fallback decoder when playing them." },
 		{
 			"Image": {
 				"path": "Codec Dropdown.png",

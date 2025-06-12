@@ -22,7 +22,7 @@
 		{ "Header": "Overview of Each UI Element" },
 
 		{ "Header2": "Manage Keys" },
-		{ "Text": "Allows the user to manage (Add,Remove) dropdowns and dropdown body's" },
+		{ "Text": "Allows the user to manage (add, remove) dropdowns and dropdown bodies." },
 		{
 			"Image": {
 				"path": "Manage Keys.png",
@@ -31,7 +31,7 @@
 			}
 		},
 
-		{ "Text": "This adds a new Key/Playlist" },
+		{ "Text": "This adds a new key/playlist." },
 		{
 			"Image": {
 				"path": "Add Key.png",
@@ -40,7 +40,7 @@
 			}
 		},
 
-		{ "Text": "This removes selected Key/Playlist" },
+		{ "Text": "This removes selected key/playlist." },
 		{
 			"Image": {
 				"path": "Remove key.png",
@@ -49,7 +49,7 @@
 			}
 		},
 
-		{ "Text": "This hides the add/remove dropdown" },
+		{ "Text": "This hides the add/remove dropdown." },
 		{
 			"Image": {
 				"path": "Closed Dropdown.png",
@@ -59,8 +59,8 @@
 		},
 		{ "Separator": null },
 
-		{ "Header2": "Save Changes to disk" },
-		{ "Text": "Simply saves all changes made to disk (apon changes the button colour is set to red)" },
+		{ "Header2": "Save Changes to disc" },
+		{ "Text": "Simply saves all changes made to disc. (Upon changes, the button colour is set to red.)" },
 		{
 			"Image": {
 				"path": "Save Changes to disk.png",
@@ -71,7 +71,7 @@
 		{ "Separator": null },
 
 		{ "Header2": "Key" },
-		{ "Text": "Key holds the name and data of a playlist or list of urls" },
+		{ "Text": "Key holds the name and data of a playlist or list of URLs." },
 		{
 			"Image": {
 				"path": "Key.png",
@@ -82,8 +82,8 @@
 		{ "Separator": null },
 
 		{ "Header2": "Active" },
-		{ "Text": "This enables or disables the key for download" },
-		{ "Text": "(disabled means it will not download anything in the disabled key)" },
+		{ "Text": "This enables or disables the key for download." },
+		{ "Text": "(Disabled means it will not download anything in the disabled key.)" },
 		{
 			"Image": {
 				"path": "Active.png",
@@ -94,8 +94,8 @@
 		{ "Separator": null },
 
 		{ "Header2": "Executable" },
-		{ "Text": "This is the executable for helping with the download process" },
-		{ "Text": "This field is no longer needed but is here for flexibility in the future" },
+		{ "Text": "This is the executable for helping with the download process." },
+		{ "Text": "This field is no longer needed but is here for flexibility in the future." },
 		{
 			"Image": {
 				"path": "Executable.png",
@@ -106,7 +106,7 @@
 		{ "Separator": null },
 
 		{ "Header2": "Codec" },
-		{ "Text": "This is the container/format you will save the songs into" },
+		{ "Text": "This is the container/format you will save the songs into." },
 		{
 			"Image": {
 				"path": "Codec.png",
@@ -127,8 +127,8 @@
 		{ "Text": "[[[strong:• Opus]]] - Advanced codec for optimal quality-to-efficiency ratio with variable bitrates ([[[warning:Lossy]]],[[[strong:Recommended]]])." },
 		{ "Text": "[[[strong:• Vorbis (Ogg)]]] - Open-source lossy codec with good quality at low bitrates; the [[[strong:grandpa]]] of Opus ([[[warning:Lossy]]])." },
 		{ "Text": "[[[strong:• WAV]]] - Uncompressed format for highest audio quality, but large file sizes ([[[warning:Lossless]]])." },
-		{ "Text": "[[[warning:NOTE]]] Opus and m4a are not natively supported by \"RhythmiRust\"" },
-		{ "Text": "since there is no native [[[strong:opus,m4a]]] decoder published yet so these two formats use a fallback decoder when playing them." },
+		{ "Text": "[[[warning:NOTE]]] Opus and M4A are not natively supported by \"RhythmiRust\"" },
+		{ "Text": "since there is no native [[[strong:Opus, M4A]]] decoder published yet, so these two formats use a fallback decoder when playing them." },
 		{
 			"Image": {
 				"path": "Codec Dropdown.png",
@@ -139,14 +139,14 @@
 		{ "Separator": null },
 
 		{ "Header2": "YT_dlp_args" },
-		{ "Text": "This are customizable arguments on how you want to download" },
-		{ "Text": "This is a very advanced subject so for normal users starting from 0 top to bottom use option 1 (with thumbnails) or 3 (without thumbnails)" },
-		{ "Text": "For those advanced users who want to customize or understand these in depth here is the page for that [[[button:Advanced args page][YT_dlp_args]]]" },
-		{ "Text": "However i will mention arguments in YT_dlp args that \"RhythmiRust\" added:" },
-		{ "Text": "file_path_clone: Is replaced with the path of the target directory where a song will be downloaded into" },
-		{ "Text": "item_clone: This is the \"URL\" that will be passed to yt-dlp" },
-		{ "Text": "codec: Is replaced with the songs codec" },
-		{ "Text": "ffmpeg-path: Target of the ffmpeg binary in the config (so the user does not need to install ffmpeg manually and so \"RhythmiRust\" can manage ffmpeg itself)" },
+		{ "Text": "These are customisable arguments on how you want to download." },
+		{ "Text": "This is a very advanced subject, so for normal users starting from zero, top to bottom, use option 1 (with thumbnails) or 3 (without thumbnails)." },
+		{ "Text": "For those advanced users who want to customise or understand these in depth, here is the page for that: [[[button:Advanced args page][YT_dlp_args]]]." },
+		{ "Text": "However, I will mention arguments in YT_dlp args that \"RhythmiRust\" added:" },
+		{ "Text": "download_dir: Is replaced with the path of the target directory where a song will be downloaded into." },
+		{ "Text": "target_url: This is the \"URL\" that will be passed to yt-dlp." },
+		{ "Text": "codec: Is replaced with the song's codec." },
+		{ "Text": "ffmpeg_path: Target of the ffmpeg binary in the config (so the user does not need to install ffmpeg manually and so \"RhythmiRust\" can manage ffmpeg itself)." },
 		{
 			"Image": {
 				"path": "YT_dlp_args.png",
@@ -157,7 +157,7 @@
 		{ "Separator": null },
 
 		{ "Header2": "Main" },
-		{ "Text": "This holds the list of urls/keys" },
+		{ "Text": "This holds the list of URLs/keys." },
 		{
 			"Image": {
 				"path": "Main_obj.png",
@@ -168,14 +168,14 @@
 		{ "Separator": null },
 
 		{ "Header2": "Main Keys" },
-		{ "Text": "This is a Key/url where you save information into" },
-		{ "Text": "test1 if the item name of another key" },
-		{ "Text": "\"Add Name here\" is the what the playlist folder will be called in the download folder" },
-		{ "Text": "For example you input a name of \"playlist/hi\" then it will make a dir called \"playlist\" then inside make a dir called \"hi\" then it will download into \"hi\"" },
-		{ "Text": "\"Add url here\" is where you add the urls you want to download into that folder" },
-		{ "Text": "Hit \"save\" once you are done then \"save changes\" to finalize them" },
-		{ "Text": "Tip: as of version \"0.1.5\" you can use \"https://soundcloud.com/username/sets\" and \"https://www.youtube.com/@username/playlists\" and these will download all thats users public playlists" },
-		{ "Text": "before it was able to download from these urls but it was only single threaded so now it will download them in batches like it does for all normal playlists" },
+		{ "Text": "This is a key/URL where you save information into." },
+		{ "Text": "test1 is the item name of another key." },
+		{ "Text": "\"Add Name here\" is what the playlist folder will be called in the download folder." },
+		{ "Text": "For example, if you input a name of \"playlist/hi\", then it will make a directory called \"playlist\", then inside make a directory called \"hi\", then it will download into \"hi\"." },
+		{ "Text": "\"Add URL here\" is where you add the URLs you want to download into that folder." },
+		{ "Text": "Hit \"save\" once you are done, then \"save changes\" to finalise them." },
+		{ "Text": "Tip: As of version \"0.1.5\", you can use \"https://soundcloud.com/username/sets\" and \"https://www.youtube.com/@username/playlists\", and these will download all that user's public playlists." },
+		{ "Text": "Before, it was able to download from these URLs but it was only single-threaded, so now it will download them in batches like it does for all normal playlists." },
 		{
 			"Image": {
 				"path": "Main_obj_keys.png",

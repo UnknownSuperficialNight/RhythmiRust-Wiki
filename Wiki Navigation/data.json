@@ -13,9 +13,9 @@
 		{ "Separator": null },
 
         { "Header2": "General Navigation" },
-		{ "Text": "Allows you to go up or down a directory" },
-        { "Text": "If you are not in the root directory then you will see a back button on the far left" },
-		{ "Text": "this is how you return to the previous directory." },
+		{ "Text": "Allows you to go up or down a directory." },
+        { "Text": "If you are not in the root directory, then you will see a back button on the far left." },
+		{ "Text": "This is how you return to the previous directory." },
         {
 			"Image": {
 				"path": "General Navigation.png",
@@ -25,7 +25,7 @@
 		},
 
         { "Header2": "Direct Links" },
-		{ "Text": "Link directly to a page use the \"General Navigation\" back button to return to the previous directory" },
+		{ "Text": "Link directly to a page. Use the \"General Navigation\" back button to return to the previous directory." },
         {
 			"Image": {
 				"path": "Direct Links.png",

@@ -1,7 +1,7 @@
 {
 	"title": "Main Window",
 	"contents": [
-		{ "Text": "The main window is the central hub of RhythmiRust, providing access to all major features and controls. (Shoutout Ultrakill this is artwork from it)" },
+		{ "Text": "The main window is the central hub of RhythmiRust, providing access to all major features and controls. (Shoutout to Ultrakill - this is artwork from it.)" },
 		{ "Separator": null },
 		{
 			"Image": {
@@ -46,7 +46,7 @@
 		{ "Separator": null },
 
 		{ "Header2": "Settings" },
-		{ "Text": "Configure app preferences and customize your experience." },
+		{ "Text": "Configure app preferences and customise your experience." },
 		{ "Text": "[[[button:Learn more about Settings][Settings]]]" }
 	]
 }

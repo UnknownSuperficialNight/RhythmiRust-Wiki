@@ -4,8 +4,8 @@
 	"contents": [
 		{ "Header2": "Use the Legacy Search" },
 		{
-			"Text": "[[[strong:Settings -> Config -> Use Legacy Search:]]] Set this setting to on while you are indexing a directory this will allow you to search all files using the old search implementation that works by scaning the entire directory and returning results."
+			"Text": "[[[strong:Settings -> Config -> Use Legacy Search:]]] Set this setting to on while you are indexing a directory. This will allow you to search all files using the old search implementation that works by scanning the entire directory and returning results."
 		},
-		{ "Text": "Make sure to turn this setting off if after indexing if you want a more efficient search with new features like: (length:>=2m)" }
+		{ "Text": "Make sure to turn this setting off after indexing if you want a more efficient search with new features like: (length:>=2m)." }
 	]
 }

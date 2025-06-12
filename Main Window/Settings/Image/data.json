@@ -13,28 +13,28 @@
 		{ "Header": "Core Menus" },
 
 		{ "Header2": "Display album art while playing music" },
-		{ "Text": "This will enable album art to be shown" },
+		{ "Text": "This enables album art to be displayed." },
 		{ "Separator": null },
 
 		{ "Header2": "Display album art in the center" },
-		{ "Text": "Enabled: This will put album art in the center of the screen" },
-		{ "Text": "Disabled: This will put album art on the sidebar" },
+		{ "Text": "Enabled: This will put album art in the centre of the screen." },
+		{ "Text": "Disabled: This will put album art on the sidebar." },
 		{ "Separator": null },
 
 		{ "Header2": "Auto-clear album art when music stops" },
-		{ "Text": "Enabled: clears image from memory when the song stops" },
-		{ "Text": "Disabled: Shows image forever untill the next song starts" },
+		{ "Text": "Enabled: This clears the image from memory when the song stops." },
+		{ "Text": "Disabled: Shows the image forever until the next song starts." },
 		{ "Separator": null },
 
 		{ "Header2": "Write background image to disk" },
-		{ "Text": "Enabled: Writes the generated padding image to disk in the config directory, either next to the binary or in the global config directory (for more information see [[[button:Config location][../Config/Advanced Settings]]])" },
-		{ "Text": "Disabled: Does not write the image to disk" },
+		{ "Text": "Enabled: This writes the generated padding image to disk in the config directory, either next to the binary or in the global config directory (for more information see [[[button:Config location][../Config/Advanced Settings]]])." },
+		{ "Text": "Disabled: Does not write the image to disk." },
 		{ "Text": "Note: The value is temporarily stored in memory and is not saved persistently in the database. Consequently, it resets to `false` each time the program starts." },
 		{ "Separator": null },
 
 		{ "Header2": "Image Padding Mode" },
-		{ "Text": "This pads images to center them and adds a effect on the padding area" },
-		{ "Text": "Click to open selections" },
+		{ "Text": "This pads images to centre them and adds an effect on the padding area." },
+		{ "Text": "Click to open selections." },
 		{ "Text": "\"SoftHorizontalGlitch\" is my favourite :)" },
 		{
 			"Image": {
@@ -44,8 +44,8 @@
 			}
 		},
 
-		{ "Header2": "Randomizer Options" },
-		{ "Text": "Tick what options you want the randomizer to select when starting a new song" },
-		{ "Text": "This menu is hidden when the randomizer is not selected as the \"Image Padding Mode\"" }
+		{ "Header2": "Randomiser Options" },
+		{ "Text": "Tick what options you want the randomiser to select when starting a new song." },
+		{ "Text": "This menu is hidden when the randomiser is not selected as the \"Image Padding Mode\"." }
 	]
 }

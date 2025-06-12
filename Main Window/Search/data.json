@@ -20,30 +20,30 @@
 		{ "Header": "Overview of Each UI Element ≈ Left to Right" },
 
 		{ "Header2": "Search Bar:" },
-		{ "Text": "Searches a directory defined in [[[strong:Search Directory]]]" },
-		{ "TextCustom": { "space_size": 15.5, "content": "Press enter to search or click the [[[strong:Search Button]]] to initiate a search" } },
+		{ "Text": "Searches a directory defined in [[[strong:Search Directory]]]." },
+		{ "TextCustom": { "space_size": 15.5, "content": "Press enter to search or click the [[[strong:Search Button]]] to initiate a search." } },
 		{ "Text": "The Search Bar supports [[[strong:Boolean expressions]]]. You can mix them as follows:" },
-		{ "Text": "- case insensitive: [[[strong:search query]]]" },
-		{ "Text": "- exact match case sensitive: [[[strong:\"search query\"]]]" },
-		{ "Text": "- word match: [[[strong:'search query']]]" },
-		{ "Text": "- and (intersection): [[[strong:\"search query1\" && search query2]]]" },
-		{ "TextCustom": { "space_size": 15.5, "content": "- or (union): [[[strong:search query1 || search query2]]]" } },
+		{ "Text": "- Case insensitive: [[[strong:search query]]]" },
+		{ "Text": "- Exact match case sensitive: [[[strong:\"search query\"]]]" },
+		{ "Text": "- Word match: [[[strong:'search query']]]" },
+		{ "Text": "- And (intersection): [[[strong:\"search query1\" && search query2]]]" },
+		{ "TextCustom": { "space_size": 15.5, "content": "- Or (union): [[[strong:search query1 || search query2]]]" } },
 		{ "Text": "The search bar, by default, performs a comprehensive search that includes the 'full path' of files and folders." },
-		{ "Text": "This means that if you search for the letter 'A', it will return results for both songs containing that letter and folders that include it as well" },
-		{ "Text": "The reason for this is if you search an artist's name and have a folder with the artist's name, all songs in it recursively will be returned" },
+		{ "Text": "This means that if you search for the letter 'A', it will return results for both songs containing that letter and folders that include it as well." },
+		{ "Text": "The reason for this is that if you search an artist's name and have a folder with the artist's name, all songs in it recursively will be returned." },
 		{ "Text": "Example: I have a structure like this: {/British/artist_here/song1.mp3}" },
-		{ "TextCustom": { "space_size": 15.5, "content": "If I search British, it will return all songs with British in the name and all songs inside the British folder" } },
+		{ "TextCustom": { "space_size": 15.5, "content": "If I search British, it will return all songs with British in the name and all songs inside the British folder." } },
 		{ "Text": "Exclusive modern search functions:" },
-		{ "Text": "([[[strong:Parenthesis]]]) are used to search columns in the database" },
-		{ "Text": "Example: [[[strong:(length:>=1m)]]] - That will search for all songs that are above or equal to 1 minute long" },
-		{ "Text": "Example2: [[[strong:(length:>=1h)]]] - That will search for all songs that are above or equal to 1 hour long" },
-		{ "TextCustom": { "space_size": 15.5, "content": "Example3: [[[strong:(album:Akira Yamaoka)]]] - That will search for all songs that are tagged with the album: \"Akira Yamaoka\" ignoring case" } },
+		{ "Text": "([[[strong:Parentheses]]]) are used to search columns in the database." },
+		{ "Text": "Example: [[[strong:(length:>=1m)]]] - This will search for all songs that are above or equal to 1 minute long." },
+		{ "Text": "Example 2: [[[strong:(length:>=1h)]]] - This will search for all songs that are above or equal to 1 hour long." },
+		{ "TextCustom": { "space_size": 15.5, "content": "Example 3: [[[strong:(album:Akira Yamaoka)]]] - This will search for all songs that are tagged with the album: \"Akira Yamaoka\" ignoring case." } },
 		{
-			"Text": "Here are all defined column values: [[[strong:name]]], [[[strong:ext]]], [[[strong:length]]], [[[strong:artist]]], [[[strong:album]]], [[[strong:etc...]]]"
+			"Text": "Here are all defined column values: [[[strong:name]]], [[[strong:ext]]], [[[strong:length]]], [[[strong:artist]]], [[[strong:album]]], [[[strong:etc...]]]."
 		},
-		{ "TextCustom": { "space_size": 22.5, "content": "For more information on tags go to [[[button:Metadata Editor][../Metadata Editor]]]" } },
-		{ "Text": "[[[strong:Tip:]]] You can use [[[strong:AND]]] with the parenthesis example: [[[strong:term && (length:>=1m) && (length:<=3m)]]] - That will get all songs with \"Term\" and their length is between 1 and 3 minutes range" },
-		{ "Text": "[[[strong:Tip2:]]] you can use exact matching in the parenthesis example: [[[strong:(album:\"Akira Yamaoka\")]]] - That will use exact matching on the album name, so capitals and lowercase matter" },
+		{ "TextCustom": { "space_size": 22.5, "content": "For more information on tags, go to [[[button:Metadata Editor][../Metadata Editor]]]." } },
+		{ "Text": "[[[strong:Tip:]]] You can use [[[strong:AND]]] with parentheses. Example: [[[strong:term && (length:>=1m) && (length:<=3m)]]] - This will get all songs with \"Term\" where their length is between 1 and 3 minutes." },
+		{ "Text": "[[[strong:Tip 2:]]] You can use exact matching in parentheses. Example: [[[strong:(album:\"Akira Yamaoka\")]]] - This will use exact matching on the album name, so capitals and lowercase matter." },
 		{
 			"Image": {
 				"path": "_search_assets/Search Bar.png",
@@ -53,7 +53,7 @@
 		},
 
 		{ "Header2": "Search Button:" },
-		{ "Text": "Start a search" },
+		{ "Text": "Start a search." },
 		{
 			"Image": {
 				"path": "_search_assets/Search Button.png",
@@ -63,7 +63,7 @@
 		},
 
 		{ "Header2": "Matches found:" },
-		{ "Text": "Shows the amount of results from a search" },
+		{ "Text": "Shows the number of results from a search." },
 		{
 			"Image": {
 				"path": "_search_assets/Matches found.png",
@@ -73,9 +73,9 @@
 		},
 
 		{ "Header2": "Search Result:" },
-		{ "Text": "Shows the results from a search" },
-		{ "Text": "Left click to add to [[[button:Queue of songs][../Music Player]]]" },
-		{ "Text": "Right click to get that songs path copied to the clipboard" },
+		{ "Text": "Shows the results from a search." },
+		{ "Text": "Left click to add to [[[button:Queue of songs][../Music Player]]]." },
+		{ "Text": "Right click to get that song's path copied to the clipboard." },
 		{
 			"Image": {
 				"path": "Search Result.png",
@@ -85,7 +85,7 @@
 		},
 
 		{ "Header2": "Search Directory:" },
-		{ "Text": "What directory do we search" },
+		{ "Text": "What directory do we search." },
 		{
 			"Image": {
 				"path": "_search_assets/Search Directory.png",
@@ -95,7 +95,7 @@
 		},
 
 		{ "Header2": "Shuffle:" },
-		{ "Text": "Shuffles the entire (Search Result) then adds it to [[[button:Queue of songs][../Music Player]]]" },
+		{ "Text": "Shuffles the entire (Search Result) then adds it to [[[button:Queue of songs][../Music Player]]]." },
 		{
 			"Image": {
 				"path": "_search_assets/Shuffle.png",

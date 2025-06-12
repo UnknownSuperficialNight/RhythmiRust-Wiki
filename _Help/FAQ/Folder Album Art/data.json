@@ -1,10 +1,10 @@
 {
 	"title": "Folder Album Art",
 	"contents": [
-		{ "Text": "You can add album art to a entire folder by making a file in the folder called 'album_art.png', which will be used if no embedded image is found in a file." },
-		{ "Text": "Alternatively: You can add album art directory called 'album_art' and any images with the supported formats will be randomised and used as album art, again only if no embedded image is present." },
+		{ "Text": "You can add album art to an entire folder by creating a file in the folder called 'album_art.png', which will be used if no embedded image is found in a file." },
+		{ "Text": "Alternatively, you can add an album art directory called 'album_art', and any images with the supported formats will be randomised and used as album art, again only if no embedded image is present." },
 		{ "Text": "If you want to override any embedded images, you can use 'override_album_art' (file or directory), which will take priority over all other album art." },
-		{ "Text": "Supported formats for both 'album_art' and 'override_album_art' are (png, jpg, jpeg, webp)." },
-		{ "Text": "Recommended image format is 'png' as this is what the other formats are converted to internally." }
+		{ "Text": "Supported formats for both 'album_art' and 'override_album_art' are: PNG, JPG, JPEG, and WebP." },
+		{ "Text": "The recommended image format is PNG, as this is what the other formats are converted to internally." }
 	]
 }

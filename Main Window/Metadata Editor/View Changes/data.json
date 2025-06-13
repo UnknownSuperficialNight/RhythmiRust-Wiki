@@ -2,11 +2,7 @@
 	"title": "Confirm/View changes",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Name" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Conditions" },
@@ -17,41 +13,25 @@
 		{ "Header2": "Name" },
 		{ "Text": "This is the name of the song you are editing." },
 		{
-			"Image": {
-				"path": "Name.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Name.png"
 		},
 
 		{ "Header2": "Conditions" },
 		{ "Text": "This is is the condition you are doing in this case adding \"2018\" to (Column: lyrics)." },
 		{
-			"Image": {
-				"path": "Conditions.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Conditions.png"
 		},
 
 		{ "Header2": "Delete the above edit" },
 		{ "Text": "Delete the above edit removing it from actions to perform on \"Save changed\"." },
 		{
-			"Image": {
-				"path": "Delete the above edit.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Delete the above edit.png"
 		},
 
 		{ "Header2": "Multiple Conditions" },
 		{ "Text": "This is showing multiple conditions in this case two adds are happening filling \"eng\" and \"2018\" to their respective columns." },
 		{
-			"Image": {
-				"path": "Multiple Conditions.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Multiple Conditions.png"
 		}
 	]
 }

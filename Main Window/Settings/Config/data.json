@@ -2,11 +2,7 @@
 	"title": "Config",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Directory Path" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Download Dir" },
@@ -22,22 +18,14 @@
 		{ "Header2": "Directory Path" },
 		{ "Text": "Directory you want to search" },
 		{
-			"Image": {
-				"path": "Directory Path.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Directory Path.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Download Dir" },
 		{ "Text": "Directory you want to download into" },
 		{
-			"Image": {
-				"path": "Download Dir.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Download Dir.png"
 		},
 		{ "Separator": null },
 
@@ -45,11 +33,7 @@
 		{ "Text": "Enabled: legacy search where it searches the directory recursively and matches to song names" },
 		{ "Text": "Disabled: uses the new search where it uses a database and allows searching explicit columns; for more info check the [[[button:Search][../../Search]]]" },
 		{
-			"Image": {
-				"path": "Legacy Search.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Legacy Search.png"
 		},
 		{ "Separator": null },
 
@@ -57,22 +41,14 @@
 		{ "Text": "Hides selected windows when the program loses focus" },
 		{ "Text": "Enables \"Selected Hidden Windows\" to select the windows that are hidden" },
 		{
-			"Image": {
-				"path": "Hide Windows.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Hide Windows.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Selected Hidden Windows" },
 		{ "Text": "Left click the icons inside to hide those windows when the program loses focus" },
 		{
-			"Image": {
-				"path": "Selected Hidden Windows.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Selected Hidden Windows.png"
 		},
 		{ "Separator": null },
 
@@ -80,29 +56,17 @@
 		{ "Text": "Codecs you want to search also is used for duplicate detector, Web Codec Checker" },
 		{ "Text": "and is used during download for detection of failed downloads" },
 		{
-			"Image": {
-				"path": "Accepted codecs.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Accepted codecs.png"
 		},
 		{ "Text": "This image shows the \"Accepted codecs\" list and a add button at the bottom if clicked it opens a input bar" },
 		{ "Text": "it also shows a disclaimer make sure to read it" },
 		{
-			"Image": {
-				"path": "body_add_button.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "body_add_button.png"
 		},
 		{ "Text": "Input your codec then press enter to add it" },
 		{ "Text": "Right click on the bar to close it" },
 		{
-			"Image": {
-				"path": "Input_bar.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Input_bar.png"
 		},
 		{ "Separator": null },
 
@@ -110,11 +74,7 @@
 		{ "Text": "This area is for advanced actions that may result in data loss (be careful what you click as all actions are final)" },
 		{ "Text": "This section is big so here is a separate page on it [[[button:Advanced Settings Page][Advanced Settings]]]" },
 		{
-			"Image": {
-				"path": "Advanced Settings.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Advanced Settings.png"
 		}
 	]
 }

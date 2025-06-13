@@ -2,11 +2,7 @@
 	"title": "Playlist Editor",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Manage Keys" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Save Changes to disc" },
@@ -24,60 +20,42 @@
 		{ "Header2": "Manage Keys" },
 		{ "Text": "Allows the user to manage (add, remove) dropdowns and dropdown bodies." },
 		{
-			"Image": {
-				"path": "Manage Keys.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Manage Keys.png"
 		},
+
+		{ "Spacer": 100.0 },
 
 		{ "Text": "This adds a new key/playlist." },
 		{
-			"Image": {
-				"path": "Add Key.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Add Key.png"
 		},
+
+		{ "Spacer": 100.0 },
 
 		{ "Text": "This removes selected key/playlist." },
 		{
-			"Image": {
-				"path": "Remove key.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Remove key.png"
 		},
+
+		{ "Spacer": 100.0 },
 
 		{ "Text": "This hides the add/remove dropdown." },
 		{
-			"Image": {
-				"path": "Closed Dropdown.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Closed Dropdown.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Save Changes to disc" },
 		{ "Text": "Simply saves all changes made to disc. (Upon changes, the button colour is set to red.)" },
 		{
-			"Image": {
-				"path": "Save Changes to disk.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Save Changes to disk.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Key" },
 		{ "Text": "Key holds the name and data of a playlist or list of URLs." },
 		{
-			"Image": {
-				"path": "Key.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Key.png"
 		},
 		{ "Separator": null },
 
@@ -85,11 +63,7 @@
 		{ "Text": "This enables or disables the key for download." },
 		{ "Text": "(Disabled means it will not download anything in the disabled key.)" },
 		{
-			"Image": {
-				"path": "Active.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Active.png"
 		},
 		{ "Separator": null },
 
@@ -97,22 +71,14 @@
 		{ "Text": "This is the executable for helping with the download process." },
 		{ "Text": "This field is no longer needed but is here for flexibility in the future." },
 		{
-			"Image": {
-				"path": "Executable.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Executable.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Codec" },
 		{ "Text": "This is the container/format you will save the songs into." },
 		{
-			"Image": {
-				"path": "Codec.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Codec.png"
 		},
 
 		{ "Header3": "Lossy vs Lossless" },
@@ -130,11 +96,7 @@
 		{ "Text": "[[[warning:NOTE]]] Opus and M4A are not natively supported by \"RhythmiRust\"" },
 		{ "Text": "since there is no native [[[strong:Opus, M4A]]] decoder published yet, so these two formats use a fallback decoder when playing them." },
 		{
-			"Image": {
-				"path": "Codec Dropdown.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Codec Dropdown.png"
 		},
 		{ "Separator": null },
 
@@ -148,22 +110,14 @@
 		{ "Text": "codec: Is replaced with the song's codec." },
 		{ "Text": "ffmpeg_path: Target of the ffmpeg binary in the config (so the user does not need to install ffmpeg manually and so \"RhythmiRust\" can manage ffmpeg itself)." },
 		{
-			"Image": {
-				"path": "YT_dlp_args.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "YT_dlp_args.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Main" },
 		{ "Text": "This holds the list of URLs/keys." },
 		{
-			"Image": {
-				"path": "Main_obj.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Main_obj.png"
 		},
 		{ "Separator": null },
 
@@ -177,11 +131,7 @@
 		{ "Text": "Tip: As of version \"0.1.5\", you can use \"https://soundcloud.com/username/sets\" and \"https://www.youtube.com/@username/playlists\", and these will download all that user's public playlists." },
 		{ "Text": "Before, it was able to download from these URLs but it was only single-threaded, so now it will download them in batches like it does for all normal playlists." },
 		{
-			"Image": {
-				"path": "Main_obj_keys.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Main_obj_keys.png"
 		}
 	]
 }

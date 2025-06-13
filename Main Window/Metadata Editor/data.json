@@ -4,7 +4,7 @@
 		{
 			"Image": {
 				"path": "Main.png",
-				"max_width": 1445.0,
+				"max_width": 1345.0,
 				"max_height": 813.0
 			}
 		},
@@ -19,11 +19,7 @@
 		{ "Text": "[[[strong:Left-click]]] to select a directory to edit." },
 		{ "Text": "[[[strong:Right-click]]] to queue the directory for regeneration. This action removes the directory from the database and re-imports it fresh." },
 		{
-			"Image": {
-				"path": "Select Directory.png",
-				"max_width": 1353.0,
-				"max_height": 762.0
-			}
+			"Image": "Select Directory.png"
 		},
 
 		{ "Header2": "Select values" },
@@ -54,11 +50,7 @@
 		{ "Text": "[[[strong:• metadata_comments]]] - Comments included in the file's metadata." },
 		{ "Text": "[[[strong:• user_notes]]] - Personal notes added by the user." },
 		{
-			"Image": {
-				"path": "Select values.png",
-				"max_width": 1353.0,
-				"max_height": 762.0
-			}
+			"Image": "Select values.png"
 		},
 
 		{ "Header2": "Input replacement value" },
@@ -66,32 +58,20 @@
 		{ "Text": "Press Enter to confirm and add the values to the Save/Discard." },
 		{ "Text": "Tip: You can drag the \"Input replacement value\" up to display fewer buttons, thus improving performance." },
 		{
-			"Image": {
-				"path": "Input replacement value.png",
-				"max_width": 1353.0,
-				"max_height": 762.0
-			}
+			"Image": "Input replacement value.png"
 		},
 
 		{ "Header2": "Save/Discard" },
 		{ "Text": "Save changes: Press the button to commit all changes in \"Confirm/View changes\"." },
 		{ "Text": "Discard all changes: Press the button to discard all changes in \"Confirm/View changes\"." },
 		{
-			"Image": {
-				"path": "Save Discard.png",
-				"max_width": 300.0,
-				"max_height": 300.0
-			}
+			"Image": "Save Discard.png"
 		},
 
 		{ "Header2": "Confirm/View changes" },
 		{ "Text": "This section is a little more complex see [[[button:Confirm/View changes][View Changes]]] for more information." },
 		{
-			"Image": {
-				"path": "Confirm View changes.png",
-				"max_width": 1353.0,
-				"max_height": 762.0
-			}
+			"Image": "Confirm View changes.png"
 		}
 	]
 }

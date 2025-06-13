@@ -2,11 +2,7 @@
 	"title": "Downloader Settings",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Download Dir" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Download Threads" },
@@ -20,22 +16,14 @@
 		{ "Header2": "Download Dir" },
 		{ "Text": "This is the directory songs will be downloaded into" },
 		{
-			"Image": {
-				"path": "Download Dir.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Download Dir.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Download Threads" },
 		{ "Text": "The number of simultaneous downloads that can occur" },
 		{
-			"Image": {
-				"path": "Download Threads.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Download Threads.png"
 		},
 		{ "Separator": null },
 
@@ -46,11 +34,7 @@
 		{ "Text": "Although preserving the ID is not strictly necessary, it can contribute to enhanced matching accuracy." },
 		{ "Text": "By default it uses ids at the end of the song name to change this refer to [[[button:Settings][../../Settings]]]" },
 		{
-			"Image": {
-				"path": "Deduplicate detector.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Deduplicate detector.png"
 		},
 		{ "Separator": null },
 
@@ -61,11 +45,7 @@
 		{ "Text": "• Playlist: Download only playlists" },
 		{ "Text": "• Liked,Playlist: Both" },
 		{
-			"Image": {
-				"path": "Spotify.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Spotify.png"
 		},
 		{ "Separator": null },
 

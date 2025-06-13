@@ -2,11 +2,7 @@
 	"title": "Wiki Navigation",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ General Navigation" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Direct Links" },
@@ -17,21 +13,14 @@
 		{ "Text": "If you are not in the root directory, then you will see a back button on the far left." },
 		{ "Text": "This is how you return to the previous directory." },
 		{
-			"Image": {
-				"path": "General Navigation.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "General Navigation.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Direct Links" },
 		{ "Text": "Link directly to a page. Use the \"General Navigation\" back button to return to the previous directory." },
 		{
-			"Image": {
-				"path": "Direct Links.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Direct Links.png"
 		}
 	]
 }

@@ -1,11 +1,6 @@
 {
 	"title": "@UnknownSuperficialNight, Creator of RhythmiRust",
-	"image": {
-		"path": "profile_pic.png",
-		"max_width": 600.0,
-		"max_height": 600.0,
-		"offset": 0.0
-	},
+	"image": "profile_pic.png",
 	"contents": [
 		{ "Header2": "Social Media Profiles" },
 		{ "Text": "[[[hyperlink:Github][https://github.com/UnknownSuperficialNight]]]" },

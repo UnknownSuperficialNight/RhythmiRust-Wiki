@@ -2,11 +2,7 @@
 	"title": "Search Window",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Search Bar" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Search Button" },
@@ -45,63 +41,44 @@
 		{ "Text": "[[[strong:Tip:]]] You can use [[[strong:AND]]] with parentheses. Example: [[[strong:term && (length:>=1m) && (length:<=3m)]]] - This will get all songs with \"Term\" where their length is between 1 and 3 minutes." },
 		{ "Text": "[[[strong:Tip 2:]]] You can use exact matching in parentheses. Example: [[[strong:(album:\"Akira Yamaoka\")]]] - This will use exact matching on the album name, so capitals and lowercase matter." },
 		{
-			"Image": {
-				"path": "_search_assets/Search Bar.png",
-				"max_width": 421.0,
-				"max_height": 33.0
-			}
+			"Image": "_search_assets/Search Bar.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Search Button:" },
 		{ "Text": "Start a search." },
 		{
-			"Image": {
-				"path": "_search_assets/Search Button.png",
-				"max_width": 72.0,
-				"max_height": 33.0
-			}
+			"Image": "_search_assets/Search Button.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Matches found:" },
 		{ "Text": "Shows the number of results from a search." },
 		{
-			"Image": {
-				"path": "_search_assets/Matches found.png",
-				"max_width": 143.0,
-				"max_height": 20.0
-			}
+			"Image": "_search_assets/Matches found.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Search Result:" },
 		{ "Text": "Shows the results from a search." },
 		{ "Text": "Left click to add to [[[button:Queue of songs][../Music Player]]]." },
 		{ "Text": "Right click to get that song's path copied to the clipboard." },
 		{
-			"Image": {
-				"path": "Search Result.png",
-				"max_width": 400.0,
-				"max_height": 400.0
-			}
+			"Image": "Search Result.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Search Directory:" },
 		{ "Text": "What directory do we search." },
 		{
-			"Image": {
-				"path": "_search_assets/Search Directory.png",
-				"max_width": 414.0,
-				"max_height": 24.0
-			}
+			"Image": "_search_assets/Search Directory.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Shuffle:" },
 		{ "Text": "Shuffles the entire (Search Result) then adds it to [[[button:Queue of songs][../Music Player]]]." },
 		{
-			"Image": {
-				"path": "_search_assets/Shuffle.png",
-				"max_width": 171.0,
-				"max_height": 22.0
-			}
+			"Image": "_search_assets/Shuffle.png"
 		}
 	]
 }

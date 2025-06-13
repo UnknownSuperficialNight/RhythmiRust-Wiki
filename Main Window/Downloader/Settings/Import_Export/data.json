@@ -2,11 +2,7 @@
 	"title": "Import/Export",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Close Window" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Up Folder" },
@@ -19,18 +15,7 @@
 		{ "Text": "[[[underline:Crimson Red]]] ≈ Show Hidden | Show Drives" },
 		{ "Separator": null },
 		{
-			"ImageGroup": [
-				{
-					"path": "Open_file.png",
-					"max_width": 300.0,
-					"max_height": 300.0
-				},
-				{
-					"path": "Save_file.png",
-					"max_width": 300.0,
-					"max_height": 300.0
-				}
-			]
+			"ImageGroup": ["Open_file.png", "Save_file.png"]
 		},
 
 		{ "Header": "Overview of Each UI Element" },
@@ -38,44 +23,28 @@
 		{ "Header2": "Close Window" },
 		{ "Text": "Closes the current window" },
 		{
-			"Image": {
-				"path": "Close Window.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Close Window.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Up Folder" },
 		{ "Text": "Moves up to the parent directory from the current folder" },
 		{
-			"Image": {
-				"path": "Up Folder.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Up Folder.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Current path" },
 		{ "Text": "The current path traversed" },
 		{
-			"Image": {
-				"path": "Current path.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Current path.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Refresh" },
 		{ "Text": "Refresh to display new files/folders" },
 		{
-			"Image": {
-				"path": "Refresh.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Refresh.png"
 		},
 		{ "Separator": null },
 
@@ -83,22 +52,14 @@
 		{ "Text": "Display files/folders in the current directory" },
 		{ "Text": "Traverse down folders via double clicking and select file/folder via a single click" },
 		{
-			"Image": {
-				"path": "Results body.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Results body.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Output file" },
 		{ "Text": "Name of the output file or selected file" },
 		{
-			"Image": {
-				"path": "Output file.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Output file.png"
 		},
 		{ "Separator": null },
 
@@ -106,11 +67,7 @@
 		{ "Text": "Rename: Rename selected folder" },
 		{ "Text": "New Folder: Create a new folder using the \"Output file\" field in the current directory" },
 		{
-			"Image": {
-				"path": "Rename_New Folder.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Rename_New Folder.png"
 		},
 		{ "Separator": null },
 
@@ -118,11 +75,7 @@
 		{ "Text": "Save: Save file to folder | Open: Open selected file" },
 		{ "Text": "Cancel: Close the window like \"Close Window\" does" },
 		{
-			"Image": {
-				"path": "Save_Cancel.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Save_Cancel.png"
 		},
 		{ "Separator": null },
 
@@ -130,11 +83,7 @@
 		{ "Text": "Show Hidden: Show Hidden files" },
 		{ "Text": "Show Drives: Show drive letter on windows" },
 		{
-			"Image": {
-				"path": "Show_Hidden_show_drives.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Show_Hidden_show_drives.png"
 		},
 		{ "Separator": null }
 	]

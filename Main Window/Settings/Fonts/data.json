@@ -2,11 +2,7 @@
 	"title": "Fonts",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Enable dynamic fonts" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Enabled dynamic font" },
@@ -21,23 +17,16 @@
 		{ "Text": "Enabled: This shows the ui to toggle individual dynamic fonts." },
 		{ "Text": "Disabled: Hides the ui and disables all dynamic font loading." },
 		{
-			"Image": {
-				"path": "Enable dynamic fonts.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Enable dynamic fonts.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Enabled dynamic font" },
 		{ "Text": "This is enabling dynamic font searching/loading of the \"Japanese\" language if found it will load the font on startup. " },
 		{
-			"Image": {
-				"path": "Enabled dynamic font.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Enabled dynamic font.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Editing a dynamic font" },
 		{ "Text": "Right click on a font to show the editing menu." },
@@ -47,33 +36,23 @@
 		{ "Text": "[[[strong:Save:]]]This will save the changes." },
 		{ "Text": "[[[strong:Remove:]]]This will remove the entire region permanently." },
 		{
-			"Image": {
-				"path": "Editing a dynamic font.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Editing a dynamic font.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Disabled dynamic fonts" },
 		{ "Text": "These are fonts that are not ticked thus will not be searched or loaded." },
 		{
-			"Image": {
-				"path": "Disabled dynamic fonts.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Disabled dynamic fonts.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Add new font region" },
 		{ "Text": "Click this button to add a new font region." },
 		{ "Text": "Enter the new region name then press enter to create it." },
 		{ "Text": "Click [[[strong:Close]]] to cancel and close the [[[strong:Add new font region]]]." },
 		{
-			"Image": {
-				"path": "Add new font region.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Add new font region.png"
 		}
 	]
 }

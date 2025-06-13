@@ -2,11 +2,7 @@
 	"title": "Discord RPC",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 800.0,
-				"max_height": 800.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Separator": null },
 

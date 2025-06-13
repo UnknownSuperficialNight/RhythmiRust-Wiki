@@ -1,28 +1,20 @@
 {
 	"title": "History",
 	"contents": [
-        {
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+		{
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ History Body" },
 		{ "Separator": null },
 
-        { "Header2": "History Body" },
+		{ "Header2": "History Body" },
 		{ "Text": "Displays the search history" },
-        { "Text": "Clicking on an item searches it again" },
+		{ "Text": "Clicking on an item searches it again" },
 		{ "Text": "Right clicking on an item will remove it" },
 		{ "Text": "If you right click once it will show a confirm delete" },
 		{ "Text": "right click again to delete left click to cancel" },
-        {
-			"Image": {
-				"path": "Confirm Removal.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+		{
+			"Image": "Confirm Removal.png"
 		}
-    ]
+	]
 }

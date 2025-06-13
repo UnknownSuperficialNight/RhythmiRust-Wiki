@@ -2,11 +2,7 @@
 	"title": "Music Player",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Playback Controls" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Music Player Settings" },
@@ -87,11 +83,7 @@
 		{ "Text": "Dark Blue ≈ Automatic Gain Control." },
 		{ "Text": "Light Green ≈ Speed Control." },
 		{
-			"Image": {
-				"path": "Music Player Settings.png",
-				"max_width": 400.0,
-				"max_height": 400.0
-			}
+			"Image": "Music Player Settings.png"
 		},
 		{ "Header3": "Current Settings" },
 		{ "Text": "Automatic Gain Control (AGC):" },
@@ -105,11 +97,7 @@
 
 		{ "Header2": "Queue of songs" },
 		{
-			"Image": {
-				"path": "Queue of songs.png",
-				"max_width": 400.0,
-				"max_height": 400.0
-			}
+			"Image": "Queue of songs.png"
 		},
 		{ "Text": "This is the body where songs will be added to via:" },
 		{ "Text": "• [[[button:Search Menu][../Search]]]" },
@@ -119,11 +107,7 @@
 
 		{ "Header2": "Volume Slider" },
 		{
-			"Image": {
-				"path": "Volume Slider.png",
-				"max_width": 400.0,
-				"max_height": 400.0
-			}
+			"Image": "Volume Slider.png"
 		},
 		{ "Text": "The volume slider starts in the middle at 1.0, which is the default volume level." },
 		{ "Text": "Moving the slider down decreases the volume, reaching a minimum of 0.1, which is the lowest audible level." },
@@ -134,32 +118,20 @@
 
 		{ "Header2": "Playback Bar" },
 		{
-			"Image": {
-				"path": "Playback bar.png",
-				"max_width": 400.0,
-				"max_height": 400.0
-			}
+			"Image": "Playback bar.png"
 		},
 		{ "Header2": "States (left to right):" },
 
 		{ "Header3": "Default State" },
 		{
-			"Image": {
-				"path": "_playback_bar_assets/Playback bar state default.png",
-				"max_width": 400.0,
-				"max_height": 400.0
-			}
+			"Image": "_playback_bar_assets/Playback bar state default.png"
 		},
 		{ "Text": "This is the default state." },
 		{ "Text": "It features a button labelled 'Seek' that opens the playback bar for further interaction." },
 
 		{ "Header3": "Non Refresh State" },
 		{
-			"Image": {
-				"path": "_playback_bar_assets/Playback bar state 1.png",
-				"max_width": 400.0,
-				"max_height": 400.0
-			}
+			"Image": "_playback_bar_assets/Playback bar state 1.png"
 		},
 		{ "Text": "In the Non-Refresh State, the UI includes several components:" },
 		{ "Text": "**Close Button:** This button closes the UI and returns to the Default State." },
@@ -176,11 +148,7 @@
 
 		{ "Header3": "Continuous Refresh State" },
 		{
-			"Image": {
-				"path": "_playback_bar_assets/Playback bar state 1.png",
-				"max_width": 400.0,
-				"max_height": 400.0
-			}
+			"Image": "_playback_bar_assets/Playback bar state 1.png"
 		},
 		{ "Text": "The Continuous Refresh State mirrors the Non-Refresh State but without the Go Button." },
 		{ "Text": "Each adjustment to the slider is applied immediately, providing real-time feedback." },

@@ -64,6 +64,7 @@
 
 		{ "_Comment": "Add a separator" },
 		{ "Separator": null },
+		{ "Spacer": 20.0 },
 
 		{ "_Comment": "Group of horizontal images" },
 		{

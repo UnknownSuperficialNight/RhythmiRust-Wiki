@@ -2,11 +2,7 @@
 	"title": "Web Codec Checker",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Search Bar" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Disclaimer" },
@@ -19,33 +15,21 @@
 		{ "Header2": "Search Bar" },
 		{ "Text": "Enter a url here and wait a few seconds (playlists do not work)" },
 		{
-			"Image": {
-				"path": "Search Bar.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Search Bar.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Disclaimer" },
 		{ "Text": "This is a disclaimer its important to read it in the ui" },
 		{
-			"Image": {
-				"path": "Disclaimer.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Disclaimer.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Url" },
 		{ "Text": "This is the last url searched/inputted" },
 		{
-			"Image": {
-				"path": "Url.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Url.png"
 		},
 		{ "Separator": null },
 
@@ -54,11 +38,7 @@
 		{ "Text": "Read the Disclaimer for more info on what the Web Codec Checker solves" },
 		{ "Text": "For more info on codecs refer to this page [[[button:Codec description in \"Playlist Editor\"][../Playlist Editor]]]" },
 		{
-			"Image": {
-				"path": "Codecs found.png",
-				"max_width": 401.0,
-				"max_height": 446.0
-			}
+			"Image": "Codecs found.png"
 		}
 	]
 }

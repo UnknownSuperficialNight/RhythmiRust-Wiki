@@ -2,11 +2,7 @@
 	"title": "Image",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Separator": null },
 
@@ -37,11 +33,7 @@
 		{ "Text": "Click to open selections." },
 		{ "Text": "\"SoftHorizontalGlitch\" is my favourite :)" },
 		{
-			"Image": {
-				"path": "Image Padding.png",
-				"max_width": 600.0,
-				"max_height": 600.0
-			}
+			"Image": "Image Padding.png"
 		},
 
 		{ "Header2": "Randomiser Options" },

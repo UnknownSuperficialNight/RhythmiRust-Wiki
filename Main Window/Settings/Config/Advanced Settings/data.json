@@ -47,9 +47,11 @@
 		{ "Separator": null },
 
 		{ "Header2": "Dependencies" },
-		{ "Text": "This forces Yt-dlp to be updated on next launch of RhythmiRust" },
+		{ "Text": "•Force Yt-dlp Update: This forces Yt-dlp to update immediately" },
 		{ "Text": "This is done once a week automatically but if a emergency update is pushed to Yt-dlp" },
 		{ "Text": "You can use this to get updated right away" },
+		{ "TextCustom": { "space_size": 12.5, "content": "[[[strong:Tip:]]] If a download fails press this to update and try again it may fix the issue" } },
+		{ "Text": "•Delete Wiki: This Deletes the wiki folder and all its contents (Useful if you dont want the wiki installed anymore)" },
 		{
 			"Image": "Dependencies.png"
 		},

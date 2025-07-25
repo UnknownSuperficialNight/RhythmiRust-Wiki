@@ -30,7 +30,7 @@
 
 		{ "Header2": "Enable high resolution images" },
 		{ "Text": "Enabled: This ignores the [[[warning:4096x4096]]] pixel limit." },
-		{ "Text": "Disabled: Enforces the [[[warning:4096x4096]]] pixel limit ensuring any images bigger are resized down to resonable sizes." },
+		{ "Text": "Disabled: Enforces the [[[warning:4096x4096]]] pixel limit ensuring any images bigger are resized down to reasonable sizes." },
 		{ "Separator": null },
 
 		{ "Header2": "Enable the source image for effects" },

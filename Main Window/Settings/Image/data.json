@@ -25,7 +25,17 @@
 		{ "Header2": "Write background image to disk" },
 		{ "Text": "Enabled: This writes the generated padding image to disk in the config directory, either next to the binary or in the global config directory (for more information see [[[button:Config location][../Config/Advanced Settings]]])." },
 		{ "Text": "Disabled: Does not write the image to disk." },
-		{ "Text": "Note: The value is temporarily stored in memory and is not saved persistently in the database. Consequently, it resets to `false` each time the program starts." },
+		{ "Text": "[[[warning:Note:]]] The value is temporarily stored in memory and is not saved persistently in the database. Consequently, it resets to `false` each time the program starts." },
+		{ "Separator": null },
+
+		{ "Header2": "Enable high resolution images" },
+		{ "Text": "Enabled: This ignores the [[[warning:4096x4096]]] pixel limit." },
+		{ "Text": "Disabled: Enforces the [[[warning:4096x4096]]] pixel limit ensuring any images bigger are resized down to resonable sizes." },
+		{ "Separator": null },
+
+		{ "Header2": "Enable the source image for effects" },
+		{ "Text": "Enabled: Forces the usage of the highest quality image for effect padding." },
+		{ "Text": "Disabled: Forces the cheapest and lowest quality image for effect padding." },
 		{ "Separator": null },
 
 		{ "Header2": "Image Padding Mode" },

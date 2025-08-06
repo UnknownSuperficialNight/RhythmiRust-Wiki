@@ -103,6 +103,19 @@
 		{ "Text": "• [[[button:Search Menu][../Search]]]" },
 		{ "Text": "• [[[button:History][../History]]]" },
 		{ "Text": "• [[[button:Favourites][../Favourites]]]" },
+		{ "Header3": "Rating Button" },
+		{
+			"Image": "Rating Button.png"
+		},
+		{ "Text": "This button opens a UI to rate the song" },
+
+		{ "Header3": "Rating Popup" },
+		{
+			"Image": "Rating Popup.png"
+		},
+		{ "Text": "Choose a number to save the rating both to the database and embed it in the song file" },
+		{ "Text": "Click a previously selected number to remove the rating" },
+		{ "Text": "[[[warning:NOTE]]]: The selected number will briefly turn yellow to indicate it is being saved. During this time, any additional clicks will be ignored. Once saving is complete, the number will change to the user defined colour" },
 		{ "Separator": null },
 
 		{ "Header2": "Volume Slider" },

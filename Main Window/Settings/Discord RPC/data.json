@@ -22,7 +22,6 @@
 		{ "Text": "•Activity visibility: Toggles showing what song you're listening to." },
 		{ "Text": "•When music is paused: Toggles showing when you have paused the music." },
 		{ "Text": "•When queue is empty: Toggles showing when the queue is empty." },
-		{ "Text": "•Clear time on next song: Clears the time when the next song starts." },
 		{ "Separator": null },
 
 		{ "Header2": "Delimiter" },

@@ -13,6 +13,8 @@
 		{ "Text": "[[[underline:Dark Blue]]] ≈ Input replacement value" },
 		{ "Text": "[[[underline:Light Green]]] ≈ Save/Discard" },
 		{ "Text": "[[[underline:Pale Orange]]] ≈ Confirm/View changes" },
+		{ "Text": "[[[underline:Soft Peach]]] ≈ Search Folder" },
+		{ "Text": "[[[underline:Deep Green]]] ≈ Search Song Names" },
 		{ "Separator": null },
 
 		{ "Header2": "Select Directory" },
@@ -72,6 +74,21 @@
 		{ "Text": "This section is a little more complex see [[[button:Confirm/View changes][View Changes]]] for more information." },
 		{
 			"Image": "Confirm View changes.png"
+		},
+
+		{ "Header2": "Search Folder" },
+		{ "Text": "Search the [[[strong:Select Directory]]] for a specific folder." },
+		{ "Text": "[[[warning:NOTE]]]: This is a simple search matching any characters in sequence." },
+		{
+			"Image": "Search Folder Bar.png"
+		},
+
+		{ "Header2": "Search Song Names" },
+		{ "Text": "Search the [[[strong:Select values]]] songs column for a specific song." },
+		{ "Text": "[[[warning:NOTE]]]: This is a simple search matching any characters in sequence." },
+		{ "Text": "This will only search the currently selected table from the [[[strong:Select Directory]]]" },
+		{
+			"Image": "Search Song Bar.png"
 		}
 	]
 }

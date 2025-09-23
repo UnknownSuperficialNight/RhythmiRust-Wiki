@@ -33,7 +33,8 @@
 		{ "Text": "([[[strong:Parentheses]]]) are used to search columns in the database." },
 		{ "Text": "Example: [[[strong:(length:>=1m)]]] - This will search for all songs that are above or equal to 1 minute long." },
 		{ "Text": "Example 2: [[[strong:(length:>=1h)]]] - This will search for all songs that are above or equal to 1 hour long." },
-		{ "TextCustom": { "space_size": 15.5, "content": "Example 3: [[[strong:(album:Akira Yamaoka)]]] - This will search for all songs that are tagged with the album: \"Akira Yamaoka\" ignoring case." } },
+		{ "Text": "Example 3: [[[strong:(artist:Akira Yamaoka)]]] - This will search for all songs that are tagged with the artist: \"Akira Yamaoka\" ignoring case." },
+		{ "TextCustom": { "space_size": 15.5, "content": "Example 4: [[[strong:(artist:)]]] finds songs with an artist listed, while [[[strong:(artist:!!)]]] finds songs where the artist is missing aka null." } },
 		{
 			"Text": "Here are all defined column values: [[[strong:name]]], [[[strong:ext]]], [[[strong:length]]], [[[strong:artist]]], [[[strong:album]]], [[[strong:etc...]]]."
 		},

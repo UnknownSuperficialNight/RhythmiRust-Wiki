@@ -26,7 +26,10 @@
 
 		{ "Header2": "Select values" },
 		{ "Text": "Select columns or cells to edit." },
-		{ "Text": "Tip: Hold Shift and left-click, then scroll down in the same column and hold Shift and left-click again - all cells in between will be selected." },
+		{ "Text": "[[[strong:Tip]]]: Hold [[[strong:SHIFT + LEFT-CLICK]]] on a cell, then scroll down in the same column and hold [[[strong:SHIFT + LEFT-CLICK]]] again to select all cells in between." },
+		{
+			"Text": "[[[strong:Tip2]]]: Hold [[[strong:CTRL + SHIFT + LEFT-CLICK]]] on a cell, then scroll down in the same column and hold [[[strong:CTRL + SHIFT + LEFT-CLICK]]] again to select all cells that match the first cell's value."
+		},
 		{ "Header3": "Column Modifiers" },
 		{ "Text": "[[[strong:• Four-letter code]]] - requires a standardised four-character code (example: \"2015\")." },
 		{ "Text": "[[[strong:• Integer only]]] - accepts only whole numbers." },

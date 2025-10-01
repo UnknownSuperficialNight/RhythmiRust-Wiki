@@ -24,6 +24,12 @@
 		{ "Text": "• [[[button:Settings][Main Window/Settings]]] - Configure app preferences and customise your experience." },
 		{ "Separator": null },
 
+		{ "Header2": "Tips and Helpers" },
+		{ "Text": "Discover helpful resources for organization and reference" },
+		{ "Text": "• [[[button:Country Codes][_Helpers/Country Codes]]] - Quick access to country codes for efficient sorting." },
+		{ "Text": "• [[[button:Language Codes][_Helpers/Language Codes]]] - Easy reference for language codes." },
+		{ "Separator": null },
+
 		{ "Header2": "Guides" },
 		{ "Text": "Learn how to make the most of RhythmiRust:" },
 		{ "Text": "• [[[button:Optimise Performance][_Guides/Optimise Performance]]] - Optimise for low-end hardware." },

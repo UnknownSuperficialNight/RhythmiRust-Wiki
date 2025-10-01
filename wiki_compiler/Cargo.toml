@@ -8,11 +8,11 @@ walkdir = "2.5.0"
 usvg = { version = "0.45.1", features = [], default-features = false }
 resvg = { version = "0.45.1", features = ["raster-images"], default-features = false }
 tiny-skia = "0.11.4"
-oxipng = { version = "9.1.4", features = ["parallel", "filetime"], default-features = false }
-rayon = "1.10.0"
-num_cpus = "1.16.0"
-serde = { version = "1.0.219", features = ["derive"] }
-serde_json = "1.0.140"
+oxipng = { version = "9.1.5", features = ["parallel", "filetime"], default-features = false }
+rayon = "1.11.0"
+num_cpus = "1.17.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
 
 [profile.release]
 opt-level = 3     #'z'   # Optimize for size

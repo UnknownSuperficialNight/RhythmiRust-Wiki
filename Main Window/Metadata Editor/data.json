@@ -15,6 +15,8 @@
 		{ "Text": "[[[underline:Pale Orange]]] ≈ Confirm/View changes" },
 		{ "Text": "[[[underline:Soft Peach]]] ≈ Search Folder" },
 		{ "Text": "[[[underline:Deep Green]]] ≈ Search Song Names" },
+		{ "Text": "[[[underline:Cyan Blue]]] ≈ Show Mode & Stats" },
+		{ "Text": "[[[underline:Crimson Red]]] ≈ Toggle Multi-Table Mode" },
 		{ "Separator": null },
 
 		{ "Header2": "Select Directory" },
@@ -92,6 +94,24 @@
 		{ "Text": "This will only search the currently selected table from the [[[strong:Select Directory]]]" },
 		{
 			"Image": "Search Song Bar.png"
+		},
+
+		{ "Header2": "Show Mode & Stats" },
+		{ "Text": "Shows the current [[[strong:Shuffle Mode]]] and the [[[strong:Stats]]] of the selected table." },
+		{ "Text": "[[[warning:NOTE]]]: This is changes while in multi-table mode see [[[button:Multi Table Mode][Multi Table Mode]]] for more information." },
+		{
+			"Image": "Single-Table Mode.png"
+		},
+
+		{ "Header2": "Toggle Multi-Table Mode" },
+		{ "Text": "Toggles Multi-Table Mode which allows you to select multiple tables and combine them together in the [[[strong:Select values]]]" },
+		{ "Text": "See [[[button:Multi Table Mode][Multi Table Mode]]] for more information." },
+		{
+			"Image": {
+				"path": "/_hidden_global_assets/gear_icon.png",
+				"max_width": 50.0,
+				"max_height": 50.0
+			}
 		}
 	]
 }

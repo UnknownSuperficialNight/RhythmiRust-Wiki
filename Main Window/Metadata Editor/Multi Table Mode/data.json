@@ -1,0 +1,39 @@
+{
+	"title": "Multi Table Mode",
+	"contents": [
+		{
+			"Image": {
+				"path": "Main.png",
+				"max_width": 1345.0,
+				"max_height": 813.0
+			}
+		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Select Tables" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Multi-Table Mode Status & Stats" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Table Names" },
+		{ "Separator": null },
+
+		{ "Header2": "Select Tables" },
+		{ "Text": "Select multiple tables to combine them in the viewport/(Select values)." },
+		{ "Text": "[[[strong:Tip:]]] You can use [[[strong:SHIFT + LEFT-CLICK]]] on the tables, then scroll down hold [[[strong:SHIFT + LEFT-CLICK]]] again to select all tables in between." },
+		{
+			"Image": "Select Tables.png"
+		},
+
+		{ "Header2": "Multi-Table Mode Status & Stats" },
+		{ "Text": "Shows the status of the [[[strong:Multi-Table Mode]]] and the stats of the selected tables." },
+		{ "Text": "This includes the number of [[[strong:tables combined]]] and the total amount of [[[strong:rows]]] in the [[[strong:viewport/(Select values)]]]" },
+		{
+			"Text": "It also includes some of the table names that are combined and a [[[strong:clear button]]] to clear everything and switch back to [[[strong:single-table]]] mode (you can also use the [[[strong:Multi-Table Mode]]] toggle/icon to return to [[[strong:single-table]]] mode)."
+		},
+		{
+			"Image": "Multi-Table Mode Status_Stats.png"
+		},
+
+		{ "Header2": "Table Names" },
+		{ "Text": "This shows in the [[[strong:Name]]] column the [[[strong:table]]] its from in blue and the [[[strong:name]]] of the song in white." },
+		{
+			"Image": "Table Names.png"
+		}
+	]
+}

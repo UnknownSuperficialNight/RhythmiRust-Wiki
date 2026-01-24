@@ -92,6 +92,7 @@
 		{ "Text": "Deep Green: #008040" },
 		{ "Text": "Cyan Blue: #55AFEC" },
 		{ "Text": "Crimson Red: #770000" },
+		{ "Text": "Deep Purple: #6934A4" },
 
 		{ "_Comment": "Text styling choices" },
 		{ "Text": "[[[underline:Text here]]]" },

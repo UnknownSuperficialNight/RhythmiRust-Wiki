@@ -17,6 +17,8 @@
 		{ "Text": "[[[underline:Deep Green]]] ≈ Search Song Names" },
 		{ "Text": "[[[underline:Cyan Blue]]] ≈ Show Mode & Stats" },
 		{ "Text": "[[[underline:Crimson Red]]] ≈ Toggle Multi-Table Mode" },
+		{ "Text": "[[[underline:Deep Purple]]] ≈ Columns Toggles" },
+
 		{ "Separator": null },
 
 		{ "Header2": "Select Directory" },
@@ -41,6 +43,11 @@
 		{ "Text": "[[[strong:• ext]]] - The file extension (e.g., MP3, WAV, FLAC) ([[[warning:read-only]]])." },
 		{ "Text": "[[[strong:• played]]] - Tracks if the file has been played ([[[warning:read-only]]])." },
 		{ "Text": "[[[strong:• length]]] - Duration of the audio file ([[[warning:read-only]]])." },
+		{ "Text": "[[[strong:• sample_rate]]] - Sample rate of the audio file ([[[warning:read-only]]])." },
+		{ "Text": "[[[strong:• channel_count]]] - Channel count of the audio file ([[[warning:read-only]]])." },
+		{ "Text": "[[[strong:• bitrate]]] - Bitrate of the audio file ([[[warning:read-only]]])." },
+		{ "Text": "[[[strong:• modification_date]]] - Date the file was last modified (Used for automatically detecting files that have updated using a external program) ([[[warning:read-only]]])." },
+		{ "Text": "[[[strong:• cached_fingerprint]]] - This is a cache fingerprint to help speed up deduplicate detection (This is cache-on-demand so it is only calculated when needed) ([[[warning:read-only]]])." },
 		{ "Text": "[[[strong:• artist]]] - The performing artist or creator." },
 		{ "Text": "[[[strong:• album]]] - This field is used to store the title of the album that the track belongs to." },
 		{ "Text": "[[[strong:• album_artist]]] - This tag indicates the primary artist or group responsible for the album. In cases where an album features multiple artists, the album artist may differ from the individual track artists." },
@@ -48,12 +55,12 @@
 		{ "Text": "[[[strong:• genre]]] - The musical or content genre." },
 		{ "Text": "[[[strong:• language]]] - The language of the audio content." },
 		{ "Text": "[[[strong:• lyrics]]] - Contains song lyrics if available." },
-		{ "Text": "[[[strong:• year]]] - The release or recording year ([[[warning:integer only]]])." },
+		{ "Text": "[[[strong:• year]]] - The release or recording year/date ([[[warning:integer only]]])." },
 		{ "Text": "[[[strong:• country]]] - Country of origin ([[[warning:four-letter code]]],[[[warning:integer only]]])." },
 		{ "Text": "[[[strong:• label]]] - The publishing or record label." },
 		{ "Text": "[[[strong:• release_type]]] - Type of release (e.g., album, single, EP)." },
 		{ "Text": "[[[strong:• tags]]] - Custom user-defined tags." },
-		{ "Text": "[[[strong:• user_ratings]]] - User or community rating ([[[warning:integer only]]])." },
+		{ "Text": "[[[strong:• ratings]]] - Personal user or community rating ([[[warning:integer only]]])." },
 		{ "Text": "[[[strong:• metadata_comments]]] - Comments included in the file's metadata." },
 		{ "Text": "[[[strong:• user_notes]]] - Personal notes added by the user." },
 		{
@@ -77,6 +84,7 @@
 
 		{ "Header2": "Confirm/View changes" },
 		{ "Text": "This section is a little more complex see [[[button:Confirm/View changes][View Changes]]] for more information." },
+		{ "Text": "[[[warning:NOTE]]]: This will also apon completion of processing it will potentially display a list of any songs that failed to be processed." },
 		{
 			"Image": "Confirm View changes.png"
 		},
@@ -112,6 +120,10 @@
 				"max_width": 50.0,
 				"max_height": 50.0
 			}
-		}
+		},
+
+		{ "Header2": "Columns Toggles" },
+		{ "Text": "Click to show what columns are shown or hidden" },
+		{ "Text": "Click on any column to toggle it on or off" }
 	]
 }

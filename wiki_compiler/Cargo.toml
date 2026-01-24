@@ -5,14 +5,14 @@ edition = "2024"
 
 [dependencies]
 walkdir = "2.5.0"
-usvg = { version = "0.45.1", features = [], default-features = false }
-resvg = { version = "0.45.1", features = ["raster-images"], default-features = false }
+usvg = { version = "0.46.0", features = [], default-features = false }
+resvg = { version = "0.46.0", features = ["raster-images"], default-features = false }
 tiny-skia = "0.11.4"
-oxipng = { version = "9.1.5", features = ["parallel", "filetime"], default-features = false }
+oxipng = { version = "10.0.0", features = ["parallel", "filetime"], default-features = false }
 rayon = "1.11.0"
 num_cpus = "1.17.0"
 serde = { version = "1.0.228", features = ["derive"] }
-serde_json = "1.0.145"
+serde_json = "1.0.149"
 
 [profile.release]
 opt-level = 3     #'z'   # Optimize for size

@@ -94,6 +94,21 @@
 		{ "Text": "Crimson Red: #770000" },
 		{ "Text": "Deep Purple: #6934A4" },
 
+		{ "_Comment": "GenList Defaults" },
+		{
+			"#D1C4E9": "soft_purple",
+			"#F9EBAE": "soft_yellow",
+			"#3465a4": "dark_blue",
+			"#B7E4C7": "light_green",
+			"#f2c94c": "pale_orange",
+			"#F8BBD0": "soft_peach",
+			"#008040": "deep_green",
+			"#55AFEC": "cyan_blue",
+			"#770000": "crimson_red",
+			"#6934A4": "deep_purple"
+		}
+
+
 		{ "_Comment": "Text styling choices" },
 		{ "Text": "[[[underline:Text here]]]" },
 		{ "Text": "[[[strikethrough:Text here]]]" },

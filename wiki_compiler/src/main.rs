@@ -12,6 +12,8 @@ mod render;
 use crate::render::*;
 mod registry;
 use crate::registry::*;
+mod crop_generation;
+use crate::crop_generation::*;
 
 const VERSION: &str = env!("CARGO_PKG_VERSION");
 
@@ -33,21 +35,21 @@ fn recreate_directory_structure(
             let path = entry.path();
 
             // Skip the `.git` directory
-            if path.file_name().map_or(false, |name| name == ".git") {
+            if path.file_name().is_some_and(|name| name == ".git") {
                 return None;
             }
 
             // Check if the file is relevant
-            if path.is_file() {
-                if let Some(file_name) = path.file_name().and_then(|f| f.to_str()) {
-                    if file_name == "data.json"
-                        || file_name.ends_with(".png")
-                        || file_name.ends_with(".svg")
-                    {
-                        return Some(path.to_path_buf());
-                    }
-                }
+            if path.is_file()
+                && let Some(file_name) = path.file_name().and_then(|f| f.to_str())
+                && (file_name == "data.json"
+                    || file_name == "GenList.json"
+                    || file_name.ends_with(".png")
+                    || file_name.ends_with(".svg"))
+            {
+                return Some(path.to_path_buf());
             }
+
             None
         })
         .collect();
@@ -72,12 +74,13 @@ fn recreate_directory_structure(
                     }
                 };
                 let target_path = target_dir.join(relative_path);
+                let target_parent = target_path.parent().unwrap();
 
                 // Create the parent directory if it doesn't exist
-                if let Some(parent) = target_path.parent() {
-                    if let Err(e) = fs::create_dir_all(parent) {
-                        eprintln!("Error creating directory: {}", e);
-                    }
+                if let Some(parent) = target_path.parent()
+                    && let Err(e) = fs::create_dir_all(parent)
+                {
+                    eprintln!("Error creating directory: {}", e);
                 }
 
                 // Copy or convert the file
@@ -110,6 +113,20 @@ fn recreate_directory_structure(
                                 file_path.file_name().unwrap().to_str().unwrap()
                             );
                         }
+                        "GenList.json" => {
+                            // Render and optimise svg files
+                            let start = Instant::now();
+
+                            if let Err(e) = process_svg_with_genlist(
+                                &file_path.with_file_name("Main.svg"),
+                                &file_path,
+                                target_parent,
+                            ) {
+                                eprintln!("Error processing SVG with genlist: {}", e);
+                            }
+
+                            println!("Time taken: {:?} for file: GenList.json", start.elapsed());
+                        }
                         file if file.ends_with(".png") => {
                             // Copy PNG files
                             let start = Instant::now();
@@ -134,18 +151,23 @@ fn recreate_directory_structure(
                             // Render and optimise svg files
                             let start = Instant::now();
 
-                            if let Err(e) =
-                                render_svg_to_png(&file_path, &target_path.with_extension("png"))
-                            {
-                                eprintln!("Error rendering SVG to PNG: {}", e);
-                            }
+                            if file_name == "MainGen.svg" {
+                            } else {
+                                if let Err(e) = render_svg_to_png(
+                                    &file_path,
+                                    &target_path.with_extension("png"),
+                                    None,
+                                ) {
+                                    eprintln!("Error rendering SVG to PNG: {}", e);
+                                }
 
-                            // Get the end time
-                            println!(
-                                "Time taken: {:?} for file: {}",
-                                start.elapsed(),
-                                file_path.file_name().unwrap().to_str().unwrap()
-                            );
+                                // Get the end time
+                                println!(
+                                    "Time taken: {:?} for file: {}",
+                                    start.elapsed(),
+                                    file_path.file_name().unwrap().to_str().unwrap()
+                                );
+                            }
                         }
                         _ => {}
                     }

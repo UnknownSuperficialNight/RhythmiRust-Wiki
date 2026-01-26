@@ -7,9 +7,10 @@
 		{
 			"Image": "Main.png"
 		},
-		{ "Text": "[[[underline:Soft Purple]]]≈ Category" },
-		{ "Text": "[[[underline:Soft Yellow]]]≈ Dropdown" },
-		{ "Text": "[[[underline:Dark Blue]]]≈ Current Category Page" },
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Category" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Dropdown" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Dropdown Body" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Inline Editing" },
 		{ "Separator": null },
 
 		{ "Header": "Overview of Each UI Element" },
@@ -18,6 +19,7 @@
 		{ "Text": "Where categories are shown/selected" },
 		{ "Text": "Insider Tip: You can queue/shuffle a entire category but pressing \"Alt+X\" to enable [[[button:Multi Shuffle Mode][../Search/Multi Shuffle Mode]]]then left clicking on a category or multiple" },
 		{ "Text": "To make a new category go see [[[button:Dropdown][Dropdown]]]" },
+		{ "Text": "[[[warning:NOTE]]] You can use [[[strong:Inline Editing]]] via [[[strong:middle clicking]]] on a category to rename it" },
 		{
 			"Image": "Category.png"
 		},
@@ -35,8 +37,17 @@
 		{ "Text": "Displays the searches saved in the selected category" },
 		{ "Text": "Clicking on an item searches it again" },
 		{ "Text": "Right clicking deletes it the same way it does in [[[button:History][../History]]]" },
+		
 		{
-			"Image": "Current Category Page.png"
+			"Image": "Dropdown Body.png"
+		},
+
+		{ "Header2": "Inline Editing" },
+		{ "Text": "Middle clicking on a value in the [[[strong:Dropdown Body]]] will open it in inline editing mode" },
+		{ "Text": "Press enter to save the changes" },
+		{ "Text": "Middle clicking again will discard the changes" },
+		{
+			"Image": "Inline Editing.png"
 		}
 	]
 }

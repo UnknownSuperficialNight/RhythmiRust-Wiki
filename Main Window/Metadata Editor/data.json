@@ -124,6 +124,9 @@
 
 		{ "Header2": "Columns Toggles" },
 		{ "Text": "Click to show what columns are shown or hidden" },
-		{ "Text": "Click on any column to toggle it on or off" }
+		{ "Text": "Click on any column to toggle it on or off" },
+		{
+			"Image": "Columns Toggles.png"
+		}
 	]
 }

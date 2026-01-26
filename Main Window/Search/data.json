@@ -78,6 +78,7 @@
 
 		{ "Header2": "Shuffle:" },
 		{ "Text": "Shuffles the entire (Search Result) then adds it to [[[button:Queue of songs][../Music Player]]]." },
+		{ "Text": "[[[warning:NOTE]]] You can hold [[[strong:Shift]]] to change it from [[[strong:Shuffle and add all]]] to [[[strong:Add all songs]]] this will disable the shuffling of the songs all will be added sequentially." },
 		{
 			"Image": "_search_assets/Shuffle.png"
 		}

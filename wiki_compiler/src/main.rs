@@ -1,10 +1,13 @@
+use owo_colors::OwoColorize;
 use rayon::ThreadPoolBuilder;
 use serde_json::Value;
 use serde_json::to_string;
 use std::env;
 use std::fs;
+use std::path::Path;
 use std::path::PathBuf;
 use std::sync::Arc;
+use std::sync::Mutex;
 use std::time::Instant;
 use walkdir::WalkDir;
 
@@ -16,6 +19,31 @@ mod crop_generation;
 use crate::crop_generation::*;
 
 const VERSION: &str = env!("CARGO_PKG_VERSION");
+
+pub fn check_and_warn_if_unreferenced(
+    file_path: &Path,
+    warnings: &Arc<Mutex<Vec<PathBuf>>>,
+) -> Result<(), std::io::Error> {
+    if let Some(dir) = file_path.parent() {
+        let data_json_path = dir.join("data.json");
+
+        if data_json_path.exists() {
+            let data = fs::read_to_string(&data_json_path)?;
+            if let Ok(json) = serde_json::from_str::<Value>(&data) {
+                let file_stem = file_path
+                    .file_stem()
+                    .and_then(|s| s.to_str())
+                    .expect("Failed to get valid UTF-8 file stem from file_path");
+                let json_str = json.to_string();
+                if !json_str.contains(file_stem) {
+                    let mut w = warnings.lock().unwrap();
+                    w.push(file_path.to_path_buf());
+                }
+            }
+        }
+    }
+    Ok(())
+}
 
 /// Recreate the directory structure based on relevant files
 fn recreate_directory_structure(
@@ -59,11 +87,16 @@ fn recreate_directory_structure(
         .build()
         .unwrap();
 
+    // Shared warnings vector
+    let warnings = Arc::new(Mutex::new(Vec::new()));
+
     let start = Instant::now();
     pool.scope(|scope| {
-        for file_path in relevant_files {
+        for file_path in &relevant_files {
             let source_dir = source_dir.clone();
             let target_dir = target_dir.clone();
+            let warnings = Arc::clone(&warnings);
+
             scope.spawn(move |_| {
                 // Compute the relative path
                 let relative_path = match file_path.strip_prefix(source_dir.as_path()) {
@@ -91,7 +124,7 @@ fn recreate_directory_structure(
 
                             // Read the json source content
                             let json_content =
-                                fs::read_to_string(&file_path).expect("Failed to read JSON");
+                                fs::read_to_string(file_path).expect("Failed to read JSON");
 
                             // Parse the JSON content into a serde_json::Value
                             let json_value: Value =
@@ -119,7 +152,7 @@ fn recreate_directory_structure(
 
                             if let Err(e) = process_svg_with_genlist(
                                 &file_path.with_file_name("Main.svg"),
-                                &file_path,
+                                file_path,
                                 target_parent,
                             ) {
                                 eprintln!("Error processing SVG with genlist: {}", e);
@@ -128,10 +161,14 @@ fn recreate_directory_structure(
                             println!("Time taken: {:?} for file: GenList.json", start.elapsed());
                         }
                         file if file.ends_with(".png") => {
+                            if let Err(e) = check_and_warn_if_unreferenced(file_path, &warnings) {
+                                eprintln!("Error checking file {}: {}", file_path.display(), e);
+                            }
+
                             // Copy PNG files
                             let start = Instant::now();
 
-                            match fs::copy(&file_path, &target_path) {
+                            match fs::copy(file_path, &target_path) {
                                 Ok(_) => {
                                     if let Err(e) = optimise_png(&target_path) {
                                         eprintln!("Error optimising PNG file: {}", e);
@@ -148,16 +185,27 @@ fn recreate_directory_structure(
                             );
                         }
                         file if file.ends_with(".svg") => {
+                            if let Err(e) = check_and_warn_if_unreferenced(file_path, &warnings) {
+                                eprintln!("Error checking file {}: {}", file_path.display(), e);
+                            }
+
                             // Render and optimise svg files
                             let start = Instant::now();
 
                             if let Err(e) = render_svg_to_png(
-                                &file_path,
+                                file_path,
                                 &target_path.with_extension("png"),
                                 None,
                             ) {
                                 eprintln!("Error rendering SVG to PNG: {}", e);
                             }
+
+                            // Get the end time
+                            println!(
+                                "Time taken: {:?} for file: {}",
+                                start.elapsed(),
+                                file_path.file_name().unwrap().to_str().unwrap()
+                            );
                         }
                         _ => {}
                     }
@@ -166,8 +214,32 @@ fn recreate_directory_structure(
         }
     });
 
+    // Display warnings
+    let warnings = warnings.lock().unwrap();
+    if !warnings.is_empty() {
+        println!(
+            "{}",
+            "The following image files are not referenced in their sibling data.json:".red()
+        );
+        for path in warnings.iter() {
+            // Compute the relative path
+            let relative_path = match path.strip_prefix(source_dir.as_path()) {
+                Ok(path) => path,
+                Err(e) => {
+                    eprintln!("Error computing relative path: {}", e);
+                    panic!()
+                }
+            };
+
+            println!("{}", relative_path.display().yellow());
+        }
+    }
+
     // Get the end time
-    println!("Time taken total: {:?}", start.elapsed());
+    println!(
+        "Time taken total: {}",
+        format!("{:?}", start.elapsed()).cyan()
+    );
 
     // This saves a JSON file with the current installed Wiki version in it.
     //

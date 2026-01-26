@@ -1,3 +1,4 @@
+use owo_colors::OwoColorize;
 use std::collections::HashMap;
 use std::fs;
 use std::path::Path;
@@ -92,7 +93,11 @@ pub fn process_svg_with_genlist(
 
                 let output_path = target_dir.join(filename).with_extension("png");
                 render_svg_to_png(svg_path, &output_path, Some(path.abs_bounding_box()))?;
-                println!("Exported {} as {}", hex, filename);
+                println!(
+                    "Exported {} as {}",
+                    hex.truecolor(color.red, color.green, color.blue),
+                    filename
+                );
             }
         }
     }

@@ -47,7 +47,7 @@
 		{ "Text": "[[[strong:• channel_count]]] - Channel count of the audio file ([[[warning:read-only]]])." },
 		{ "Text": "[[[strong:• bitrate]]] - Bitrate of the audio file ([[[warning:read-only]]])." },
 		{ "Text": "[[[strong:• modification_date]]] - Date the file was last modified (Used for automatically detecting files that have updated using a external program) ([[[warning:read-only]]])." },
-		{ "Text": "[[[strong:• cached_fingerprint]]] - This is a cache fingerprint to help speed up deduplicate detection (This is cache-on-demand so it is only calculated when needed) ([[[warning:read-only]]])." },
+		{ "Text": "[[[strong:• cached_fingerprint]]] - This is a cache fingerprint used by the [[[button:Duplicate Detector][../Downloader/Duplicate Detector]]] to speed up deduplicate detection (This is cache-on-demand so it is only calculated when needed) ([[[warning:read-only]]])." },
 		{ "Text": "[[[strong:• artist]]] - The performing artist or creator." },
 		{ "Text": "[[[strong:• album]]] - This field is used to store the title of the album that the track belongs to." },
 		{ "Text": "[[[strong:• album_artist]]] - This tag indicates the primary artist or group responsible for the album. In cases where an album features multiple artists, the album artist may differ from the individual track artists." },

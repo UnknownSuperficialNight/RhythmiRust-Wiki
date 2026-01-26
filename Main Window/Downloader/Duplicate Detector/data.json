@@ -36,6 +36,10 @@
 		{ "Text": "[[[strong:• Fingerprint Only]]] This is the most accurate but takes a very long time to compute and results in [[[strong:9 million]]] comparisons with [[[strong:21000]]] songs." },
 		{
 			"Image": "Select Similarity Mode.png"
-		}
+		},
+
+		{ "Header": "Extra Information" },
+		{ "Text": "The [[[strong:Duplicate Detector]]] uses the [[[strong:cached_fingerprint]]] field from [[[button:Metadata Editor][../../Metadata Editor]]] cache generated fingerprints from the audio files." },
+		{ "Text": "This is used to speed up the detection process in future runs and is [[[strong:cached on-demand]]] so it is only calculated when needed." }
 	]
 }

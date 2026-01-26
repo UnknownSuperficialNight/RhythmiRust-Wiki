@@ -4,11 +4,10 @@
 		{
 			"Image": "Main.png"
 		},
-		{ "Text": "[[[underline:Soft Purple]]] ≈ Yt-dlp args" },
-		{ "Text": "[[[underline:Soft Yellow]]] ≈ Cache" },
-		{ "Text": "[[[underline:Dark Blue]]] ≈ Dependencies" },
-		{ "Text": "[[[underline:Light Green]]] ≈ Config location" },
-		{ "Text": "[[[underline:Pale Orange]]] ≈ Irreversible actions" },
+		{ "Text": "Yt-dlp args" },
+		{ "Text": "Cache" },
+		{ "Text": "Dependencies" },
+		{ "Text": "Irreversible actions" },
 		{ "Separator": null },
 
 		{ "Header": "Overview of Each UI Element" },
@@ -16,11 +15,18 @@
 		{ "Header2": "Yt-dlp args" },
 		{ "Text": "This is where the download arguments are stored refer to the [[[button:Yt-dlp page][../../../Downloader/Playlist Editor/YT_dlp_args]]] for more info on args" },
 		{
-			"Image": "Yt-dlp args.png"
+			"ImageGroup": [
+				{
+					"path": "Yt-dlp args.png"
+				},
+				{
+					"path": "Add new argument.png"
+				}
+			]
 		},
 		{ "Text": "In the above image" },
 		{ "Text": "[[[strong:•Soft Purple:]]] Button/Heading to select what arguments you want to edit (left click to edit | right click to deselect)" },
-		{ "Text": "[[[strong:•Soft Yellow:]]] Edit the arguments of the selected (save to finalize; close to cancel; Remove to remove the entire argument entry)" },
+		{ "Text": "[[[strong:•Soft Yellow:]]] Edit the arguments of the selected each line is a new argument sequentially (save to finalize; close to cancel; Remove to remove the entire argument entry)" },
 		{ "Text": "[[[strong:•Dark Blue:]]] Other Buttons/Headings to select what you want to edit like soft purple" },
 		{ "Text": "[[[strong:•Add new argument:]]] This shares the same memory as the edit arguments do this enables quick duplication of previous arguments just click on a argument you want to duplicate" },
 		{ "Text": "then click the add button this will open the ui you see in the image then edit the comment and args then click save to finalize" },
@@ -29,7 +35,7 @@
 
 		{ "Header2": "Cache" },
 		{ "Text": "This involves actions to the downloader cache" },
-		{ "Text": "[[[strong:•Manually Regenerate Search Cache:]]] This triggers a regneration of the search cache but does not clear it" },
+		{ "Text": "[[[strong:•Manually Regenerate Search Cache:]]] This triggers a regeneration of the search cache but does not clear it" },
 		{ "Text": "This is useful if you added new files and want to add them to the search cache" },
 		{ "Text": "[[[strong:•Graveyard Cache:]]] This is where dead/broken links are stored to never be used again" },
 		{ "Text": "[[[strong:•Graveyard Temp:]]] This holds links that have failed but not failed enough to qualify to be merged into \"Graveyard Cache\"" },
@@ -54,15 +60,6 @@
 		{ "Text": "[[[strong:•Delete Wiki:]]] This Deletes the wiki folder and all its contents (Useful if you dont want the wiki installed anymore)" },
 		{
 			"Image": "Dependencies.png"
-		},
-		{ "Separator": null },
-
-		{ "Header2": "Config location" },
-		{ "Text": "This moves the config from being portable to global stored locations are:" },
-		{ "Text": "Windows: localappdata\\RhythmiRust" },
-		{ "Text": "Linux: ~/.config/RhythmiRust" },
-		{
-			"Image": "Config location.png"
 		},
 		{ "Separator": null },
 

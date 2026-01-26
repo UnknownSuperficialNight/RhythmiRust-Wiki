@@ -29,11 +29,11 @@
 
 		{ "Header2": "Select Similarity Mode" },
 		{ "Text": "This selects what mode you want to use for the [[[strong:Duplicate Detector]]]." },
-		{ "Text": "[[[strong:Very Fast]]] This is the fastest but results in only the most obvious duplicates." },
-		{ "Text": "[[[strong:Fast]]] This is the 2nd fastest but its a little more accurate." },
-		{ "Text": "[[[strong:Balanced]]] This is the middle of the two and is a good balance between speed and accuracy to compute time." },
-		{ "Text": "[[[strong:Thorough]]] This is very accurate but results in 500K comparisons in my case with [[[strong:21000]]] songs" },
-		{ "Text": "[[[strong:Fingerprint Only]]] This is the most accurate but takes a very long time to compute and results in [[[strong:9 million]]] comparisons with [[[strong:21000]]] songs." },
+		{ "Text": "[[[strong:• Very Fast]]] This is the fastest but results in only the most obvious duplicates." },
+		{ "Text": "[[[strong:• Fast]]] This is the 2nd fastest but its a little more accurate." },
+		{ "Text": "[[[strong:• Balanced]]] This is the middle of the two and is a good balance between speed and accuracy to compute time." },
+		{ "Text": "[[[strong:• Thorough]]] This is very accurate but results in 500K comparisons in my case with [[[strong:21000]]] songs" },
+		{ "Text": "[[[strong:• Fingerprint Only]]] This is the most accurate but takes a very long time to compute and results in [[[strong:9 million]]] comparisons with [[[strong:21000]]] songs." },
 		{
 			"Image": "Select Similarity Mode.png"
 		}

@@ -4,28 +4,39 @@
 		{
 			"Image": "Main.png"
 		},
-		{ "Text": "[[[underline:Soft Purple]]] ≈ Save Button" },
-		{ "Text": "[[[underline:Soft Yellow]]] ≈ Colour fields" },
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Save Theme" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Theme Mode" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Theme Settings" },
 		{ "Separator": null },
 
 		{ "Header": "Overview of Each UI Element" },
 
-		{ "Header2": "Save Button" },
-		{ "Text": "Left click this button saves the current state of Colour fields to disk" },
-		{ "Text": "Right click to reset to default colours" },
+		{ "Header2": "Save Theme" },
+		{ "Text": "[[[strong:Left click]]] this button saves the current state of Colour fields to disk" },
+		{ "Text": "[[[strong:Right click]]] to reset the previous saved state (This can be used for experimentation example try change a colour and then revert back to the previous state)" },
 		{
-			"Image": "Save Button.png"
+			"Image": "Save Theme.png"
 		},
-		{ "Text": "In the above image" },
-		{ "Text": "•Soft Purple: Dropdown to show the args without editing them" },
-		{ "Text": "•Soft Yellow: used to edit the args" },
-		{ "Text": "•Dark Blue: This is the add menu to add new args" },
 		{ "Separator": null },
 
-		{ "Header2": "Colour fields" },
-		{ "Text": "Click on the colour for the associated field you want to edit then use the colour picker until satisfied" },
+		{ "Header2": "Theme Mode" },
+		{ "Text": "[[[strong:Left click]]] this button to switch between the 3 presets [[[strong:Super Dark]], [[[strong:Dark]], [[[strong:Light]]]]" },
 		{
-			"Image": "Colour fields.png"
+			"Image": "Theme Mode.png"
+		},
+		{ "Separator": null },
+
+		{ "Header2": "Theme Settings" },
+		{ "Text": "These are the individual colour tweaks for the [[[strong:Theme Mode]]] you are currently using" },
+		{ "Text": "[[[strong:• Widget Colours]]] This is all the individual colours for the widgets in the program" },
+		{ "Text": "[[[strong:• Background Colours]]] This is the background colours for the widgets in the program" },
+		{ "Text": "[[[strong:• Text Colours]]] This is the text colours for the widgets in the program" },
+		{ "Text": "[[[strong:• Window & Borders]]] This is the window and border colours for the widgets in the program" },
+		{ "Text": "[[[strong:• Specials]]] This is for toggles that do not fit into the other categories" },
+		{ "Text": "[[[strong:• Advanced Settings]]] This are for theme settings that affect shapes of the widgets in the program e.g. [[[strong:Handle Shape]]] for sliders" },
+		{ "Text": "[[[warning:NOTE]]] You can always change something then revert it back to the previous state by right clicking the [[[strong:Save Theme]]] button." },
+		{
+			"Image": "Theme Settings.png"
 		}
 	]
 }

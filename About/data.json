@@ -15,21 +15,21 @@
 		{ "Text": "Thus RhythmiRust was born." },
 
 		{ "Header2": "Why make RhythmiRust" },
-		{ "Text": "I wanted to make a \"music player\" due to the lack of one that offered a search feature, let alone a downloader." },
+		{ "Text": "I wanted to make a [[[strong:music player]]] due to the lack of one that offered a search feature, let alone a downloader." },
 		{ "Text": "My primary aim was to make an effortless method for downloading/syncing videos from platforms like YouTube, Spotify, and SoundCloud;" },
 		{ "Text": "these downloaded files would then be stored locally for preservation and playback." },
 		{ "Text": "RhythmiRust was intended to be an efficient, portable, feature-rich and lightweight application." },
 		{ "Text": "This means minimal CPU and RAM usage, and a fully portable cross-platform configuration" },
-		{ "Text": "with album art support." },
+		{ "Text": "with album art support and metadata editing." },
 
 		{ "Header2": "The Influence of Music on RhythmiRust's Development" },
-		{ "Text": "As a music enthusiast with a vast collection of 16,561 songs," },
+		{ "Text": "As a music enthusiast with a vast collection of 19,709 songs," },
 		{ "Text": "I desired an easy method to search through and play them, and download/sync new additions." },
 
 		{ "Header2": "The Core Values Guiding the Development of RhythmiRust" },
 		{ "Text": "RhythmiRust should maintain a consistent GUI appearance." },
 		{ "Text": "No elements should appear outside of the GUI (such as opening system file dialogue)." },
 		{ "Text": "The application should be self-contained, requiring minimal external dependencies." },
-		{ "Text": "RhythmiRust has only two external dependencies: one for network/download functionality and another for converting formats." }
+		{ "Text": "RhythmiRust has only three external dependencies: two for network/download functionality and another for converting formats and image processing." }
 	]
 }

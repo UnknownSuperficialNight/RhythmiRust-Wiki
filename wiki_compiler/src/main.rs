@@ -151,22 +151,12 @@ fn recreate_directory_structure(
                             // Render and optimise svg files
                             let start = Instant::now();
 
-                            if file_name == "MainGen.svg" {
-                            } else {
-                                if let Err(e) = render_svg_to_png(
-                                    &file_path,
-                                    &target_path.with_extension("png"),
-                                    None,
-                                ) {
-                                    eprintln!("Error rendering SVG to PNG: {}", e);
-                                }
-
-                                // Get the end time
-                                println!(
-                                    "Time taken: {:?} for file: {}",
-                                    start.elapsed(),
-                                    file_path.file_name().unwrap().to_str().unwrap()
-                                );
+                            if let Err(e) = render_svg_to_png(
+                                &file_path,
+                                &target_path.with_extension("png"),
+                                None,
+                            ) {
+                                eprintln!("Error rendering SVG to PNG: {}", e);
                             }
                         }
                         _ => {}

@@ -23,6 +23,11 @@
 		{ "Text": "[[[button:Learn more about \"Web Codec Checker\"][Web Codec Checker]]]" },
 		{ "Separator": null },
 
+		{ "Header2": "Duplicate Detector" },
+		{ "Text": "Detect and remove duplicate songs." },
+		{ "Text": "[[[button:Learn more about \"Duplicate Detector\"][Duplicate Detector]]]" },
+		{ "Separator": null },
+
 		{ "Header2": "Settings" },
 		{ "Text": "Controls spotify downloader and duplicate detector + more." },
 		{ "Text": "[[[button:Learn more about \"Settings\"][Settings]]]" }

@@ -35,6 +35,7 @@
 		{ "Text": "• [[[button:Optimise Performance][_Guides/Optimise Performance]]] - Optimise for low-end hardware." },
 		{ "Text": "• [[[button:Search While Indexing][_Guides/Search While Indexing]]] - Search all files while the indexer is running." },
 		{ "Text": "• [[[button:Newb Download Guide][_Guides/Newb Download Guide]]] - Beginner-friendly download guide." },
+		{ "Text": "• [[[button:Global Config Guide][_Guides/Global Config]]] - Guide to using the global config instead of the portable config." },
 		{ "Separator": null },
 
 		{ "Header2": "Help/Support/FAQ" },

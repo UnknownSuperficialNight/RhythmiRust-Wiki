@@ -1,0 +1,15 @@
+{
+  "title": "Global Config Guide",
+  "subheading": "Step-by-step guide to using the global config instead of the portable config.",
+  "contents": [
+    { "Header2": "Getting Started" },
+    { "Text": "Due to windows file system restrictions and complexity I've removed the `use global config` button." },
+    { "Text": "Instead, simply relocate the RhythmiRust_config file to one of the following locations:" },
+
+    { "Text": "[[[strong:/home/username/.config/RhythmiRust_config]]] or [[[strong:~/.config/RhythmiRust_config]]]" },
+    { "Text": "[[[strong:C:\\Users\\username\\AppData\\Local\\RhythmiRust_config]]] or [[[strong:%LOCALAPPDATA%\\RhythmiRust_config]]]" },
+
+    { "Text": "By doing so, you'll be using the global config instead of the portable config. This will mean that you can use the same config for all of your RhythmiRust installations." },
+    { "Text": "Thus when updating RhythmiRust you don't have to worry where to put the binary/executable." }
+  ]
+}

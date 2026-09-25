@@ -1,4 +1,5 @@
 use serde::Serialize;
+use std::error::Error;
 use std::fs;
 use std::path::PathBuf;
 use std::sync::Arc;
@@ -17,7 +18,7 @@ impl Registry {
 }
 
 /// Writes the registry data to a JSON file in the specified directory.
-pub fn write_registry_to_json(target_dir: &Arc<PathBuf>) -> Result<(), Box<dyn std::error::Error>> {
+pub fn write_registry_to_json(target_dir: &Arc<PathBuf>) -> Result<(), Box<dyn Error>> {
     // Create a new instance of the registry
     let registry = Registry::default();
 

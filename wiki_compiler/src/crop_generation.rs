@@ -1,10 +1,10 @@
 use owo_colors::OwoColorize;
-use std::collections::HashMap;
 use std::fs;
 use std::path::Path;
+use std::{collections::HashMap, error::Error};
 use usvg::{Color, Options, Paint, Tree};
 
-use crate::render::render_svg_to_png;
+use crate::render::{load_svg_data, render_svg_to_png};
 
 /// Converts a SVG Color struct to a hexadecimal string representation
 /// Format: #RRGGBB (uppercase for consistent filename matching)
@@ -18,9 +18,7 @@ fn hex_color(color: &Color) -> String {
 ///
 /// Converts all keys to uppercase for consistent lookup across different
 /// case variations in filenames. Handles error propagation for file I/O.
-fn load_genlist<P: AsRef<Path>>(
-    path: P,
-) -> Result<HashMap<String, String>, Box<dyn std::error::Error>> {
+fn load_genlist<P: AsRef<Path>>(path: P) -> Result<HashMap<String, String>, Box<dyn Error>> {
     let data = fs::read_to_string(path)?;
     let raw_map: HashMap<String, String> = serde_json::from_str(&data)?;
     // Convert all keys to uppercase for consistent lookup
@@ -63,12 +61,12 @@ pub fn process_svg_with_genlist(
     svg_path: &Path,
     genlist_path: &Path,
     target_dir: &Path,
-) -> Result<(), Box<dyn std::error::Error>> {
+) -> Result<(), Box<dyn Error>> {
     // Load color-to-filename mapping
     let color_map = load_genlist(genlist_path)?;
 
     // Read and parse SVG
-    let svg_data = fs::read(svg_path)?;
+    let svg_data = load_svg_data(svg_path)?;
     let options = Options::default();
     let tree = Tree::from_data(&svg_data, &options)?;
 

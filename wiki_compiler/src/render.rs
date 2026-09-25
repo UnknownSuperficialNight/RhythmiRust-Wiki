@@ -1,8 +1,20 @@
 use oxipng::StripChunks;
 use oxipng::{InFile, Options as OxipngOptions, OutFile, optimize};
 use resvg::{render, tiny_skia::Pixmap, usvg};
+use std::error::Error;
 use std::path::Path;
-use usvg::{Options, Rect, Transform, Tree};
+use usvg::{Options, Rect, Transform, Tree, decompress_svgz};
+
+pub fn load_svg_data(path: &Path) -> Result<Vec<u8>, Box<dyn Error>> {
+    let data = std::fs::read(path)?;
+
+    // Gzip magic bytes. SVGZ is gzip-compressed SVG.
+    if data.starts_with(&[0x1f, 0x8b]) {
+        Ok(decompress_svgz(&data)?)
+    } else {
+        Ok(data)
+    }
+}
 
 /// Render an SVG file to PNG with optional cropping
 ///
@@ -14,9 +26,9 @@ pub fn render_svg_to_png(
     svg_file_path: &Path,
     png_file_path: &Path,
     crop_rect: Option<Rect>,
-) -> Result<(), Box<dyn std::error::Error>> {
+) -> Result<(), Box<dyn Error>> {
     // Read the SVG file
-    let svg_data = std::fs::read(svg_file_path)?;
+    let svg_data = load_svg_data(svg_file_path)?;
 
     // Parse the SVG data
     let options = Options::default();
@@ -69,7 +81,7 @@ pub fn render_svg_to_png(
 /// Uses oxipng with preset 2 (balanced compression) and strips safe chunks
 ///
 /// Note: Wraps &Path in InFile and OutFile for compatibility with oxipng's API
-pub fn optimise_png(png_file_path: &Path) -> Result<(), Box<dyn std::error::Error>> {
+pub fn optimise_png(png_file_path: &Path) -> Result<(), Box<dyn Error>> {
     // Optimize the resulting PNG data
     let mut options = OxipngOptions::from_preset(2);
     options.strip = StripChunks::Safe;

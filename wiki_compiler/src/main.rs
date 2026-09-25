@@ -3,6 +3,7 @@ use rayon::ThreadPoolBuilder;
 use serde_json::Value;
 use serde_json::to_string;
 use std::env;
+use std::error::Error;
 use std::fs;
 use std::path::Path;
 use std::path::PathBuf;
@@ -20,6 +21,14 @@ use crate::crop_generation::*;
 
 const VERSION: &str = env!("CARGO_PKG_VERSION");
 
+/// Checks whether a PNG, SVG, or SVGZ file is referenced by the sibling
+/// `data.json` file.
+///
+/// SVG and SVGZ files are checked against the PNG filename they generate.
+/// For example, both `Main.svg` and `Main.svgz` are checked for a
+/// `Main.png` reference in `data.json`.
+///
+/// Unreferenced files are added to the shared warnings list.
 pub fn check_and_warn_if_unreferenced(
     file_path: &Path,
     warnings: &Arc<Mutex<Vec<PathBuf>>>,
@@ -29,27 +38,93 @@ pub fn check_and_warn_if_unreferenced(
 
         if data_json_path.exists() {
             let data = fs::read_to_string(&data_json_path)?;
+
             if let Ok(json) = serde_json::from_str::<Value>(&data) {
-                let file_stem = file_path
-                    .file_stem()
-                    .and_then(|s| s.to_str())
-                    .expect("Failed to get valid UTF-8 file stem from file_path");
+                let extension = file_path
+                    .extension()
+                    .and_then(|ext| ext.to_str())
+                    .unwrap_or("")
+                    .to_ascii_lowercase();
+
+                // data.json references the generated PNG filename.
+                let expected_name = match extension.as_str() {
+                    // PNG files already use their referenced filename.
+                    "png" => file_path
+                        .file_name()
+                        .and_then(|name| name.to_str())
+                        .ok_or_else(|| {
+                            std::io::Error::new(
+                                std::io::ErrorKind::InvalidInput,
+                                "Invalid UTF-8 filename",
+                            )
+                        })?
+                        .to_string(),
+
+                    // SVG and SVGZ files are rendered to a PNG with the same
+                    // filename stem.
+                    "svg" | "svgz" => {
+                        let file_stem = file_path
+                            .file_stem()
+                            .and_then(|stem| stem.to_str())
+                            .ok_or_else(|| {
+                                std::io::Error::new(
+                                    std::io::ErrorKind::InvalidInput,
+                                    "Invalid UTF-8 filename",
+                                )
+                            })?;
+
+                        format!("{file_stem}.png")
+                    }
+
+                    // Ignore unrelated file types.
+                    _ => return Ok(()),
+                };
+
                 let json_str = json.to_string();
-                if !json_str.contains(file_stem) {
+
+                // Warn if data.json does not reference the generated PNG.
+                if !json_str.contains(&expected_name) {
                     let mut w = warnings.lock().unwrap();
                     w.push(file_path.to_path_buf());
                 }
             }
         }
     }
+
     Ok(())
+}
+
+/// Find the main SVG/SVGZ file for a given GenList.json path
+fn find_main_svg(genlist_path: &Path) -> Result<PathBuf, Box<dyn Error>> {
+    let parent = genlist_path
+        .parent()
+        .ok_or("GenList.json has no parent directory")?;
+
+    let svg_path = parent.join("Main.svg");
+
+    if svg_path.is_file() {
+        return Ok(svg_path);
+    }
+
+    let svgz_path = parent.join("Main.svgz");
+
+    if svgz_path.is_file() {
+        return Ok(svgz_path);
+    }
+
+    Err(format!(
+        "Could not find {} or {}",
+        svg_path.display(),
+        svgz_path.display()
+    )
+    .into())
 }
 
 /// Recreate the directory structure based on relevant files
 fn recreate_directory_structure(
     source_dir: &Arc<PathBuf>,
     target_dir: &Arc<PathBuf>,
-) -> Result<(), Box<dyn std::error::Error>> {
+) -> Result<(), Box<dyn Error>> {
     // Remove the target directory if it exists
     if target_dir.exists() {
         fs::remove_dir_all(target_dir.as_path())?;
@@ -73,7 +148,8 @@ fn recreate_directory_structure(
                 && (file_name == "data.json"
                     || file_name == "GenList.json"
                     || file_name.ends_with(".png")
-                    || file_name.ends_with(".svg"))
+                    || file_name.ends_with(".svg")
+                    || file_name.ends_with(".svgz"))
             {
                 return Some(path.to_path_buf());
             }
@@ -150,12 +226,19 @@ fn recreate_directory_structure(
                             // Render and optimise svg files
                             let start = Instant::now();
 
-                            if let Err(e) = process_svg_with_genlist(
-                                &file_path.with_file_name("Main.svg"),
-                                file_path,
-                                target_parent,
-                            ) {
-                                eprintln!("Error processing SVG with genlist: {}", e);
+                            match find_main_svg(file_path) {
+                                Ok(svg_path) => {
+                                    if let Err(e) = process_svg_with_genlist(
+                                        &svg_path,
+                                        file_path,
+                                        target_parent,
+                                    ) {
+                                        eprintln!("Error processing SVG/SVGZ with genlist: {}", e);
+                                    }
+                                }
+                                Err(e) => {
+                                    eprintln!("Error finding Main.svg or Main.svgz: {}", e);
+                                }
                             }
 
                             println!("Time taken: {:?} for file: GenList.json", start.elapsed());
@@ -184,7 +267,7 @@ fn recreate_directory_structure(
                                 file_path.file_name().unwrap().to_str().unwrap()
                             );
                         }
-                        file if file.ends_with(".svg") => {
+                        file if file.ends_with(".svg") || file.ends_with(".svgz") => {
                             if let Err(e) = check_and_warn_if_unreferenced(file_path, &warnings) {
                                 eprintln!("Error checking file {}: {}", file_path.display(), e);
                             }
@@ -197,7 +280,7 @@ fn recreate_directory_structure(
                                 &target_path.with_extension("png"),
                                 None,
                             ) {
-                                eprintln!("Error rendering SVG to PNG: {}", e);
+                                eprintln!("Error rendering SVG/SVGZ to PNG: {}", e);
                             }
 
                             // Get the end time
@@ -252,7 +335,7 @@ fn recreate_directory_structure(
     Ok(())
 }
 
-fn main() -> Result<(), Box<dyn std::error::Error>> {
+fn main() -> Result<(), Box<dyn Error>> {
     // Get the current directory where the binary is executed
     let current_dir = env::current_dir()?;
 

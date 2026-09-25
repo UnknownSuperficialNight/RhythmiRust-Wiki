@@ -34,9 +34,11 @@
 		{ "Separator": null },
 
 		{ "Header2": "Codecs found" },
-		{ "Text": "These are the reported codecs of the website input" },
-		{ "Text": "Read the Disclaimer for more info on what the Web Codec Checker solves" },
-		{ "Text": "For more info on codecs refer to this page [[[button:Codec description in \"Playlist Editor\"][../Playlist Editor]]]" },
+		{ "Text": "This section lists the audio and video formats detected at the entered URL." },
+		{ "Text": "Each result shows the file format first, followed by the codec used to encode it and its bitrate in kilobits per second (kbps)." },
+		{ "Text": "For example, m4a (mp4a.40.2, 129.5 kbps) is an M4A file using the mp4a.40.2 codec with a bitrate of 129.5 kbps." },
+		{ "Text": "If a codec is not detected, it is displayed as none. Multiple results are separated by a vertical bar (|)." },
+		{ "Text": "For more information about codecs, refer to the [[[button:Codec description in \"Playlist Editor\"][../Playlist Editor]]] page." },
 		{
 			"Image": "Codecs found.png"
 		}

@@ -34,7 +34,7 @@
 		{ "Text": "[[[strong:• Window & Borders]]] This is the window and border colours for the widgets in the program" },
 		{ "Text": "[[[strong:• Specials]]] This is for toggles that do not fit into the other categories" },
 		{ "Text": "[[[strong:• Advanced Settings]]] This are for theme settings that affect shapes of the widgets in the program e.g. [[[strong:Handle Shape]]] for sliders" },
-		{ "Text": "[[[warning:NOTE]]] You can always change something then revert it back to the previous state by right clicking the [[[strong:Save Theme]]] button." },
+		{ "Text": "[[[warning:Note:]]] You can always change something then revert it back to the previous state by right clicking the [[[strong:Save Theme]]] button." },
 		{
 			"Image": "Theme Settings.png"
 		}

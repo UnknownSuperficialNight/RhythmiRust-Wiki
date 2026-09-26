@@ -93,7 +93,7 @@
 		{ "Text": "[[[strong:• Opus]]] - Advanced codec for optimal quality-to-efficiency ratio with variable bitrates ([[[warning:Lossy]]],[[[strong:Recommended]]])." },
 		{ "Text": "[[[strong:• Vorbis (Ogg)]]] - Open-source lossy codec with good quality at low bitrates; the [[[strong:grandpa]]] of Opus ([[[warning:Lossy]]])." },
 		{ "Text": "[[[strong:• WAV]]] - Uncompressed format for highest audio quality, but large file sizes ([[[warning:Lossless]]])." },
-		{ "Text": "[[[warning:NOTE]]] Opus and M4A are not natively supported by \"RhythmiRust\"" },
+		{ "Text": "[[[warning:Note:]]] Opus and M4A are not natively supported by \"RhythmiRust\"" },
 		{ "Text": "since there is no native [[[strong:Opus, M4A]]] decoder published yet, so these two formats use a fallback decoder when playing them." },
 		{
 			"Image": "Codec Dropdown.png"

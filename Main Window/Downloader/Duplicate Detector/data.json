@@ -4,42 +4,124 @@
 		{
 			"Image": "Main.png"
 		},
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Interface Legend" },
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Start/Progress" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Automatic Duplicate Detector" },
-		{ "Text": "[[[underline:Dark Blue]]] ≈ Select Similarity Mode" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Deduplication Threads" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Data Migration" },
+		{ "Text": "[[[underline:Pale Orange]]] ≈ Select Similarity Mode" },
+		{ "Spacer": 10.0 },
 		{ "Separator": null },
 
 		{ "Header": "Overview of Each UI Element" },
+		{ "Spacer": 5.0 },
 
 		{ "Header2": "Start/Progress" },
-		{ "Text": "Start the [[[strong:Duplicate Detector]]] manually." },
-		{ "Text": "[[[warning:NOTE]]] This will display a progress bar and will not be able to be stopped once started." },
+		{ "Text": "Use this control to start the [[[strong:Duplicate Detector]]] manually." },
+		{ "Text": "[[[warning:Note:]]] A progress bar is displayed while the scan is running." },
+		{ "Text": "[[[warning:Note:]]] The only way to abort the duplicate detection process is to close the application." },
+		{ "Text": "[[[warning:Note:]]] There is no other way to stop the scan." },
+		{ "Spacer": 10.0 },
 		{
 			"Image": "Start Progress.png"
 		},
+		{ "Spacer": 10.0 },
 		{ "Separator": null },
 
 		{ "Header2": "Automatic Duplicate Detector" },
 		{ "Text": "After the [[[strong:Downloader]]] has finished, this will call the [[[strong:Duplicate Detector]]] automatically." },
-		{ "Text": "[[[warning:NOTE]]] This will use the [[[strong:Select Similarity Mode]]] as the similarity mode for the [[[strong:Duplicate Detector]]] automatically." },
+		{ "Text": "[[[warning:Note:]]] The automatic scan uses the currently selected [[[strong:Select Similarity Mode]]] setting." },
+
+		{ "Spacer": 10.0 },
 		{
 			"Image": "Automatic Duplicate Detector.png"
 		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Deduplication Threads" },
+		{ "Text": "Sets the number of CPU threads used by the [[[strong:Duplicate Detector]]] while scanning for duplicate files." },
+		{ "Text": "The slider allows you to select between [[[strong:1]]] thread and the maximum number of available CPU threads." },
+		{ "Text": "Using more threads will reduce scan times and increase CPU usage when additional CPU cores are available, but may affect the performance of other applications." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Deduplication Threads.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Data Migration" },
+		{ "Text": "Controls which metadata is preserved when the [[[strong:Duplicate Detector]]] replaces an old song with a new one." },
+
+		{ "Header3": "Reset All" },
+		{ "Text": "Resets all tickboxes to their default state. This does not remove or change metadata from any songs." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Metadata Columns" },
+		{ "Text": "Each tickbox represents a metadata field that can be copied from the old song to the new song." },
+		{ "Text": "When a tickbox is selected, the [[[strong:Duplicate Detector]]] checks whether the old song has a value for that field." },
+		{ "Text": "If it does, and the corresponding field on the new song is empty or [[[strong:null]]], the value is copied to the new song." },
+		{ "Text": "If the new song already has a value for that field, it is left unchanged." },
+		{ "Text": "This helps preserve metadata when duplicate songs are replaced." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Data Migration.png"
+		},
+		{ "Spacer": 10.0 },
 		{ "Separator": null },
 
 		{ "Header2": "Select Similarity Mode" },
-		{ "Text": "This selects what mode you want to use for the [[[strong:Duplicate Detector]]]." },
-		{ "Text": "[[[strong:• Very Fast]]] This is the fastest but results in only the most obvious duplicates." },
-		{ "Text": "[[[strong:• Fast]]] This is the 2nd fastest but its a little more accurate." },
-		{ "Text": "[[[strong:• Balanced]]] This is the middle of the two and is a good balance between speed and accuracy to compute time." },
-		{ "Text": "[[[strong:• Thorough]]] This is very accurate but results in 500K comparisons in my case with [[[strong:21000]]] songs" },
-		{ "Text": "[[[strong:• Fingerprint Only]]] This is the most accurate but takes a very long time to compute and results in [[[strong:9 million]]] comparisons with [[[strong:21000]]] songs." },
+		{ "Text": "Selects how the [[[strong:Duplicate Detector]]] compares files and determines whether they may be duplicates." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Available Modes" },
+		{ "Text": "[[[strong:• Lite]]] Matches only titles that are nearly identical." },
+		{ "Text": "[[[strong:• Standard]]] Handles minor differences such as capitalization and punctuation." },
+		{ "Text": "[[[strong:• Balanced]]] Handles common variations such as different word order and small typos." },
+		{ "Text": "[[[strong:• Deep Scan]]] Handles inconsistent formatting commonly introduced by different sources." },
+		{ "Text": "[[[strong:• Advanced]]] Handles significant differences in title structure." },
+		{ "Text": "[[[strong:• Aggressive]]] Prioritizes audio content when filenames or titles do not match reliably." },
+		{ "Text": "[[[strong:• Maximum Recall]]] Matches files without shared name information by comparing their audio content." },
+		{ "Text": "[[[strong:• Exhaustive]]] Forces every potential file pair to be compared. This provides the broadest comparison but may take substantially longer to complete." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Mode Overlap" },
+		{ "Text": "[[[warning:Note:]]] The similarity modes use overlapping comparison methods, so their results may overlap. However, no single mode is guaranteed to find every duplicate." },
+		{ "Text": "For the best chance of finding all possible duplicates, use [[[strong:Exhaustive]]] or run every mode from [[[strong:Maximum Recall]]] through [[[strong:Lite]]]." },
+
+		{ "Spacer": 15.0 },
 		{
 			"Image": "Select Similarity Mode.png"
 		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
 
 		{ "Header": "Extra Information" },
-		{ "Text": "The [[[strong:Duplicate Detector]]] uses the [[[strong:cached_fingerprint]]] field from [[[button:Metadata Editor][../../Metadata Editor]]] cache generated fingerprints from the audio files." },
-		{ "Text": "This is used to speed up the detection process in future runs and is [[[strong:cached on-demand]]] so it is only calculated when needed." }
+		{ "Spacer": 5.0 },
+
+		{ "Header3": "Audio Fingerprints" },
+		{ "Text": "The [[[strong:Duplicate Detector]]] uses the [[[strong:cached_fingerprint]]] field from the [[[button:Metadata Editor][../../Metadata Editor]]] cache." },
+		{ "Text": "This field stores generated [[[strong:audio fingerprints]]], which help compare the actual audio content when filenames or titles differ." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "On-Demand Caching" },
+		{ "Text": "Fingerprints are [[[strong:cached on-demand]]], so they are generated only when a detection mode requires them." },
+		{ "Text": "Once cached, they speed up future scans by avoiding unnecessary recalculation." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Database Size" },
+		{ "Text": "Stricter modes, such as [[[strong:Lite]]] and [[[strong:Standard]]], perform [[[strong:fewer comparisons]]] and therefore cache fingerprints for fewer files." },
+		{ "Text": "This creates a [[[strong:smaller fingerprint database]]] while limiting comparisons to files that are more likely to be duplicates." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Search Scope" },
+		{ "Text": "[[[warning:Note:]]] The [[[strong:Duplicate Detector]]] is tied directly to the [[[strong:Search]]] database, not to the path used by the [[[strong:Downloader]]]." },
+		{ "Text": "It scans the files included in the current [[[strong:Search]]] scope and uses that database to cache their fingerprints." },
+		{ "Text": "Wherever the [[[strong:Search]]] is pointed, the duplicate detector scans the files available in that search scope." },
+		{ "Text": "Changing the [[[strong:Search]]] scope changes which files the detector scans." }
 	]
 }

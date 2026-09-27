@@ -4,23 +4,25 @@
 		{
 			"Image": "Main.png"
 		},
-		{ "Text": "[[[underline:Soft Purple]]] ≈ Download Dir" },
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Download Directory" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Download Threads" },
 		{ "Text": "[[[underline:Light Green]]] ≈ Spotify" },
-		{ "Text": "[[[underline:Pale Orange]]] ≈ Import/Export" },
 		{ "Separator": null },
 
 		{ "Header": "Overview of Each UI Element" },
 
-		{ "Header2": "Download Dir" },
-		{ "Text": "This is the directory songs will be downloaded into" },
+		{ "Header2": "Download Directory" },
+		{ "Text": "The directory where downloaded songs will be saved." },
+		{ "Text": "By default, this is usually the same directory selected in the searcher." },
 		{
 			"Image": "Download Dir.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Download Threads" },
-		{ "Text": "The number of simultaneous downloads that can occur" },
+		{ "Text": "The number of downloads that can occur simultaneously." },
+		{ "Text": "[[[warning:Note:]]] It is best to use a smaller number, even [[[strong:1]]], if you have time. Higher numbers increase the likelihood of a download failing." },
+		{ "Text": "This is because more requests are sent to websites each second. If too many requests are made, the server may temporarily reject them before accepting requests again." },
 		{
 			"Image": "Download Threads.png"
 		},
@@ -28,7 +30,7 @@
 
 		{ "Header2": "Spotify" },
 		{ "Text": "These are the same as the fields in [[[button:Key and below in Playlist Editor][../Playlist Editor]]]" },
-		{ "Text": "Spotfetch_download_selection: This selects what you want to download from spotify:" },
+		{ "Text": "[[[strong:Spotfetch_download_selection:]]] This selects what you want to download from spotify:" },
 		{ "Text": "• Liked: Download only users liked" },
 		{ "Text": "• Playlist: Download only playlists" },
 		{ "Text": "• Liked,Playlist: Both" },
@@ -38,6 +40,6 @@
 		{ "Separator": null },
 
 		{ "Header2": "Import/Export" },
-		{ "Text": "[[[button:Import or Export][Import_Export]]] your playlists to a json file" }
+		{ "Text": "[[[strikethrough:Import/Export]]] does not exist anymore this in the future will be its own standalone feature" }
 	]
 }

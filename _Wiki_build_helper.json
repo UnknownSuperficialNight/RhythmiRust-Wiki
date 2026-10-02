@@ -108,6 +108,14 @@
 			"#6934A4": "deep_purple"
 		},
 
+		{ "_Comment": "The above genlist format, saved as GenList.json in a folder, slices individual stroke colours out of that folder's Main.svg/Main.svgz into their own PNGs. GenList.json always targets Main.svg/Main.svgz automatically, no naming needed" },
+
+		{ "_Comment": "A folder can have more than one genlist. Extra genlists are paired by filename with the SVG/SVGZ they target - e.g. Cache.json pairs with Cache.svg or Cache.svgz in the same folder. Only the file stem has to match, the extension doesn't matter, and the content is the same colour-to-filename map as GenList Defaults above" },
+
+		{ "_Comment": "A json file with no matching svg/svgz sibling is left alone, so any other json can live in the same folder for whatever purpose without being mistaken for a genlist" },
+
+		{ "_Comment": "Prefix a paired svg/svgz AND its genlist json with an underscore to mark them hidden, e.g. _Advanced Settings Dropdowns.svgz + _Advanced Settings Dropdowns.json. A hidden svg/svgz is still read for its genlist crops, but is not itself rendered into the output Wiki - useful when you only need the individual pieces cropped out and not the whole image" },
+
 
 		{ "_Comment": "Text styling choices" },
 		{ "Text": "[[[underline:Text here]]]" },

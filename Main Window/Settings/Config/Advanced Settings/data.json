@@ -4,10 +4,7 @@
 		{
 			"Image": "Main.png"
 		},
-		{ "Text": "Yt-dlp args" },
-		{ "Text": "Cache" },
-		{ "Text": "Dependencies" },
-		{ "Text": "Irreversible actions" },
+		{ "Text": "Headings are the same in the image above:" },
 		{ "Separator": null },
 
 		{ "Header": "Overview of Each UI Element" },
@@ -34,39 +31,53 @@
 		{ "Separator": null },
 
 		{ "Header2": "Cache" },
-		{ "Text": "This involves actions to the downloader cache" },
+		{ "TextCustom": { "space_size": 12.5, "content": "This involves actions to the downloader/search cache:" } },
+
 		{ "Text": "[[[strong:•Manually Regenerate Search Cache:]]] This triggers a regeneration of the search cache but does not clear it" },
 		{ "Text": "This is useful if you added new files and want to add them to the search cache" },
+		{ "TextCustom": { "space_size": 12.5, "content": "[[[warning:Note:]]] This already is done automatically via the file watcher. This is simply here in case you are impatient." } },
+
+		{ "Text": "[[[strong:•Clear Regenerate Search Cache:]]] This Clears the search cache that is used in the new search implementation" },
+		{ "TextCustom": { "space_size": 12.5, "content": "This forces all searches to be re-generated" } },
+
+		{ "Text": "[[[strong:•Clear Audio Fingerprint Cache:]]] This Clears the audio fingerprint cache" },
+		{ "TextCustom": { "space_size": 12.5, "content": "This forces all audio fingerprints to be removed from the search database" } },
+
 		{ "Text": "[[[strong:•Graveyard Cache:]]] This is where dead/broken links are stored to never be used again" },
+		{ "TextCustom": { "space_size": 12.5, "content": "if you do clear \"Graveyard Cache\" expect a large amount of urls attempting to be downloaded" } },
+
 		{ "Text": "[[[strong:•Graveyard Temp:]]] This holds links that have failed but not failed enough to qualify to be merged into \"Graveyard Cache\"" },
 		{ "Text": "Both buttons clear their respective caches forcing re-downloads of failed or potentially failed urls" },
 		{ "Text": "Warning: You probably don't want to do this unless you tried to download offline" },
-		{ "Text": "as downloading offline would make all downloads fail this false positives are added in here" },
-		{ "TextCustom": { "space_size": 12.5, "content": "if you do clear \"Graveyard Cache\" expect a large amount of urls attempting to be downloaded" } },
-		{ "Text": "[[[strong:•Clear Regenerate Search Cache:]]] This Clears the search cache that is used in the new search implementation" },
-		{ "Text": "This forces all searches to be re-generated" },
+		{ "TextCustom": { "space_size": 12.5, "content": "as downloading offline would make all downloads fail this false positives are added in here" } },
+
 		{ "Text": "[[[strong:•Clear Download Cache:]]] This Clears all previously downloaded URLs, effectively resetting the downloader" },
-		{ "Text": "This forces all successful URLs to be downloaded again. Use only if a complete reset is necessary" },
+		{ "TextCustom": { "space_size": 12.5, "content": "This forces all successful URLs to be downloaded again. Use only if a complete reset is necessary" } },
+		{ "Spacer": 10.0 },
 		{
 			"Image": "Cache.png"
 		},
+		{ "Spacer": 10.0 },
 		{ "Separator": null },
 
 		{ "Header2": "Dependencies" },
-		{ "Text": "[[[strong:•Force Yt-dlp Update:]]] This forces Yt-dlp to update immediately" },
+		{ "Text": "[[[strong:•Force Yt-dlp and Deno Update:]]] This forces Yt-dlp and Deno to update immediately" },
 		{ "Text": "This is done once a week automatically but if a emergency update is pushed to Yt-dlp" },
 		{ "Text": "You can use this to get updated right away" },
 		{ "TextCustom": { "space_size": 12.5, "content": "[[[strong:Tip:]]] If a download fails press this to update and try again it may fix the issue" } },
 		{ "Text": "[[[strong:•Delete Wiki:]]] This Deletes the wiki folder and all its contents (Useful if you dont want the wiki installed anymore)" },
+		{ "Spacer": 10.0 },
 		{
 			"Image": "Dependencies.png"
 		},
+		{ "Spacer": 10.0 },
 		{ "Separator": null },
 
 		{ "Header2": "Irreversible actions" },
 		{ "Text": "This as actions for mass deletion (Warning: These actions are final and cannot be reversed)" },
 		{ "Text": "[[[strong:Prune History for Dead Searches:]]] This will search each thing in \"History\" and if the search is empty remove it from history" },
 		{ "Text": "[[[strong:Clear History:]]] This will full remove everything from history" },
+		{ "Spacer": 10.0 },
 		{
 			"Image": "Irreversible actions.png"
 		}

@@ -4,50 +4,97 @@
 		{
 			"Image": "Main.png"
 		},
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Display album art while playing music" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Auto-clear album art when music stops" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Write background image to disk" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Enable high resolution images" },
+		{ "Text": "[[[underline:Pale Orange]]] ≈ Enable the source image for effects" },
+		{ "Text": "[[[underline:Soft Peach]]] ≈ Image Padding Mode" },
+		{ "Text": "[[[underline:Deep Green]]] ≈ General" },
+		{ "Text": "[[[underline:Cyan Blue]]] ≈ Randomiser Options" },
+		{ "Text": "[[[underline:Crimson Red]]] ≈ CPU Effects" },
+		{ "Text": "[[[underline:Deep Purple]]] ≈ GPU Effects" },
 		{ "Separator": null },
 
 		{ "Header": "Core Menus" },
 
 		{ "Header2": "Display album art while playing music" },
 		{ "Text": "This enables album art to be displayed." },
-		{ "Separator": null },
-
-		{ "Header2": "Display album art in the center" },
-		{ "Text": "Enabled: This will put album art in the centre of the screen." },
-		{ "Text": "Disabled: This will put album art on the sidebar." },
+		{
+			"Image": "Display album art while playing music.png"
+		},
 		{ "Separator": null },
 
 		{ "Header2": "Auto-clear album art when music stops" },
 		{ "Text": "Enabled: This clears the image from memory when the song stops." },
 		{ "Text": "Disabled: Shows the image forever until the next song starts." },
+		{
+			"Image": "Auto-clear album art when music stops.png"
+		},
 		{ "Separator": null },
 
 		{ "Header2": "Write background image to disk" },
 		{ "Text": "Enabled: This writes the generated padding image to disk in the config directory, either next to the binary or in the global config directory (for more information see [[[button:Global Config Guide][/_Guides/Global Config]]])." },
 		{ "Text": "Disabled: Does not write the image to disk." },
-		{ "Text": "[[[warning:Note:]]] The value is temporarily stored in memory and is not saved persistently in the database. Consequently, it resets to `false` each time the program starts." },
+		{ "Text": "[[[warning:Note:]]] The value is temporarily stored in memory and is not saved persistently in the database. Consequently, it resets to [[[strong:false]]] each time the program starts." },
+		{
+			"Image": "Write background image to disk.png"
+		},
 		{ "Separator": null },
 
 		{ "Header2": "Enable high resolution images" },
 		{ "Text": "Enabled: This ignores the [[[warning:4096x4096]]] pixel limit." },
 		{ "Text": "Disabled: Enforces the [[[warning:4096x4096]]] pixel limit ensuring any images bigger are resized down to reasonable sizes." },
+		{
+			"Image": "Enable high resolution images.png"
+		},
 		{ "Separator": null },
 
 		{ "Header2": "Enable the source image for effects" },
 		{ "Text": "Enabled: Forces the usage of the highest quality image for effect padding." },
 		{ "Text": "Disabled: Forces the cheapest and lowest quality image for effect padding." },
+		{
+			"Image": "Enable the source image for effects.png"
+		},
 		{ "Separator": null },
 
 		{ "Header2": "Image Padding Mode" },
 		{ "Text": "This pads images to centre them and adds an effect on the padding area." },
 		{ "Text": "Click to open selections." },
-		{ "Text": "\"SoftHorizontalGlitch\" is my favourite :)" },
 		{
-			"Image": "Image Padding.png"
+			"Image": "Image Padding Mode.png"
 		},
+		{ "Separator": null },
+
+		{ "Header2": "General" },
+		{ "Text": "Off: Turns off the effects at all." },
+		{ "Text": "Randomiser: Randomized from selected effects. (See [[[strong:randomiser Options]]] below)" },
+		{
+			"Image": "General.png"
+		},
+		{ "Separator": null },
 
 		{ "Header2": "Randomiser Options" },
 		{ "Text": "Tick what options you want the randomiser to select when starting a new song." },
-		{ "Text": "This menu is hidden when the randomiser is not selected as the \"Image Padding Mode\"." }
+		{ "Text": "This menu is hidden when the randomiser is not selected as the [[[strong:Image Padding Mode]]]." },
+		{
+			"Image": "Randomiser Options.png"
+		},
+		{ "Separator": null },
+
+		{ "Header2": "CPU Effects" },
+		{ "Text": "All options in this category use the cpu for effects." },
+		{ "Text": "[[[warning:Note:]]] All cores of the cpu are used to speed up processing time and limit the amount of time the program affects other programs (games)." },
+		{ "Text": "[[[warning:Note:]]] Thus this can cause frame rate drops for a second while its processing to avoid this use gpu if possible." },
+		{
+			"Image": "CPU Effects.png"
+		},
+		{ "Separator": null },
+
+		{ "Header2": "GPU Effects" },
+		{ "Text": "All options below are use the gpu for the effect process. (Faster than cpu and does not effect gaming frame rates while cpu does)" },
+		{
+			"Image": "GPU Effects.png"
+		}
 	]
 }

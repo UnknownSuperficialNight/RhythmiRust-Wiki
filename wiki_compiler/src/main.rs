@@ -4,30 +4,35 @@ use std::sync::Arc;
 
 mod compiler;
 mod crop_generation;
+mod optimise_cache;
 mod output;
 mod reference_check;
 mod registry;
 mod render;
+mod scheduler;
 mod stats;
 
 use crate::compiler::recreate_directory_structure;
 
+/// The compiler version from `Cargo.toml`.
+///
+/// It is written to `Registry.json` so the RhythmiRust app can tell which
+/// compiler built an installed Wiki.
 const VERSION: &str = env!("CARGO_PKG_VERSION");
 
 fn main() -> Result<(), Box<dyn Error>> {
     let current_dir = env::current_dir()?;
     let parent_dir = current_dir.file_name().unwrap();
 
-    // recreate_directory_structure wipes and rebuilds a "Wiki" subfolder in
-    // whatever directory this binary is run from. Both checks below exist
-    // purely to make sure that destructive step can never run anywhere
-    // other than the actual wiki repo - accidentally invoking this from
-    // the wrong directory would delete an unrelated "Wiki" folder with no
-    // warning otherwise.
+    // `recreate_directory_structure` deletes and rebuilds a "Wiki" subfolder
+    // inside the current directory.
+    //
+    // Both checks below must pass first. Without them, running the compiler
+    // from the wrong directory would delete an unrelated "Wiki" folder.
     let helper_file_name = "_Wiki_build_helper.json";
     let helper_file_path = current_dir.join(helper_file_name);
 
-    // A marker file that's only ever meant to exist at the top of the real wiki repo
+    // This marker file should only exist at the top of the wiki repository.
     if !helper_file_path.exists() {
         eprintln!(
             "Error: '{}' not found. The compiler needs to be at the top level of the Wiki directory, \
@@ -37,10 +42,8 @@ fn main() -> Result<(), Box<dyn Error>> {
         return Err("Required file not found".into());
     }
 
-    // A second, independent guard: the folder name itself. The marker file
-    // check above could in principle still pass somewhere it shouldn't
-    // (a copy of the file elsewhere, for instance), so this checks
-    // something unrelated - the actual folder name - before proceeding.
+    // The folder name is checked as well, because the marker file could have
+    // been copied somewhere else.
     if parent_dir.to_str().unwrap() == "RhythmiRust-Wiki" {
         let target_dir = current_dir.join("Wiki");
         recreate_directory_structure(&Arc::new(current_dir), &Arc::new(target_dir))?;

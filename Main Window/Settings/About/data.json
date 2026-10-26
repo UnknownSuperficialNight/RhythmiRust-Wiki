@@ -1,0 +1,172 @@
+{
+	"title": "About",
+	"contents": [
+		{
+			"Image": "Main.png"
+		},
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Interface Legend" },
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Name" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Logo" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Version and Developer" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Config and Log Paths" },
+		{ "Text": "[[[underline:Pale Orange]]] ≈ Find Me On" },
+		{ "Text": "[[[underline:Soft Peach]]] ≈ Donations" },
+		{ "Text": "[[[underline:Deep Green]]] ≈ Contributing and Download" },
+		{ "Text": "[[[underline:Cyan Blue]]] ≈ Copyright Notice" },
+		{ "Text": "[[[underline:Crimson Red]]] ≈ Backend Info" },
+		{ "Text": "[[[underline:Deep Purple]]] ≈ Git Stats" },
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header": "Overview of Each UI Element" },
+		{ "Spacer": 5.0 },
+
+		{ "Header2": "Name" },
+		{ "Text": "Displays the name of the program, [[[strong:RhythmiRust]]]." },
+		{ "Text": "Name comes from the combination of the words [[[strong:Rhythmic]]] and [[[hyperlink:Rust][https://rust-lang.org]]]." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Name.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Logo" },
+		{ "Text": "Displays the [[[strong:RhythmiRust]]] logo." },
+		{ "Text": "The logo is a cog with an audio waveform at its centre." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Logo.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Version and Developer" },
+		{ "Text": "[[[strong:Version]]] shows the version of [[[strong:RhythmiRust]]] you are currently running." },
+		{ "Text": "[[[strong:Developed by]]] shows the name of the developer." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Version and Developer.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Config and Log Paths" },
+		{ "Text": "Shows where [[[strong:RhythmiRust]]] stores its files on your system." },
+		{ "Text": "[[[strong:Config path]]] is the location of the configuration folder." },
+		{ "Text": "[[[strong:Log path]]] is the location of the log file." },
+		{ "Text": "[[[warning:Note:]]] The paths shown will differ depending on your system and how the program was installed." },
+		{ "Text": "[[[warning:Note:]]] You can [[[strong:double click]]] to select the entire line and then press [[[strong:Ctrl + C]]] to copy the entire path." },
+		{ "Text": "[[[warning:Note:]]] No need to stretch the window to copy the entire path." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Config and Log Paths.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Find Me On" },
+		{ "Text": "Links for contacting the developer through [[[strong:GitHub]]], [[[strong:Email]]] and [[[strong:Discord]]]." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Find Me On.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Donations" },
+		{ "Text": "Links for supporting the developer through donations." },
+		{ "Text": "[[[strong:Bitcoin]]] and [[[strong:Ethereum]]] are currently available." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Donations.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Contributing and Download" },
+		{ "Text": "[[[strong:Contributing]]] links to the [[[strong:Wiki]]]." },
+		{ "Text": "[[[strong:Download]]] links to the main program on [[[strong:GitHub]]]." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Contributing and Download.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Copyright Notice" },
+		{ "Text": "Displays the copyright notice for the project." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Copyright Notice.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Backend Info" },
+		{ "Text": "Shows the graphics backend that [[[strong:RhythmiRust]]] is currently using, along with any other backends listed beside [[[strong:Others]]]." },
+		{ "Text": "Click the arrow to expand or collapse this section." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Hover Details" },
+		{ "Text": "Hover over the current backend, or any of the others, to display more details about the renderer and the device being used." },
+		{ "Text": "The details shown include the following:" },
+		{ "Text": "[[[strong:• Backend]]] The renderer that is in use." },
+		{ "Text": "[[[strong:• Device Type]]] The type of device, for example [[[strong:DiscreteGpu]]]." },
+		{ "Text": "[[[strong:• Name]]] The name of the device." },
+		{ "Text": "[[[strong:• Driver]]] and [[[strong:Driver info]]] The driver and its version information." },
+		{ "Text": "[[[strong:• Vendor]]] and [[[strong:Device]]] The vendor and device identifiers." },
+		{ "Text": "[[[strong:• PCI Bus ID]]] The location of the device on the PCI bus." },
+		{ "Text": "[[[strong:• Subgroup size]]] The subgroup size range reported by the device." },
+		{ "Text": "[[[strong:• Transient saves memory]]] and [[[strong:Limit bucket]]] Additional device information." },
+		{ "Text": "[[[warning:Note:]]] The details shown will differ depending on your hardware and the backend you hover over." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Backend Info.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null },
+
+		{ "Header2": "Git Stats" },
+		{ "Text": "Shows statistics from the project's Git history." },
+		{ "Text": "Click the arrow to expand or collapse this section." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Total Project Stats" },
+		{ "Text": "Statistics for every contributor combined." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Committer/User" },
+		{ "Text": "Statistics for each individual contributor, ranked with the highest at the top." },
+		{ "Text": "Each entry shows the contributor's name and their rank." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Statistics Shown" },
+		{ "Text": "Both sections display the following:" },
+		{ "Text": "[[[strong:• Commits]]] The number of commits." },
+		{ "Text": "[[[strong:• Insertions]]] and [[[strong:Deletions]]] The number of lines added and removed." },
+		{ "Text": "[[[strong:• Lines changed]]] The total number of lines changed." },
+		{ "Text": "[[[strong:• Files changed]]], [[[strong:Files created]]] and [[[strong:Files deleted]]] The number of files affected." },
+		{ "Text": "[[[strong:• First commit]]] and [[[strong:Last commit]]] The date and time of the earliest and latest commits." },
+		{ "Text": "[[[strong:• Average lines changed per commit]]] The average number of lines changed in each commit." },
+		{ "Text": "[[[strong:Total Project Stats]]] also shows [[[strong:Total Contributors/People]]]." },
+
+		{ "Spacer": 10.0 },
+		{
+			"Image": "Git Stats.png"
+		},
+		{ "Spacer": 10.0 },
+		{ "Separator": null }
+	]
+}

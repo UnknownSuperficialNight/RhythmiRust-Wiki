@@ -14,45 +14,54 @@
 		{ "Header": "Overview of Each UI Element" },
 
 		{ "Header2": "Enable dynamic fonts" },
-		{ "Text": "Enabled: This shows the ui to toggle individual dynamic fonts." },
-		{ "Text": "Disabled: Hides the ui and disables all dynamic font loading." },
+		{ "Text": "[[[strong:Enabled:]]] Shows the UI used to toggle individual dynamic fonts." },
+		{ "Text": "[[[strong:Disabled:]]] Hides the UI and disables all dynamic font loading." },
 		{
 			"Image": "Enable dynamic fonts.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Enabled dynamic font" },
-		{ "Text": "This is enabling dynamic font searching/loading of the \"Japanese\" language if found it will load the font on startup. " },
+		{ "Text": "A ticked font is searched for and loaded dynamically, for example the [[[strong:Japanese]]] region. If a matching font is found, it is loaded on startup." },
+		{ "Text": "Ticking a font also loads it [[[strong:immediately at runtime]]], so no restart is needed." },
 		{
 			"Image": "Enabled dynamic font.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Editing a dynamic font" },
-		{ "Text": "Right click on a font to show the editing menu." },
-		{ "Text": "[[[strong:Edit Region:]]]This is the region/name of the font you are editing." },
-		{ "Text": "[[[strong:Edit font_names:]]]This is the font names it will search for and load if found." },
-		{ "Text": "[[[warning:Note:]]]It searches the fonts in order from top to bottom so if a higher font is found it will use that and not load lower fonts." },
-		{ "Text": "[[[strong:Save:]]]This will save the changes." },
-		{ "Text": "[[[strong:Remove:]]]This will remove the entire region permanently." },
+		{ "Text": "[[[strong:Right-click]]] a font to open the editing menu." },
+		{ "Text": "[[[strong:Edit Region:]]] The region or name of the font you are editing." },
+		{ "Text": "[[[strong:Edit font_names:]]] The font names to search for, and load if found." },
+		{ "Text": "[[[warning:Note:]]] Fonts are searched in order from top to bottom. If a font higher in the list is found, it is used and the fonts below it are not loaded." },
+		{ "Text": "[[[strong:Save:]]] Saves your changes." },
+		{ "Text": "[[[strong:Remove:]]] Removes the entire region." },
+		{ "Text": "[[[warning:Note:]]] Removing a region is permanent." },
 		{
 			"Image": "Editing a dynamic font.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Disabled dynamic fonts" },
-		{ "Text": "These are fonts that are not ticked thus will not be searched or loaded." },
+		{ "Text": "Fonts that are not ticked are [[[strong:not]]] searched for or loaded." },
 		{
 			"Image": "Disabled dynamic fonts.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Add new font region" },
-		{ "Text": "Click this button to add a new font region." },
-		{ "Text": "Enter the new region name then press enter to create it." },
-		{ "Text": "Click [[[strong:Close]]] to cancel and close the [[[strong:Add new font region]]]." },
+		{ "Text": "Click [[[strong:Add new font region]]] to create a new region." },
+		{ "Text": "Enter the new region name, then press [[[strong:Enter]]] to create it." },
+		{ "Text": "Click [[[strong:Close]]] to cancel and close [[[strong:Add new font region]]]." },
 		{
-			"Image": "Add new font region.png"
+			"ImageGroup": [
+				{
+					"path": "Add new font region.png"
+				},
+				{
+					"path": "Add new font region inner.png"
+				}
+			]
 		}
 	]
 }

@@ -4,13 +4,13 @@
 		{
 			"Image": "Main.png"
 		},
-		{ "Text": "Headings are the same in the image above:" },
+		{ "Text": "The headings below match the headings in the image above." },
 		{ "Separator": null },
 
 		{ "Header": "Overview of Each UI Element" },
 
 		{ "Header2": "Yt-dlp args" },
-		{ "Text": "This is where the download arguments are stored refer to the [[[button:Yt-dlp page][../../../Downloader/Playlist Editor/YT_dlp_args]]] for more info on args" },
+		{ "Text": "This is where the download arguments are stored. Each entry is a [[[strong:profile]]], made up of a comment (its name) and its args. See the [[[button:Yt-dlp page][../../../Downloader/Playlist Editor/YT_dlp_args]]] for more information on args." },
 		{
 			"ImageGroup": [
 				{
@@ -21,38 +21,87 @@
 				}
 			]
 		},
-		{ "Text": "In the above image" },
-		{ "Text": "[[[strong:•Soft Purple:]]] Button/Heading to select what arguments you want to edit (left click to edit | right click to deselect)" },
-		{ "Text": "[[[strong:•Soft Yellow:]]] Edit the arguments of the selected each line is a new argument sequentially (save to finalize; close to cancel; Remove to remove the entire argument entry)" },
-		{ "Text": "[[[strong:•Dark Blue:]]] Other Buttons/Headings to select what you want to edit like soft purple" },
-		{ "Text": "[[[strong:•Add new argument:]]] This shares the same memory as the edit arguments do this enables quick duplication of previous arguments just click on a argument you want to duplicate" },
-		{ "Text": "then click the add button this will open the ui you see in the image then edit the comment and args then click save to finalize" },
-		{ "Text": "after than hit close of the Button/Heading and that should return the Button/Heading to the original state thus duplicating it" },
+		{ "Text": "In the images above:" },
+		{ "Text": "[[[underline:Soft Purple]]] ≈ Selected profile" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Edit comments and Edit args" },
+		{ "Text": "[[[underline:Dark Blue]]] ≈ Other profiles" },
+		{ "Text": "[[[underline:Light Green]]] ≈ Add" },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Selected profile" },
+		{ "Text": "[[[strong:Left click]]] a profile to select it for editing." },
+		{ "Text": "[[[strong:Right click]]] to deselect it." },
+		{
+			"Image": "Selected profile.png"
+		},
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Edit comments and Edit args" },
+		{ "Text": "•[[[strong:Comments:]]] The name of the profile." },
+		{ "Text": "•[[[strong:Args:]]] The arguments for the profile. Each line is a separate argument, applied in order from top to bottom." },
+		{ "Text": "•[[[strong:Save:]]] Saves your changes and finalises the edit." },
+		{ "Text": "•[[[strong:Close:]]] Cancels the edit without saving." },
+		{ "Text": "•[[[strong:Remove:]]] Permanently removes the entire profile." },
+		{ "Spacer": 10.0 },
+		{ "Text": "[[[strong:Built-in profiles]]]" },
+		{ "Text": "These are the default profiles provided with the program. The comment is [[[strong:locked]]] (greyed out), so they cannot be renamed or removed, but their args can still be edited." },
+		{ "Text": "[[[warning:Note:]]] When a new release updates the built-in profiles, their args are overwritten with the new defaults. This lets updates push changes to every user. To keep your own changes, add a new profile instead (see [[[strong:Add]]] below)." },
+		{ "Spacer": 10.0 },
+		{ "Text": "[[[strong:Custom profiles]]]" },
+		{ "Text": "These are profiles you have added yourself. You can edit the comment and the args freely, and they are [[[strong:never]]] changed by updates." },
+		{
+			"Image": "Edit comments and Edit args.png"
+		},
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Other profiles" },
+		{ "Text": "These are the remaining profiles. The built-in profiles are listed first, and any custom profiles you add are [[[strong:appended after them]]]. Select them in the same way as the selected profile." },
+		{
+			"Image": "Other profiles.png"
+		},
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Add" },
+		{ "Text": "Adds a new custom profile. [[[strong:Add]]] shares its contents with the edit section, so you can quickly duplicate an existing profile:" },
+		{ "Text": "•Select the profile you want to duplicate." },
+		{ "Text": "•Click [[[strong:Add]]] to open the add menu." },
+		{ "Text": "•Edit the [[[strong:comment]]] and the [[[strong:args]]]." },
+		{ "Text": "•Click [[[strong:Save]]] to finalise." },
+		{ "Text": "•Click [[[strong:Close]]] to cancel." },
+		{ "Text": "The new profile is added to the end of the list, after the built-in profiles and any existing custom profiles." },
+		{ "Text": "[[[warning:Note:]]] The comment and the args must both be filled in. If either is empty, a notification is shown and the profile is not added." },
+		{ "Text": "[[[strong:Tip:]]] Duplicating a built-in profile is the way to keep your own changes to it, as custom profiles are never overwritten by updates." },
+		{
+			"Image": "Add.png"
+		},
+		{
+			"Image": "Add new argument.png"
+		},
+		{ "Spacer": 10.0 },
 		{ "Separator": null },
 
 		{ "Header2": "Cache" },
-		{ "TextCustom": { "space_size": 12.5, "content": "This involves actions to the downloader/search cache:" } },
+		{ "TextCustom": { "space_size": 12.5, "content": "These actions affect the downloader and search caches." } },
 
-		{ "Text": "[[[strong:•Manually Regenerate Search Cache:]]] This triggers a regeneration of the search cache but does not clear it" },
-		{ "Text": "This is useful if you added new files and want to add them to the search cache" },
-		{ "TextCustom": { "space_size": 12.5, "content": "[[[warning:Note:]]] This already is done automatically via the file watcher. This is simply here in case you are impatient." } },
+		{ "Text": "•[[[strong:Manually Regenerate Search Cache:]]] Triggers a regeneration of the search cache without clearing it." },
+		{ "Text": "This is useful if you have added new files and want them included in the search cache straight away." },
+		{ "TextCustom": { "space_size": 12.5, "content": "[[[warning:Note:]]] This already happens automatically via the file watcher. The button is only here in case you are impatient." } },
 
-		{ "Text": "[[[strong:•Clear Regenerate Search Cache:]]] This Clears the search cache that is used in the new search implementation" },
-		{ "TextCustom": { "space_size": 12.5, "content": "This forces all searches to be re-generated" } },
+		{ "Text": "•[[[strong:Clear Regenerate Search Cache:]]] Clears the search cache used by the new search implementation." },
+		{ "TextCustom": { "space_size": 12.5, "content": "This forces all searches to be regenerated." } },
 
-		{ "Text": "[[[strong:•Clear Audio Fingerprint Cache:]]] This Clears the audio fingerprint cache" },
-		{ "TextCustom": { "space_size": 12.5, "content": "This forces all audio fingerprints to be removed from the search database" } },
+		{ "Text": "•[[[strong:Clear Audio Fingerprint Cache:]]] Clears the audio fingerprint cache." },
+		{ "TextCustom": { "space_size": 12.5, "content": "This removes all audio fingerprints from the search database." } },
 
-		{ "Text": "[[[strong:•Graveyard Cache:]]] This is where dead/broken links are stored to never be used again" },
-		{ "TextCustom": { "space_size": 12.5, "content": "if you do clear \"Graveyard Cache\" expect a large amount of urls attempting to be downloaded" } },
+		{ "Text": "•[[[strong:Graveyard Cache:]]] Where dead or broken links are stored so that they are never used again." },
+		{ "TextCustom": { "space_size": 12.5, "content": "[[[warning:Note:]]] If you clear [[[strong:Graveyard Cache]]], expect a large number of URLs to be attempted again." } },
 
-		{ "Text": "[[[strong:•Graveyard Temp:]]] This holds links that have failed but not failed enough to qualify to be merged into \"Graveyard Cache\"" },
-		{ "Text": "Both buttons clear their respective caches forcing re-downloads of failed or potentially failed urls" },
-		{ "Text": "Warning: You probably don't want to do this unless you tried to download offline" },
-		{ "TextCustom": { "space_size": 12.5, "content": "as downloading offline would make all downloads fail this false positives are added in here" } },
+		{ "Text": "•[[[strong:Graveyard Temp:]]] Holds links that have failed, but not often enough to be merged into [[[strong:Graveyard Cache]]]." },
+		{ "Text": "Both buttons clear their respective caches, forcing failed or potentially failed URLs to be downloaded again." },
+		{ "TextCustom": { "space_size": 12.5, "content": "[[[warning:Note:]]] You probably don't want to do this unless you tried to download while offline. Downloading offline makes every download fail, so false positives are added to these caches." } },
 
-		{ "Text": "[[[strong:•Clear Download Cache:]]] This Clears all previously downloaded URLs, effectively resetting the downloader" },
-		{ "TextCustom": { "space_size": 12.5, "content": "This forces all successful URLs to be downloaded again. Use only if a complete reset is necessary" } },
+		{ "Text": "•[[[strong:Clear Download Cache:]]] Clears all previously downloaded URLs, effectively resetting the downloader." },
+		{ "TextCustom": { "space_size": 12.5, "content": "[[[warning:Note:]]] This forces all successful URLs to be downloaded again. Use it only if a complete reset is necessary." } },
 		{ "Spacer": 10.0 },
 		{
 			"Image": "Cache.png"
@@ -61,11 +110,10 @@
 		{ "Separator": null },
 
 		{ "Header2": "Dependencies" },
-		{ "Text": "[[[strong:•Force Yt-dlp and Deno Update:]]] This forces Yt-dlp and Deno to update immediately" },
-		{ "Text": "This is done once a week automatically but if a emergency update is pushed to Yt-dlp" },
-		{ "Text": "You can use this to get updated right away" },
-		{ "TextCustom": { "space_size": 12.5, "content": "[[[strong:Tip:]]] If a download fails press this to update and try again it may fix the issue" } },
-		{ "Text": "[[[strong:•Delete Wiki:]]] This Deletes the wiki folder and all its contents (Useful if you dont want the wiki installed anymore)" },
+		{ "Text": "•[[[strong:Force Yt-dlp and Deno Update:]]] Forces Yt-dlp and Deno to update immediately." },
+		{ "Text": "This is done automatically once a week, but you can use this button to update straight away if an emergency update is pushed to Yt-dlp." },
+		{ "TextCustom": { "space_size": 12.5, "content": "[[[strong:Tip:]]] If a download fails, press this to update and try again. It may fix the issue." } },
+		{ "Text": "•[[[strong:Delete Wiki:]]] Deletes the wiki folder and all of its contents. This is useful if you no longer want the wiki installed." },
 		{ "Spacer": 10.0 },
 		{
 			"Image": "Dependencies.png"
@@ -74,9 +122,10 @@
 		{ "Separator": null },
 
 		{ "Header2": "Irreversible actions" },
-		{ "Text": "This as actions for mass deletion (Warning: These actions are final and cannot be reversed)" },
-		{ "Text": "[[[strong:Prune History for Dead Searches:]]] This will search each thing in \"History\" and if the search is empty remove it from history" },
-		{ "Text": "[[[strong:Clear History:]]] This will full remove everything from history" },
+		{ "Text": "These are actions for mass deletion." },
+		{ "Text": "[[[warning:Note:]]] These actions are final and cannot be reversed." },
+		{ "Text": "•[[[strong:Prune History for Dead Searches:]]] Searches each entry in [[[strong:History]]] and removes it if the search returns nothing." },
+		{ "Text": "•[[[strong:Clear History:]]] Fully removes everything from [[[strong:History]]]." },
 		{ "Spacer": 10.0 },
 		{
 			"Image": "Irreversible actions.png"

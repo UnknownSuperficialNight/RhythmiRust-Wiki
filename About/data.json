@@ -18,18 +18,22 @@
 		{ "Text": "I wanted to make a [[[strong:music player]]] due to the lack of one that offered a search feature, let alone a downloader." },
 		{ "Text": "My primary aim was to make an effortless method for downloading/syncing videos from platforms like YouTube, Spotify, and SoundCloud;" },
 		{ "Text": "these downloaded files would then be stored locally for preservation and playback." },
-		{ "Text": "RhythmiRust was intended to be an efficient, portable, feature-rich and lightweight application." },
+		{ "Text": "RhythmiRust is intended to be an efficient, portable, feature-rich and lightweight application." },
 		{ "Text": "This means minimal CPU and RAM usage, and a fully portable cross-platform configuration" },
 		{ "Text": "with album art support and metadata editing." },
+		{ "Text": "However, it also aims to be feature-rich, so it will sacrifice a small amount of memory for a wide range of extra features." },
+		{ "Text": "I intend to keep real memory usage ideally below [[[strong:300 MB]]] of RAM, which is about the same as VLC uses on Linux." },
 
 		{ "Header2": "The Influence of Music on RhythmiRust's Development" },
-		{ "Text": "As a music enthusiast with a vast collection of 19,709 songs," },
-		{ "Text": "I desired an easy method to search through and play them, and download/sync new additions." },
+		{ "Text": "As a music enthusiast with a vast collection of [[[strong:28,887 songs]]] (as of [[[strong:28 October 2026]]])," },
+		{ "Text": "I desired an easy method to [[[strong:search through]]] and [[[strong:play]]] them, and to [[[strong:download/sync]]] new additions." },
 
 		{ "Header2": "The Core Values Guiding the Development of RhythmiRust" },
-		{ "Text": "RhythmiRust should maintain a consistent GUI appearance." },
-		{ "Text": "No elements should appear outside of the GUI (such as opening system file dialogue)." },
-		{ "Text": "The application should be self-contained, requiring minimal external dependencies." },
-		{ "Text": "RhythmiRust has only three external dependencies: two for network/download functionality and another for converting formats and image processing." }
-	]
+		{ "Text": "•[[[strong:Convenience:]]] RhythmiRust should suit [[[strong:technical users]]] and [[[strong:everyday users]]] at the same time." },
+		{ "Text": "Technical users should be able to do more advanced things, while the basics stay simple enough for anyone to understand and just use." },
+		{ "Text": "•[[[strong:Everything inside the GUI:]]] No elements should appear outside of the GUI (such as opening a system file dialogue)." },
+		{ "Text": "•[[[strong:Self-contained:]]] The application should require minimal external dependencies." },
+		{ "Text": "RhythmiRust has up to [[[strong:four external dependencies]]]." },
+		{ "Text": "RhythmiRust [[[strong:manages them itself]]], automatically [[[strong:updating them]]] and keeping them correct, so you do not need to install anything manually." },
+		{ "Text": "If you already have some of them installed, RhythmiRust will [[[strong:use the ones from your system]]] instead." }	]
 }

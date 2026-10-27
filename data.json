@@ -2,9 +2,9 @@
 	"title": "Welcome to RhythmiRust Wiki",
 	"image": {
 		"path": "icon.png",
-		"max_width": 200.0,
-		"max_height": 200.0,
-		"offset": 205.0
+		"max_width": 300.0,
+		"max_height": 300.0,
+		"offset": 150.0
 	},
 	"subheading": "Welcome to RhythmiRust! This wiki will help you learn how to use the programme effectively.",
 	"contents": [

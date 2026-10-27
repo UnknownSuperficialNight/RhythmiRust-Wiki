@@ -13,7 +13,7 @@ This repository contains:
 
 ## Contributing
 
-We welcome contributions from everyone! If you find an area that could be improved—whether it's rewording a section for clarity, expanding on a topic, or adding new content—please feel free to edit and enhance the wiki. Your contributions will help create a richer resource for all users.
+We welcome contributions from everyone! If you find an area that could be improved whether it's rewording a section for clarity, expanding on a topic, or adding new content please feel free to edit and enhance the wiki. Your contributions will help create a richer resource for all users.
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ To get started with the RhythmiRust-Wiki:
 ## Quick Start
 
 > [!IMPORTANT]
-> NOTE: This assumes you have [Rust](https://www.rust-lang.org/tools/install) and [git](https://git-scm.com/downloads) installed and available in your $PATH environmental variables.
+> NOTE: This assumes you have [Rust](https://www.rust-lang.org/tools/install) and [git](https://git-scm.com/downloads) installed and available in your **$PATH** environmental variables.
 
 Setup and generate the wiki:
 
@@ -60,4 +60,4 @@ This project is licensed under the **BSD 3-Clause License**. See the [LICENSE](.
 
 ## Thank You!
 
-I appreciate your interest in the RhythmiRust-Wiki. Happy coding!
+I appreciate your interest in the RhythmiRust-Wiki.

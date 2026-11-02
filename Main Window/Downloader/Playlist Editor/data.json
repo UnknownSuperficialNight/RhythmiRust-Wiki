@@ -5,7 +5,7 @@
 			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Manage Keys" },
-		{ "Text": "[[[underline:Soft Yellow]]] ≈ Save Changes to disc" },
+		{ "Text": "[[[underline:Soft Yellow]]] ≈ Save Changes to disk" },
 		{ "Text": "[[[underline:Dark Blue]]] ≈ Key" },
 		{ "Text": "[[[underline:Light Green]]] ≈ Active" },
 		{ "Text": "[[[underline:Pale Orange]]] ≈ Executable" },
@@ -22,31 +22,32 @@
 		{
 			"Image": "Manage Keys.png"
 		},
+		{ "Separator": null },
 
-		{ "Spacer": 100.0 },
-
+		{ "Header3": "Add key" },
 		{ "Text": "This adds a new key/playlist." },
 		{
 			"Image": "Add Key.png"
 		},
+		{ "Separator": null },
 
-		{ "Spacer": 100.0 },
-
-		{ "Text": "This removes selected key/playlist." },
+		{ "Header3": "Remove key" },
+		{ "Text": "This removes the selected key/playlist." },
 		{
 			"Image": "Remove key.png"
 		},
+		{ "Separator": null },
 
-		{ "Spacer": 100.0 },
-
+		{ "Header3": "Hide the dropdown" },
 		{ "Text": "This hides the add/remove dropdown." },
 		{
-			"Image": "Closed Dropdown.png"
+			"Image": "Manage Keys.png"
 		},
 		{ "Separator": null },
 
-		{ "Header2": "Save Changes to disc" },
-		{ "Text": "Simply saves all changes made to disc. (Upon changes, the button colour is set to red.)" },
+		{ "Header2": "Save Changes to disk" },
+		{ "Text": "Simply saves all changes made to disk." },
+		{ "Text": "[[[warning:Note:]]] Upon changes, the button colour is set to [[[strong:red]]] to remind the user to click it." },
 		{
 			"Image": "Save Changes to disk.png"
 		},
@@ -60,8 +61,8 @@
 		{ "Separator": null },
 
 		{ "Header2": "Active" },
-		{ "Text": "This enables or disables the key for download." },
-		{ "Text": "(Disabled means it will not download anything in the disabled key.)" },
+		{ "Text": "Enabled: The key is active, so its playlists and URLs are downloaded." },
+		{ "Text": "Disabled: The whole key (section) is turned off, so any URLs or playlists inside it will not be downloaded." },
 		{
 			"Image": "Active.png"
 		},
@@ -69,49 +70,43 @@
 
 		{ "Header2": "Executable" },
 		{ "Text": "This is the executable for helping with the download process." },
-		{ "Text": "This field is no longer needed but is here for flexibility in the future." },
+		{ "Text": "[[[warning:Note:]]] This field is no longer needed but is here for flexibility in the future." },
 		{
 			"Image": "Executable.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Codec" },
-		{ "Text": "This is the container/format you will save the songs into." },
+		{ "Text": "This is the codec the songs will be saved as." },
 		{
 			"Image": "Codec.png"
 		},
+		{ "Spacer": 20.0 },
 
-		{ "Header3": "Lossy vs Lossless" },
-		{ "Text": "[[[strong:Lossy codecs:]]] compress audio by removing some data, resulting in smaller file sizes but reduced quality ([[[warning:Lossy]]])." },
-		{ "Text": "[[[strong:Lossless codecs:]]] retain all original audio data, providing higher quality at the cost of larger file sizes ([[[warning:Lossless]]])." },
-		{ "Header3": "Codecs to choose from" },
-		{ "Text": "[[[strong:• AAC]]] - Lossy codec with better quality than MP3 ([[[warning:Lossy]]])." },
-		{ "Text": "[[[strong:• ALAC]]] - Apple's lossless codec for high-quality playback ([[[warning:Lossless]]])." },
-		{ "Text": "[[[strong:• FLAC]]] - Lossless codec for audiophile-grade music ([[[warning:Lossless]]],[[[strong:Recommended]]])." },
-		{ "Text": "[[[strong:• M4A]]] - Container for AAC or ALAC audio, primarily used in Apple's ecosystem ([[[warning:Lossy]]])." },
-		{ "Text": "[[[strong:• MP3]]] - Classic lossy codec with decent quality but outdated ([[[warning:Lossy]]])." },
-		{ "Text": "[[[strong:• Opus]]] - Advanced codec for optimal quality-to-efficiency ratio with variable bitrates ([[[warning:Lossy]]],[[[strong:Recommended]]])." },
-		{ "Text": "[[[strong:• Vorbis (Ogg)]]] - Open-source lossy codec with good quality at low bitrates; the [[[strong:grandpa]]] of Opus ([[[warning:Lossy]]])." },
-		{ "Text": "[[[strong:• WAV]]] - Uncompressed format for highest audio quality, but large file sizes ([[[warning:Lossless]]])." },
-		{ "Text": "[[[warning:Note:]]] Opus and M4A are not natively supported by \"RhythmiRust\"" },
-		{ "Text": "since there is no native [[[strong:Opus, M4A]]] decoder published yet, so these two formats use a fallback decoder when playing them." },
+		{ "Header3": "Which codec should I choose?" },
 		{
-			"Image": "Codec Dropdown.png"
+			"Table": {
+				"headers": ["Codec", "Type", "Best for"],
+				"rows": [
+					["[[[strong:Opus]]]", "[[[warning:Lossy]]] [[[strong:Recommended]]]", "Small files with great quality"],
+					["[[[strong:FLAC]]]", "[[[warning:Lossless]]] [[[strong:Recommended]]]", "The best quality, with larger files"]
+				]
+			}
 		},
+		{ "Text": "For the full list of codecs, and what lossy, lossless and containers mean, see the [[[button:Codecs][/_Guides/Codecs]]] guide." },
 		{ "Separator": null },
 
 		{ "Header2": "YT_dlp_args" },
 		{ "Text": "These are customisable arguments on how you want to download." },
-		{ "Text": "This is a very advanced subject, so for normal users starting from zero, top to bottom, use option 1 (with thumbnails) or 3 (without thumbnails)." },
+		{ "Text": "This is a very advanced subject, so for normal users starting from zero, top to bottom, use [[[strong:option 1]]] (with thumbnails) or [[[strong:option 3]]] (without thumbnails)." },
 		{ "Text": "For those advanced users who want to customise or understand these in depth, here is the page for that: [[[button:Advanced args page][YT_dlp_args]]]." },
-		{ "Text": "However, I will mention arguments in YT_dlp args that \"RhythmiRust\" added:" },
-		{ "Text": "download_dir: Is replaced with the path of the target directory where a song will be downloaded into." },
-		{ "Text": "target_url: This is the \"URL\" that will be passed to yt-dlp." },
-		{ "Text": "codec: Is replaced with the song's codec." },
-		{ "Text": "ffmpeg_path: Target of the ffmpeg binary in the config (so the user does not need to install ffmpeg manually and so \"RhythmiRust\" can manage ffmpeg itself)." },
 		{
 			"Image": "YT_dlp_args.png"
 		},
+		{ "Spacer": 20.0 },
+
+		{ "Header3": "Arguments added by RhythmiRust" },
+		{ "Text": "RhythmiRust adds a few extra arguments on top of yt-dlp ([[[strong:download_dir]]], [[[strong:target_url]]], [[[strong:codec]]], [[[strong:ffmpeg_path]]], [[[strong:deno_path]]] and [[[strong:PATH_SEPARATOR]]]). They are explained in the [[[button:Advanced Settings][/Main Window/Settings/Config/Advanced Settings]]] page." },
 		{ "Separator": null },
 
 		{ "Header2": "Main" },
@@ -123,15 +118,31 @@
 
 		{ "Header2": "Main Keys" },
 		{ "Text": "This is a key/URL where you save information into." },
-		{ "Text": "test1 is the item name of another key." },
-		{ "Text": "\"Add Name here\" is what the playlist folder will be called in the download folder." },
-		{ "Text": "For example, if you input a name of \"playlist/hi\", then it will make a directory called \"playlist\", then inside make a directory called \"hi\", then it will download into \"hi\"." },
-		{ "Text": "\"Add URL here\" is where you add the URLs you want to download into that folder." },
-		{ "Text": "Hit \"save\" once you are done, then \"save changes\" to finalise them." },
-		{ "Text": "Tip: As of version \"0.1.5\", you can use \"https://soundcloud.com/username/sets\" and \"https://www.youtube.com/@username/playlists\", and these will download all that user's public playlists." },
-		{ "Text": "Before, it was able to download from these URLs but it was only single-threaded, so now it will download them in batches like it does for all normal playlists." },
+		{
+			"Table": {
+				"headers": ["Field", "Meaning"],
+				"rows": [
+					["[[[strong:Add Name here]]]", "What the playlist folder will be called in the download folder"],
+					["[[[strong:Add URL here]]]", "Where you add the URLs you want to download into that folder"]
+				]
+			}
+		},
+		{ "Spacer": 20.0 },
+
+		{ "Text": "[[[strong:Folder names:]]] If you input a name of \"playlist/hi\", it will make a directory called \"playlist\", then inside make a directory called \"hi\", then download into \"hi\"." },
+		{ "Text": "[[[strong:Saving:]]] Hit \"save\" once you are done, then \"save changes\" to finalise them." },
 		{
 			"Image": "Main_obj_keys.png"
-		}
+		},
+		{ "Spacer": 20.0 },
+
+		{ "Header3": "User playlists" },
+		{ "Text": "[[[warning:Tip:]]] As of version [[[strong:0.4.0]]], you can use these URLs, and they will download all of that user's public playlists:" },
+		{ "Text": "•https://soundcloud.com/username/sets" },
+		{ "Text": "•https://www.youtube.com/@username/playlists" },
+		{ "Text": "SoundCloud likes work too:" },
+		{ "Text": "•https://soundcloud.com/username/likes" },
+		{ "Text": "The program tries to handle playlists generically: it detects them, then sorts them into a multithreaded download, in batches, like it does for all normal playlists." },
+		{ "Text": "[[[italics:Before, it was able to download from these URLs but it was only single-threaded.]]]" }
 	]
 }

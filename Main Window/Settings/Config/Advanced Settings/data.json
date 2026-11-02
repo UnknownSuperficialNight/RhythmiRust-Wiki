@@ -78,6 +78,23 @@
 			"Image": "Add new argument.png"
 		},
 		{ "Spacer": 10.0 },
+
+		{ "Header3": "Arguments added by RhythmiRust" },
+		{ "Text": "These are the extra arguments \"RhythmiRust\" adds on top of yt-dlp:" },
+		{
+			"Table": {
+				"headers": ["Argument", "Replaced with"],
+				"rows": [
+					["[[[strong:download_dir]]]", "The path of the target directory a song will be downloaded into"],
+					["[[[strong:target_url]]]", "The \"URL\" that will be passed to yt-dlp"],
+					["[[[strong:codec]]]", "The song's codec"],
+					["[[[strong:ffmpeg_path]]]", "The ffmpeg binary in the config"],
+					["[[[strong:deno_path]]]", "The Deno JavaScript runtime, used by yt-dlp to solve JavaScript challenges"],
+					["[[[strong:PATH_SEPARATOR]]]", "A platform-agnostic path separator, so Linux and Windows always get the right one"]
+				]
+			}
+		},
+		{ "Text": "[[[italics:ffmpeg_path means the user does not need to install ffmpeg manually. \"RhythmiRust\" will use the ffmpeg on your system if you have it, otherwise it will download ffmpeg and manage it itself.]]]" },
 		{ "Separator": null },
 
 		{ "Header2": "Cache" },

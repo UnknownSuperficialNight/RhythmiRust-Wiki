@@ -47,14 +47,14 @@
 		{ "Text": "A quick summary of what each combination does. The sections below explain each setting in more detail." },
 		{
 			"Table": {
-				"headers": ["Fit to display", "High resolution", "Source for effects", "Main image", "Background"],
+				"headers": ["Fit to display", "High resolution", "Source for effects", "Album art", "Background"],
 				"rows": [
-					["[[[strong:Off]]]", "Off", "Off", "Kept, capped at 4096px", "Shrunk to display size, then effect (fast)"],
-					["[[[strong:Off]]]", "Off", "On", "Kept, capped at 4096px", "Not shrunk, effect at main image size"],
-					["[[[strong:Off]]]", "On", "Off", "Kept at full resolution", "Shrunk to display size, then effect"],
-					["[[[strong:Off]]]", "On", "On", "Kept at full resolution", "Not shrunk, effect at full resolution (slowest)"],
-					["[[[warning:On]]]", "Off", "[[[italics:Ignored]]]", "Shrunk to drawn size from 4096px", "Shrunk to display size from 4096px, then effect"],
-					["[[[warning:On]]]", "On", "[[[italics:Ignored]]]", "Shrunk to drawn size from full source", "Shrunk to display size from full source, then effect"]
+					["[[[strong:Off]]]", "Off", "Off", "Capped at 4096px", "Shrunk to display size (fast)"],
+					["[[[strong:Off]]]", "Off", "On", "Capped at 4096px", "Same as album art"],
+					["[[[strong:Off]]]", "On", "Off", "Full resolution", "Shrunk to display size"],
+					["[[[strong:Off]]]", "On", "On", "Full resolution", "Same as album art (slowest)"],
+					["[[[warning:On]]]", "Off", "[[[italics:Disabled]]]", "Shrunk to drawn size (from 4096px)", "Shrunk to display size (from 4096px)"],
+					["[[[warning:On]]]", "On", "[[[italics:Disabled]]]", "Shrunk to drawn size (from full source)", "Shrunk to display size (from full source)"]
 				]
 			}
 		},

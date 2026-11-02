@@ -14,16 +14,17 @@
 		{ "Header": "Overview of Each UI Element" },
 
 		{ "Header2": "Start" },
-		{ "Text": "Starts the download process" },
-		{ "Text": "Will be disabled apon download start (to avoid confusion about why there is a button that does nothing while downloading)" },
+		{ "Text": "Starts the download process." },
+		{ "Text": "[[[warning:Note:]]] The button is disabled once the download starts, so two download processes are never started at once (the download itself is multithreaded)." },
 		{
 			"Image": "Start.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Regenerate list" },
-		{ "Text": "Regenerates the \"Custom Order\" list new results at the bottom of the list" },
-		{ "Text": "Becomes Red indicating that the list needs to be regenerated before starting the download" },
+		{ "Text": "Regenerates the [[[strong:Custom Order]]] list, with new results added at the bottom of the list." },
+		{ "Text": "[[[warning:Note:]]] The button turns [[[strong:red]]] to show that the list needs to be regenerated before starting the download." },
+		{ "Text": "[[[warning:Note:]]] This may be removed in the future, as the ordering in the list has become largely redundant over time." },
 		{
 			"Image": "Regenerate list.png"
 		},
@@ -31,30 +32,43 @@
 
 		{ "Header2": "Custom Order" },
 		{ "Text": "Arrange your music by organizing a scrollable list of playlists or songs." },
-		{ "Text": "This feature deduplicates URLs, preventing duplicates across multiple sources such as artists and playlists." },
-		{ "Text": "To achieve this:" },
-		{ "Text": "•Click on an item to select it (known as the cursor)." },
-		{ "Text": "•Use the \"Cursor Mover\" buttons to rearrange the order." },
-		{ "Text": "•Ensures that any duplicate songs are downloaded into their respective artist folders instead of generic playlist folders." },
-		{ "Text": "•Keep in mind that placing an artist above a playlist means that duplicates within lower sources will be removed leaving the artist with the url before the download process begins, saving time and internet bandwidth." },
-		{ "Text": "Note: Duplicate songs in the downloaded music list will only be removed from the source above it in the order during the download process." },
+		{ "Text": "The list is an ordered hierarchy: items near the top take priority over items near the bottom, so if the same URL is in two different folders, it knows which one to prioritise." },
+		{ "Text": "[[[strong:Tip:]]] For most people, individual song links should be at the top and playlists at the bottom." },
 		{
 			"Image": "Custom Order.png"
 		},
+		{ "Spacer": 20.0 },
+
+		{ "Header3": "How to arrange the list" },
+		{
+			"Table": {
+				"headers": ["Action", "How"],
+				"rows": [
+					["[[[strong:Select]]]", "Click on an item to select it (known as the [[[strong:cursor]]])"],
+					["[[[strong:Move]]]", "Use the [[[strong:Cursor Mover]]] buttons to rearrange the order"]
+				]
+			}
+		},
+		{ "Spacer": 20.0 },
+
+		{ "Header3": "How the priority works" },
+		{ "Text": "Playlists, artists and other collections are not compared as a whole. They are first broken down into a pool of individual song URLs, and then those song URLs are compared." },
+		{ "Text": "If the same song URL turns up in two different folders, the order decides which one is kept. The one nearest the top is downloaded and the one lower down is skipped, so you never end up with a duplicate." },
+		{ "Text": "[[[strong:Example:]]] If a song is downloaded into one folder near the top, and a playlist lower down also contains that exact song URL, that song is skipped in the lower folder." },
+		{ "Text": "[[[warning:Note:]]] Duplicates are only ever removed from folders lower in the order than the one that keeps the song, and this happens during the download process." },
 		{ "Separator": null },
 
 		{ "Header2": "Cursor skip multiplier" },
-		{ "Text": "This multiplier affects the \"Cursor Mover\"" },
-		{ "Text": "if the number is 2 when moving up and down using the \"Cursor Mover\"" },
-		{ "Text": "it will move that many spaces in the \"Custom Order\"" },
-		{ "Text": "Just change the number to how many spaces you want to move to speed up traversing in large lists" },
+		{ "Text": "This multiplier affects the [[[strong:Cursor Mover]]]." },
+		{ "Text": "For example, if the number is [[[strong:2]]], each press of up or down in the [[[strong:Cursor Mover]]] moves the cursor that many spaces in the [[[strong:Custom Order]]]." },
+		{ "Text": "[[[strong:Tip:]]] Change the number to how many spaces you want to move, to speed up traversing large lists." },
 		{
 			"Image": "Cursor skip multiplier.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Cursor Mover" },
-		{ "Text": "This moves selected items up or down in \"Custom Order\"" },
+		{ "Text": "This moves the selected item up or down in the [[[strong:Custom Order]]]." },
 		{
 			"Image": "Cursor Mover.png"
 		}

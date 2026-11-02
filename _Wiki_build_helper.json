@@ -21,29 +21,10 @@
 
 		{ "_Comment": "Add a image with a relative path" },
 		{
-			"ImageHorizonal": {
-				"path": ".png",
-				"max_width": 100.0,
-				"max_height": 100.0
-			}
-		},
-
-		{ "_Comment": "Add a image with a relative path" },
-		{
 			"Image": "/_hidden_global_assets/gear_icon.png"
 		},
 
-		{ "_Comment": "Add a image with a relative path and horizontal offset" },
-		{
-			"ImageHorizonal": {
-				"path": ".png",
-				"max_width": 100.0,
-				"max_height": 100.0,
-				"offset": 20.0
-			}
-		},
-
-		{ "_Comment": "Add a image with a relative path and vertical offset" },
+		{ "_Comment": "Add a image with a relative path and horizontal offset. The offset always moves the image to the right, in any position on the page" },
 		{
 			"Image": {
 				"path": ".png",
@@ -52,6 +33,9 @@
 				"offset": 20.0
 			}
 		},
+
+		{ "_Comment": "max_width and max_height are optional, including on the top of page image. Leave them out to show the image at its native size and use just the offset. Images still shrink to fit a narrow window either way." },
+		{ "Image": { "path": "icon.png", "offset": 150.0 } },
 
 		{ "_Comment": "Add a image with a path from root" },
 		{

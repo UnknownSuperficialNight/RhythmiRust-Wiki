@@ -93,6 +93,7 @@
 		{ "Text": "Cyan Blue: #55AFEC" },
 		{ "Text": "Crimson Red: #770000" },
 		{ "Text": "Deep Purple: #6934A4" },
+		{ "Text": "Hot Magenta: #C2185B" },
 
 		{ "_Comment": "GenList Defaults" },
 		{
@@ -105,7 +106,8 @@
 			"#008040": "deep_green",
 			"#55AFEC": "cyan_blue",
 			"#770000": "crimson_red",
-			"#6934A4": "deep_purple"
+			"#6934A4": "deep_purple",
+			"#C2185B": "hot_magenta"
 		},
 
 		{ "_Comment": "The above genlist format, saved as GenList.json in a folder, slices individual stroke colours out of that folder's Main.svg/Main.svgz into their own PNGs. GenList.json always targets Main.svg/Main.svgz automatically, no naming needed" },
@@ -131,6 +133,7 @@
 		{ "Text": "[[[underline:Light Green]]] ≈ Remove Bar" },
 		{ "Text": "[[[underline:Pale Orange]]] ≈ Remove Bar" },
 		{ "Text": "[[[underline:Soft Peach]]] ≈ Remove Bar" },
+		{ "Text": "[[[underline:Hot Magenta]]] ≈ Remove Bar" },
 
 		{ "_Comment": "This is how to include button types from striked out to linking to other pages" },
 		{ "Text": "•[[[button:][]]]- [[[strikethrough:]]]" },

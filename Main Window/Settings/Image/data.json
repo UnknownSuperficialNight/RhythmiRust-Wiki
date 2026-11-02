@@ -7,6 +7,7 @@
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Display album art while playing music" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Auto-clear album art when music stops" },
 		{ "Text": "[[[underline:Dark Blue]]] ≈ Write background image to disk" },
+		{ "Text": "[[[underline:Hot Magenta]]] ≈ Fit images to the display size" },
 		{ "Text": "[[[underline:Light Green]]] ≈ Enable high resolution images" },
 		{ "Text": "[[[underline:Pale Orange]]] ≈ Enable the source image for effects" },
 		{ "Text": "[[[underline:Soft Peach]]] ≈ Image Padding Mode" },
@@ -42,17 +43,44 @@
 		},
 		{ "Separator": null },
 
+		{ "Header2": "How the image settings combine" },
+		{ "Text": "A quick summary of what each combination does. The sections below explain each setting in more detail." },
+		{
+			"Table": {
+				"headers": ["Fit to display", "High resolution", "Source for effects", "Main image", "Background"],
+				"rows": [
+					["[[[strong:Off]]]", "Off", "Off", "Kept, capped at 4096px", "Shrunk to display size, then effect (fast)"],
+					["[[[strong:Off]]]", "Off", "On", "Kept, capped at 4096px", "Not shrunk, effect at main image size"],
+					["[[[strong:Off]]]", "On", "Off", "Kept at full resolution", "Shrunk to display size, then effect"],
+					["[[[strong:Off]]]", "On", "On", "Kept at full resolution", "Not shrunk, effect at full resolution (slowest)"],
+					["[[[warning:On]]]", "Off", "[[[italics:Ignored]]]", "Shrunk to drawn size from 4096px", "Shrunk to display size from 4096px, then effect"],
+					["[[[warning:On]]]", "On", "[[[italics:Ignored]]]", "Shrunk to drawn size from full source", "Shrunk to display size from full source, then effect"]
+				]
+			}
+		},
+		{ "Spacer": 20.0 },
+
+		{ "Header2": "Fit images to the display size" },
+		{ "Text": "Enabled: Shrinks the main image to the size it is drawn at, and sizes the background to cover the whole display area. This uses far less memory and processing. This overrides [[[strong:Enable the source image for effects]]], which is disabled while this is on." },
+		{ "Text": "Disabled: Keeps the normal behaviour, where the main image keeps its source quality (up to the [[[warning:4096x4096]]] limit unless high resolution images are enabled)." },
+		{ "Text": "[[[warning:Note:]]] Images may look softer if the window is enlarged afterwards (for example going fullscreen) until the next song loads." },
+		{
+			"Image": "Fit images to the display size.png"
+		},
+		{ "Spacer": 20.0 },
+
 		{ "Header2": "Enable high resolution images" },
-		{ "Text": "Enabled: This ignores the [[[warning:4096x4096]]] pixel limit." },
+		{ "Text": "Enabled: This ignores the [[[warning:4096x4096]]] pixel limit. While [[[strong:Fit images to the display size]]] is on, the image is resized straight from the full-resolution source, which is slightly sharper but slower to load and uses more memory." },
 		{ "Text": "Disabled: Enforces the [[[warning:4096x4096]]] pixel limit ensuring any images bigger are resized down to reasonable sizes." },
 		{
 			"Image": "Enable high resolution images.png"
 		},
-		{ "Separator": null },
+		{ "Spacer": 20.0 },
 
 		{ "Header2": "Enable the source image for effects" },
-		{ "Text": "Enabled: Forces the usage of the highest quality image for effect padding." },
-		{ "Text": "Disabled: Forces the cheapest and lowest quality image for effect padding." },
+		{ "Text": "Enabled: Runs the effect at the main image's resolution for the highest quality effect padding, at the cost of speed and memory." },
+		{ "Text": "Disabled: Runs the effect on a smaller copy sized to the display, which is the cheapest and lowest quality option." },
+		{ "Text": "[[[warning:Note:]]] This setting is ignored, and cannot be changed, while [[[strong:Fit images to the display size]]] is enabled." },
 		{
 			"Image": "Enable the source image for effects.png"
 		},

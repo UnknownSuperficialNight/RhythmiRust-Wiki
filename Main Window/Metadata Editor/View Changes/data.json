@@ -10,26 +10,42 @@
 		{ "Text": "[[[underline:Light Green]]] ≈ Multiple Conditions" },
 		{ "Separator": null },
 
+		{ "Header": "Overview of Each UI Element" },
+
 		{ "Header2": "Name" },
 		{ "Text": "This is the name of the song you are editing." },
 		{
 			"Image": "Name.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Conditions" },
-		{ "Text": "This is is the condition you are doing in this case adding \"2018\" to (Column: lyrics)." },
+		{ "Text": "This is the condition being applied. In this case, adding [[[strong:\"Lyrics here lol\"]]] to the [[[strong:lyrics]]] column." },
 		{
 			"Image": "Conditions.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Delete the above edit" },
-		{ "Text": "Delete the above edit removing it from actions to perform on \"Save changed\"." },
+		{ "Text": "[[[strong:Save changes]]] will not perform the above edit once it is removed." },
 		{
 			"Image": "Delete the above edit.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Multiple Conditions" },
-		{ "Text": "This is showing multiple conditions in this case two adds are happening filling \"eng\" and \"2018\" to their respective columns." },
+		{ "Text": "A single song can have more than one condition. In this case, the same song has two conditions:" },
+		{
+			"Table": {
+				"headers": ["Condition", "Change", "Column"],
+				"rows": [
+					["[[[strong:Add]]]", "\"18\"", "rating"],
+					["[[[strong:Replace]]]", "US → \"GB\"", "country"]
+				]
+			}
+		},
+		{ "Text": "[[[strong:Add]]] fills in a value for the column, and [[[strong:Replace]]] swaps the existing value for a new one." },
+		{ "Text": "[[[warning:Note:]]] The file is only changed when these are actually saved. Each file is read once, all of its conditions are applied, and it is written back to disk once, which saves a lot of performance no matter how many conditions there are." },
 		{
 			"Image": "Multiple Conditions.png"
 		}

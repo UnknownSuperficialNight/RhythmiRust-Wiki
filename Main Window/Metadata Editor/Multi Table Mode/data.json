@@ -2,36 +2,56 @@
 	"title": "Multi Table Mode",
 	"contents": [
 		{
-			"Image": {
-				"path": "Main.png",
-				"max_width": 1345.0,
-				"max_height": 813.0
-			}
+			"Image": "Main.png"
 		},
 		{ "Text": "[[[underline:Soft Purple]]] ≈ Select Tables" },
 		{ "Text": "[[[underline:Soft Yellow]]] ≈ Multi-Table Mode Status & Stats" },
 		{ "Text": "[[[underline:Dark Blue]]] ≈ Table Names" },
 		{ "Separator": null },
 
+		{ "Header": "Overview of Each UI Element" },
+
 		{ "Header2": "Select Tables" },
 		{ "Text": "Select multiple tables to combine them in the viewport/(Select values)." },
-		{ "Text": "[[[strong:Tip:]]] You can use [[[strong:SHIFT + LEFT-CLICK]]] on the tables, then scroll down hold [[[strong:SHIFT + LEFT-CLICK]]] again to select all tables in between." },
+		{ "Text": "Selected tables are shown in a lighter purple." },
+		{ "Text": "[[[strong:Tip:]]] To select a range, [[[strong:SHIFT + LEFT-CLICK]]] the first table, scroll down, then [[[strong:SHIFT + LEFT-CLICK]]] the last table to select every table in between." },
 		{
 			"Image": "Select Tables.png"
 		},
+		{ "Separator": null },
 
 		{ "Header2": "Multi-Table Mode Status & Stats" },
 		{ "Text": "Shows the status of the [[[strong:Multi-Table Mode]]] and the stats of the selected tables." },
-		{ "Text": "This includes the number of [[[strong:tables combined]]] and the total amount of [[[strong:rows]]] in the [[[strong:viewport/(Select values)]]]" },
-		{
-			"Text": "It also includes some of the table names that are combined and a [[[strong:clear button]]] to clear selected options. (You can use the [[[strong:Multi-Table Mode]]] toggle/icon to return to [[[strong:single-table]]] mode)"
-		},
 		{
 			"Image": "Multi-Table Mode Status_Stats.png"
 		},
+		{ "Spacer": 20.0 },
+
+		{ "Header3": "What it shows" },
+		{
+			"Table": {
+				"headers": ["Part", "Meaning"],
+				"rows": [
+					["[[[strong:Multi-table mode]]]", "The status of the mode"],
+					["[[[strong:tables combined]]]", "The number of tables combined"],
+					["[[[strong:total rows]]]", "The total amount of rows in the viewport/(Select values)"],
+					["[[[strong:Table names]]]", "Some of the table names that are combined"],
+					["[[[strong:Clear Selection]]]", "Clears the selected options"]
+				]
+			}
+		},
+		{ "Text": "[[[strong:Tip:]]] You can use the [[[strong:Multi-Table Mode]]] toggle/icon to return to [[[strong:single-table]]] mode." },
+		{
+			"Image": {
+				"path": "/_hidden_global_assets/gear_icon.png",
+				"max_width": 75.0,
+				"max_height": 75.0
+			}
+		},
+		{ "Separator": null },
 
 		{ "Header2": "Table Names" },
-		{ "Text": "This shows in the [[[strong:Name]]] column the [[[strong:table]]] its from in blue and the [[[strong:name]]] of the song in white." },
+		{ "Text": "In the [[[strong:Name]]] column, each row shows the table it is from in blue, followed by the name of the song in white." },
 		{
 			"Image": "Table Names.png"
 		}

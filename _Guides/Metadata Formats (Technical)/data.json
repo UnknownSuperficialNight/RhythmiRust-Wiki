@@ -1,0 +1,101 @@
+{
+	"title": "Metadata Formats (Technical)",
+	"subheading": "A technical guide to how audio tags are stored in each format.",
+	"contents": [
+		{ "Text": "[[[strong:Just want to know which format to choose?]]] The [[[button:Codecs][/_Guides/Codecs]]] guide explains it simply, without the technical breakdown." },
+		{ "Spacer": 10.0 },
+
+		{ "Header": "Metadata (Tags)" },
+		{ "Text": "Metadata is the information stored inside an audio file, such as the title, artist, album, genre, track number and cover art. It is what lets a player display and sort your music properly, without relying on file names." },
+		{ "Spacer": 10.0 },
+
+		{ "Header2": "Quick Summary (TL;DR)" },
+		{ "Text": "•[[[strong:Same fields, different names:]]] Every format stores the title, artist, album and so on, but each uses its own names and structure. See [[[strong:Common fields compared]]] below." },
+		{ "Text": "•[[[strong:Converting:]]] Common fields normally carry over, but [[[strong:custom fields]]] and unusual frames may be lost." },
+		{ "Text": "•[[[strong:Simplest:]]] [[[strong:Vorbis comments]]] use plain KEY=value text, with any custom key and multiple values." },
+		{ "Text": "•[[[strong:Non-English text:]]] Safest in [[[strong:Vorbis comments]]], [[[strong:MP4 tags]]] and [[[strong:ID3v2.4]]], which all use UTF-8. [[[strong:WAV]]] has the weakest support." },
+		{ "Spacer": 10.0 },
+		{
+			"Table": {
+				"headers": ["Format", "Used by", "Stored as", "Cover art", "Custom fields"],
+				"rows": [
+					["[[[strong:ID3v2]]]", "MP3", "Frames", "Yes (APIC)", "Yes (TXXX)"],
+					["[[[strong:ID3v1]]]", "MP3 (obsolete)", "Fixed block", "No", "No"],
+					["[[[strong:Vorbis comments]]]", "FLAC, Ogg Vorbis, Opus", "KEY=value pairs", "Yes", "Yes (any key)"],
+					["[[[strong:MP4 tags]]]", "M4A (AAC, ALAC)", "Atoms", "Yes (covr)", "Yes (----)"],
+					["[[[strong:RIFF INFO]]]", "WAV", "Chunks", "No standard", "No"]
+				]
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header2": "ID3" },
+		{ "Text": "[[[italics:Frame based]]] - Used by MP3 files." },
+		{ "Text": "Each piece of information is stored in its own frame, identified by a four-character ID. An ID3v2 tag sits at the start of the file and can hold Unicode text, lyrics and embedded images." },
+		{ "Spacer": 10.0 },
+		{ "Header3": "Versions" },
+		{ "Text": "•[[[strong:ID3v2.3]]] - The most widely compatible version. Text is stored as ISO-8859-1 or UTF-16, and each frame holds a single value, so multiple artists have to be joined into one string with a separator." },
+		{ "Text": "•[[[strong:ID3v2.4]]] - The newest version. It adds UTF-8 text and proper support for multiple values in one frame, but some older players and devices do not read it well." },
+		{ "Text": "•[[[strong:ID3v1]]] - An obsolete format stored in the last 128 bytes of the file. Fields are fixed at around 30 characters, text is usually limited to ISO-8859-1 (Latin) characters, and there is no cover art." },
+		{ "Spacer": 10.0 },
+		{ "Header3": "Details" },
+		{ "Text": "•[[[strong:Custom fields:]]] Stored in user defined text frames (TXXX)." },
+		{ "Text": "•[[[strong:Cover art:]]] Stored in an attached picture frame (APIC), along with its MIME type and a picture type such as front cover or back cover. A file can hold several pictures." },
+		{ "Text": "[[[warning:Note:]]] A file can carry both ID3v1 and ID3v2 tags at once, and different players may read different ones." },
+		{ "Spacer": 10.0 },
+
+		{ "Header2": "Vorbis comments" },
+		{ "Text": "[[[italics:Key=value based]]] - Used by FLAC, Ogg Vorbis and Opus files." },
+		{ "Text": "Each tag is a text pair written as [[[strong:KEY=value]]], for example TITLE=Example Song. FLAC stores them in its own comment block, Ogg Vorbis in its second header packet, and Opus in a header called OpusTags." },
+		{ "Spacer": 10.0 },
+		{ "Text": "•[[[strong:Keys:]]] Plain ASCII characters, and not case sensitive, so artist and ARTIST are the same field." },
+		{ "Text": "•[[[strong:Values:]]] UTF-8, so they can hold text in any language." },
+		{ "Text": "•[[[strong:Field names:]]] There is no fixed list, so you can add your own custom keys. A few common names (TITLE, ARTIST, ALBUM, GENRE, DATE and TRACKNUMBER) are widely used." },
+		{ "Text": "•[[[strong:Multiple values:]]] The same key can appear more than once, so a track with two artists simply has two ARTIST entries." },
+		{ "Text": "•[[[strong:Cover art:]]] FLAC has a dedicated picture block. Ogg Vorbis and Opus store the same picture data as base64 text inside a comment called METADATA_BLOCK_PICTURE." },
+		{ "Text": "[[[warning:Note:]]] Large embedded images in [[[strong:Ogg Vorbis]]] and [[[strong:Opus]]] files can cause problems for some older hardware players, as the picture is stored inside the comment header." },
+		{ "Spacer": 10.0 },
+
+		{ "Header2": "MP4 tags" },
+		{ "Text": "[[[italics:Atom based]]] - Used by M4A files (AAC and ALAC)." },
+		{ "Text": "Tags are stored in atoms, which are labelled blocks inside the MP4 structure. The tags sit together in a list atom (ilst) within the file's metadata." },
+		{ "Spacer": 10.0 },
+		{ "Text": "•[[[strong:Atom names:]]] Four-character codes, many of which begin with a © symbol, such as ©nam for the title." },
+		{ "Text": "•[[[strong:Numbers:]]] Track and disc numbers (trkn and disk) are stored as numbers rather than plain text." },
+		{ "Text": "•[[[strong:Genre:]]] ©gen holds a custom genre as text, while gnre holds a standard genre from a fixed list." },
+		{ "Text": "•[[[strong:Custom fields:]]] Stored in freeform atoms (----), which have their own name and an identifier such as com.apple.iTunes. Support for them varies between players." },
+		{ "Text": "•[[[strong:Cover art:]]] Stored in the covr atom." },
+		{ "Spacer": 10.0 },
+
+		{ "Header2": "RIFF INFO" },
+		{ "Text": "[[[italics:Chunk based]]] - Used by WAV files." },
+		{ "Text": "Tags are stored in a LIST chunk of the type INFO. Each field is a four-character ID followed by its text." },
+		{ "Spacer": 10.0 },
+		{ "Text": "•[[[strong:Fields:]]] A small, fixed set, such as INAM for the title, IART for the artist and IPRD for the album." },
+		{ "Text": "•[[[strong:Track number:]]] ITRK is widely used but is not part of the original specification, so not every program reads it." },
+		{ "Text": "•[[[strong:Text encoding:]]] The specification defaults to ISO-8859-1, with an optional CSET chunk to name a code page, but programs do not always follow it, so non-English characters may display incorrectly." },
+		{ "Text": "•[[[strong:Cover art:]]] There is no standard way to store it." },
+		{ "Text": "[[[warning:Note:]]] Some tools embed an ID3v2 tag inside the WAV file instead, which allows richer tags, but support for this varies between players." },
+		{ "Separator": null },
+
+		{ "Header2": "Common fields compared" },
+		{
+			"Table": {
+				"headers": ["Field", "ID3", "Vorbis comments", "MP4 tags", "RIFF INFO"],
+				"rows": [
+					["[[[strong:Title]]]", "TIT2", "TITLE", "©nam", "INAM"],
+					["[[[strong:Artist]]]", "TPE1", "ARTIST", "©ART", "IART"],
+					["[[[strong:Album artist]]]", "TPE2", "ALBUMARTIST", "aART", "None"],
+					["[[[strong:Album]]]", "TALB", "ALBUM", "©alb", "IPRD"],
+					["[[[strong:Genre]]]", "TCON", "GENRE", "©gen", "IGNR"],
+					["[[[strong:Date]]]", "TDRC (TYER in v2.3)", "DATE", "©day", "ICRD"],
+					["[[[strong:Track number]]]", "TRCK", "TRACKNUMBER", "trkn", "ITRK (unofficial)"],
+					["[[[strong:Disc number]]]", "TPOS", "DISCNUMBER", "disk", "None"],
+					["[[[strong:Cover art]]]", "APIC", "Picture block (FLAC) / METADATA_BLOCK_PICTURE (Ogg)", "covr", "No standard support"]
+				]
+			}
+		},
+		{ "Spacer": 10.0 },
+		{ "Text": "[[[warning:Note:]]] When converting between formats, common fields such as the title, artist and album normally carry over, but custom fields and unusual frames may be lost." }
+	]
+}

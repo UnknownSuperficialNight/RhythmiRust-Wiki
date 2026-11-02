@@ -66,6 +66,20 @@
 			]
 		},
 
+		{ "_Comment": "Add a table. headers is the top row and rows is a list of rows, where each row is a list of cells. Every row needs the same number of cells as there are headers" },
+		{ "_Comment": "Headers are plain text. Cells in rows use the same [[[...]]] markers as Text (strong, warning, italics, underline, strikethrough, button and hyperlink)" },
+		{ "_Comment": "Cells never wrap, so each column grows to fit its longest cell. Keep cell text short and put longer explanations in normal Text instead, as very wide tables can be wider than a small window" },
+		{ "_Comment": "Cells do not need a leading bullet. Each table gets its own id from its position on the page, so no naming is needed" },
+		{
+			"Table": {
+				"headers": ["Codec", "Type", "Best for"],
+				"rows": [
+					["[[[strong:Opus]]]", "[[[warning:Lossy]]] [[[strong:Recommended]]]", "Small files with great quality"],
+					["[[[strong:FLAC]]]", "[[[warning:Lossless]]]", "[[[button:Codecs][/_Guides/Codecs]]]"]
+				]
+			}
+		},
+
 		{ "_Comment": "These are the colours i use for the svg images" },
 		{ "Text": "Soft Purple: #D1C4E9" },
 		{ "Text": "Soft Yellow: #F9EBAE" },

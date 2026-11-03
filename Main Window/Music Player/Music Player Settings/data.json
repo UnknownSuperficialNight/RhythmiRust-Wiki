@@ -1,0 +1,38 @@
+{
+	"title": "Music Player Settings",
+	"contents": [
+		{ "Text": "Open these settings by clicking the gear icon in the Music Player." },
+		{
+			"Image": {
+				"path": "/_hidden_global_assets/gear_icon.png",
+				"max_width": 50.0,
+				"max_height": 50.0
+			}
+		},
+		{ "Separator": null },
+
+		{ "Header": "Overview of Each Setting" },
+
+		{ "Header2": "Automatic Gain Control" },
+		{ "Text": "Automatic Gain Control (AGC) dynamically modifies audio volume, enhancing or reducing it in real-time, based on the current loudness of the music to maintain optimal listening levels." },
+		{ "Separator": null },
+
+		{ "Header2": "Enable Speed Control" },
+		{ "Text": "Enables the speed control UI, allowing you to adjust the playback speed of the music." },
+		{ "Text": "Once enabled, the [[[strong:Speed Slider]]] is shown in the Music Player, next to the volume slider." },
+		{ "Spacer": 20.0 },
+
+		{ "Header3": "Speed values" },
+		{
+			"Table": {
+				"headers": ["Value", "Effect"],
+				"rows": [
+					["[[[strong:Below 1.00]]]", "Slower"],
+					["[[[strong:1.00]]]", "Default speed"],
+					["[[[strong:Above 1.00]]]", "Faster"],
+					["[[[strong:0.85]]]", "15% slower than the default speed"]
+				]
+			}
+		}
+	]
+}

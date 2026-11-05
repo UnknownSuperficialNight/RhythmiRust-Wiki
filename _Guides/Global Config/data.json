@@ -1,15 +1,28 @@
 {
-  "title": "Global Config Guide",
-  "subheading": "Step-by-step guide to using the global config instead of the portable config.",
-  "contents": [
-    { "Header2": "Getting Started" },
-    { "Text": "Due to windows file system restrictions and complexity I've removed the `use global config` button." },
-    { "Text": "Instead, simply relocate the RhythmiRust_config file to one of the following locations:" },
+	"title": "Global Config Guide",
+	"subheading": "Step-by-step guide to using the global config instead of the portable config.",
+	"contents": [
+		{ "Header2": "Getting Started" },
+		{ "Text": "The [[[strong:use global config]]] button has been removed, due to Windows file system restrictions and complexity." },
+		{ "Text": "Instead, simply relocate the [[[strong:RhythmiRust_config]]] folder to one of the following locations:" },
+		{
+			"Table": {
+				"headers": ["Platform", "Location", "Shorthand"],
+				"rows": [
+					["[[[strong:Linux]]]", "/home/username/.config/RhythmiRust_config", "~/.config/RhythmiRust_config"],
+					["[[[strong:Windows]]]", "C:\\Users\\username\\AppData\\Local\\RhythmiRust_config", "%LOCALAPPDATA%\\RhythmiRust_config"]
+				]
+			}
+		},
+		{ "Spacer": 10.0 },
 
-    { "Text": "[[[strong:/home/username/.config/RhythmiRust_config]]] or [[[strong:~/.config/RhythmiRust_config]]]" },
-    { "Text": "[[[strong:C:\\Users\\username\\AppData\\Local\\RhythmiRust_config]]] or [[[strong:%LOCALAPPDATA%\\RhythmiRust_config]]]" },
+		{ "Text": "By doing so, you will be using the [[[strong:global config]]] instead of the [[[strong:portable config]]]. This means you can use the same config for all of your RhythmiRust installations." },
+		{ "Text": "Thus when updating RhythmiRust, you do not have to worry about where to put the binary/executable." },
+		{ "Text": "[[[warning:Note:]]] The [[[strong:portable config]]] is simply a folder named [[[strong:RhythmiRust_config]]], which is always created right next to where the executable is." },
+		{ "Separator": null },
 
-    { "Text": "By doing so, you'll be using the global config instead of the portable config. This will mean that you can use the same config for all of your RhythmiRust installations." },
-    { "Text": "Thus when updating RhythmiRust you don't have to worry where to put the binary/executable." }
-  ]
+		{ "Header2": "Find your current config" },
+		{ "Text": "[[[strong:Settings -> About:]]] This page shows the [[[strong:Config path]]] and the [[[strong:Log path]]] that are currently in use." },
+		{ "Text": "To quickly grab the current config path, [[[strong:double-click]]] it and press [[[strong:CTRL + C]]] to copy it." }
+	]
 }

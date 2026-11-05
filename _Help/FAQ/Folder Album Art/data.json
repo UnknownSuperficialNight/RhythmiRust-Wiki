@@ -1,12 +1,71 @@
 {
 	"title": "Folder Album Art",
 	"contents": [
-		{ "Text": "You can add album art to an entire folder by creating a file in the folder called 'album_art.png', which will be used if no embedded image is found in a file." },
-		{ "Text": "Alternatively, you can add an album art directory called 'album_art', and any images with the supported formats will be randomised and used as album art, again only if no embedded image is present." },
+		{ "Header2": "Adding album art to a folder" },
+		{ "Text": "You can add album art to an entire folder with a file or a directory, named after one of these types. They are used if no embedded image is found in a file, and they are checked in this order, where the first match is used:" },
 		{
-			"Text": "If you want to override any embedded images or the normal album art, you can use override types such as 'override_album_art' or 'override_cover' (either as files or directories), which will take priority over all other album art including embedded images."
+			"Table": {
+				"headers": ["Order", "Name", "Type"],
+				"rows": [
+					["[[[strong:1]]]", "[[[strong:album_art]]]", "File or directory"],
+					["[[[strong:2]]]", "[[[strong:cover]]]", "File or directory"],
+					["[[[strong:3]]]", "[[[strong:folder]]]", "File or directory"],
+					["[[[strong:4]]]", "[[[strong:front]]]", "File or directory"],
+					["[[[strong:5]]]", "[[[strong:albumart]]]", "File or directory"],
+					["[[[strong:6]]]", "[[[strong:album]]]", "File or directory"],
+					["[[[strong:7]]]", "[[[strong:artwork]]]", "File or directory"]
+				]
+			}
 		},
-		{ "Text": "Supported formats for all album art types including 'album_art', 'cover', 'override_album_art', and 'override_cover' are: PNG, JPG, JPEG, and WebP." },
-		{ "Text": "The recommended image format is PNG, as this is what the other formats are converted to internally." }
+		{ "Text": "[[[warning:Note:]]] The names are not case sensitive, so [[[strong:Cover]]] and [[[strong:cover]]] both work." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "File or directory" },
+		{
+			"Table": {
+				"headers": ["Type", "How it works"],
+				"rows": [
+					["[[[strong:File]]]", "Name it after the type, with a supported extension (e.g. album_art.png)"],
+					["[[[strong:Directory]]]", "Any images inside with a supported format are randomised and used as album art"]
+				]
+			}
+		},
+		{ "Text": "[[[warning:Note:]]] For each name, the directory is checked before the file." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Overriding embedded images" },
+		{ "Text": "If you want to override any embedded images or the normal album art, use one of these types instead:" },
+		{
+			"Table": {
+				"headers": ["Name", "Type", "When it is used"],
+				"rows": [
+					["[[[strong:override_album_art]]]", "File or directory", "Always"],
+					["[[[strong:override_cover]]]", "File or directory", "Always"]
+				]
+			}
+		},
+		{ "Text": "[[[warning:Note:]]] The [[[strong:override]]] types take priority over all other album art, including embedded images. They are checked in the order shown, and work the same way as the normal types." },
+		{ "Separator": null },
+
+		{ "Header2": "If nothing matches" },
+		{ "Text": "If no embedded image and none of the names above are found, the folder the song is in is checked for any image, whatever it is called." },
+		{ "Text": "If there is [[[strong:exactly one]]] image in the folder, it is used as the album art, as it is probably the cover." },
+		{ "Text": "If there are two or more images, nothing is used." },
+		{ "Text": "[[[warning:Note:]]] This only applies to the normal types, not the override types." },
+		{ "Separator": null },
+
+		{ "Header2": "Supported formats" },
+		{ "Text": "These formats are supported for all album art types:" },
+		{
+			"Table": {
+				"headers": ["Format", "Notes"],
+				"rows": [
+					["[[[strong:PNG]]]", "[[[strong:Recommended]]]"],
+					["[[[strong:JPG]]]", "Converted to PNG internally"],
+					["[[[strong:JPEG]]]", "Converted to PNG internally"],
+					["[[[strong:WebP]]]", "Converted to PNG internally"]
+				]
+			}
+		}
 	]
 }

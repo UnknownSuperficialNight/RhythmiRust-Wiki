@@ -3,61 +3,102 @@
 	"subheading": "Step-by-step guide to using the downloader for the first time.",
 	"contents": [
 		{ "Header2": "Getting Started" },
-		{
-			"Text": "[[[strong:Downloader -> Settings -> Target Download Dir:]]] Set the folder the downloader will download to. (You probably want this set to the same path as your search folder.)"
-		},
-		{
-			"Text": "[[[strong:Downloader -> Settings -> Max Download Threads:]]] This is the number of concurrent downloads the downloader will perform. (This will be the number of songs that can be downloaded at once.) Max it out for the fastest download speeds."
-		},
+		{ "Text": "[[[strong:Downloader -> Settings -> Target Download Dir:]]] Set the folder the downloader will download to." },
+		{ "Text": "[[[strong:Tip:]]] You probably want this set to the same path as your search folder." },
+		{ "Text": "[[[strong:Downloader -> Settings -> Max Download Threads:]]] The number of concurrent downloads, i.e. how many songs can be downloaded at once. The default is [[[strong:2]]] and you can adjust it to suit your setup." },
+		{ "Text": "[[[warning:Note:]]] More threads is not always faster. Websites may apply rate limiting, which can slow or block downloads if you request too much at once." },
 		{
 			"Image": "Getting Started.png"
 		},
 		{ "Separator": null },
 
-		{ "Header3": "Spotify" },
-		{ "Text": "[[[strong:Downloader -> Settings -> Spotify download all playlists and liked:]]] Enable this to download from Spotify. (It only downloads songs from your Spotify account, i.e., playlists and liked songs.)" },
-		{ "Text": "[[[strong:Downloader -> Settings -> Spotfetch_download_selection:]]] Set this to 'liked', 'playlists', or 'liked,playlists', depending on what you want to download from Spotify." },
+		{ "Header3": "Spotify (optional)" },
+		{ "Text": "Only follow this step if you want to download from Spotify." },
+		{ "Text": "[[[strong:Downloader -> Settings -> Spotify download all playlists and liked:]]] Tick this to enable Spotify downloads." },
+		{ "Text": "[[[warning:Note:]]] This only downloads songs from your own Spotify account, i.e. your playlists and liked songs." },
+		{ "Spacer": 10.0 },
+
+		{ "Text": "[[[strong:Downloader -> Settings -> Spotfetch_download_selection:]]] Choose what to download from Spotify:" },
+		{
+			"Table": {
+				"headers": ["Option", "Downloads"],
+				"rows": [
+					["[[[strong:liked]]]", "Your liked songs"],
+					["[[[strong:playlists]]]", "Your playlists"],
+					["[[[strong:liked,playlists]]]", "Both your liked songs and your playlists"]
+				]
+			}
+		},
+		{ "Text": "[[[warning:Note:]]] Hover over the [[[strong:Spotify Disclaimer]]] in the settings before enabling this. A sign-in window will also open in your browser when you start the download." },
 		{
 			"Image": "Spotify.png"
 		},
 		{ "Separator": null },
 
-		{ "Header3": "Set up your playlists" },
+		{ "Header2": "Set up your playlists" },
+		{ "Header3": "Add a category" },
+		{ "Text": "[[[strong:Downloader -> Playlist Editor -> Closed Dropdown:]]] Select [[[strong:Add key]]] to add a new category, then fill in:" },
+		{ "Text": "[[[strong:Add Website:]]] Enter the website name (SoundCloud, YouTube, etc.)." },
+		{ "Text": "[[[strong:Choose Download Executable:]]] Choose the download executable, such as yt-dlp." },
+		{ "Text": "[[[strong:Add Codec:]]] Set your preferred codec: AAC, ALAC, FLAC, M4A, MP3, Opus, Vorbis (Ogg) or WAV." },
+		{ "Text": "[[[strong:Save:]]] Adds the category and closes the [[[strong:Add key]]] dropdown." },
+		{ "Text": "[[[warning:Note:]]] The website name must start with a letter, not a number." },
+		{ "Spacer": 10.0 },
+
+		{ "Text": "These are the recommended codecs:" },
 		{
-			"Text": "[[[strong:Downloader -> Playlist Editor -> Closed Dropdown:]]] Select [[[strong:Add key]]], then add the website name (SoundCloud, YouTube, etc.), then set [[[strong:Add Codec]]] to your preferred codec (MP3, FLAC, Opus, etc.), then click save to add the category and close the [[[strong:Add key]]] dropdown."
+			"Table": {
+				"headers": ["Codec", "Type", "Best for"],
+				"rows": [
+					["[[[strong:Opus]]]", "[[[warning:Lossy]]] [[[strong:Recommended]]]", "Small files with great quality"],
+					["[[[strong:FLAC]]]", "[[[warning:Lossless]]] [[[strong:Recommended]]]", "The best quality, with larger files"]
+				]
+			}
 		},
-		{
-			"Text": "[[[strong:Downloader -> Playlist Editor -> SoundCloud:]]] Click on the category you just made and head to [[[strong:YT_dlp_args]]], then select the one you want. The safest option is option 1 (Downloads best audio then converts to format - slower). Then click on the [[[strong:Main]]] dropdown."
-		},
+		{ "Text": "See the [[[button:Codecs][/_Guides/Codecs]]] guide for the full list." },
 		{
 			"Image": "Add key.png"
 		},
-		{
-			"Text": "In the [[[strong:Main]]] dropdown, click [[[strong:Add]]] and enter the playlist name. (This will be the name of the folder that the playlist will be downloaded into.) Then enter your URL. (Direct, playlist, and profile playlist URLs work - check examples in [[[strong:Main keys]]] in [[[button:Playlist Editor][/Main Window/Downloader/Playlist Editor]]].)"
-		},
-		{ "Text": "Press save once both fields are filled in, then press [[[strong:Save]]], and then press [[[strong:Save Changes]]] at the very top to write all the changes to the disk." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Choose a profile" },
+		{ "Text": "[[[strong:Downloader -> Playlist Editor -> SoundCloud:]]] Click the category you just made to open it." },
+		{ "Text": "Then use [[[strong:YT_dlp_args]]] to choose a profile. Profiles are numbered, and clicking one shows its description." },
+		{ "Text": "[[[strong:Profile 1]]] is the default, and is always number 1. It is called [[[strong:downloads best audio then converts (slower)]]] and it downloads the best available audio before converting it to your chosen codec." },
+		{ "Text": "[[[strong:Tip:]]] Profile 1 is the safest option, so if you are unsure, leave it as it is." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Add your playlists" },
+		{ "Text": "Next, open the [[[strong:Main]]] dropdown and click [[[strong:Add]]] then fill in:" },
+		{ "Text": "[[[strong:Playlist name:]]] The name of the folder the playlist will be downloaded into." },
+		{ "Text": "[[[strong:URL:]]] Direct, playlist and profile playlist URLs all work. See the examples under [[[strong:Main keys]]] on the [[[button:Playlist Editor][/Main Window/Downloader/Playlist Editor]]] page." },
+		{ "Text": "Once both fields are filled in, click [[[strong:Save]]] then click [[[strong:Save Changes]]] at the very top to write all your changes to disk." },
+		{ "Text": "[[[warning:Note:]]] [[[strong:Save Changes]]] is the only thing that writes your changes to disk, and it is highlighted red while there are changes to save." },
 		{
 			"Image": "Save Changes.png"
 		},
 		{ "Separator": null },
 
-		{ "Header3": "Set precedence order" },
-		{
-			"Text": "[[[strong:Downloader -> Starter -> Regenerate list:]]] This will add the new folders to the order list. (It's recommended to always [[[strong:Regenerate list]]] before each download to ensure everything is correct in the order.)"
-		},
+		{ "Header2": "Set the precedence order" },
+		{ "Header3": "Regenerate the list" },
+		{ "Text": "[[[strong:Downloader -> Starter -> Regenerate list:]]] Adds any new folders to the order list." },
+		{ "Text": "[[[strong:Tip:]]] It is recommended to always [[[strong:Regenerate list]]] before each download, so the order is correct." },
 		{
 			"Image": "Regenerate list.png"
 		},
-		{
-			"Text": "Click on the item in the list you want to move, then on the right there are up and down arrows to move the item. (Folders at the top of the list will take priority over folders at the bottom, so if there is the same song in both folders, the one at the top will be downloaded into, skipping the bottom ones.)"
-		},
-		{ "Text": "[[[warning:Note:]]] Use the arrows with the number next to them to increase the number of spaces the selected item moves." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Move items" },
+		{ "Text": "Click the [[[strong:item]]] you want to move, then use the [[[strong:up and down arrows]]] on the right to move it." },
+		{ "Text": "Folders at the top of the list take priority over folders below them. If the same song exists in more than one folder, it is downloaded into the highest one and the others are skipped." },
+		{ "Text": "[[[warning:Note:]]] The arrows with a number next to them move the selected item by that many places." },
 		{
 			"Image": "Order.png"
 		},
 		{ "Separator": null },
 
 		{ "Header2": "Start the download process" },
-		{ "Text": "[[[strong:Downloader -> Starter -> Start:]]] Press the start button to start the download process and wait. (If Spotify is enabled, it will open a sign-in window in your browser.)" }
+		{ "Text": "[[[strong:Downloader -> Starter -> Start:]]] Press [[[strong:Start]]] to begin downloading, then wait." },
+		{ "Text": "[[[warning:Note:]]] If Spotify is enabled, a sign-in window opens in your browser." }
 	]
 }

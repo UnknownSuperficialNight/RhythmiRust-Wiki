@@ -1,0 +1,15 @@
+{
+	"title": "Troubleshooting",
+	"subheading": "Quick tips and fixes for common problems.",
+	"contents": [
+		{ "Text": "Here are some quick fixes for common problems." },
+		{
+			"Table": {
+				"headers": ["Guide", "What it fixes"],
+				"rows": [
+					["[[[button:Not Downloading Anything][Not Downloading Anything]]]", "The downloader or Spotify is not downloading anything"]
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"title": "Not Downloading Anything",
+	"subheading": "Quick fix for when the downloader or Spotify is not downloading anything.",
+	"contents": [
+		{ "Header2": "The problem" },
+		{ "Text": "The downloader or Spotify finishes without downloading anything." },
+		{ "Separator": null },
+
+		{ "Header2": "The fix" },
+		{ "Text": "Make sure [[[strong:YT_dlp_args]]] is set to profile [[[strong:1]]] or profile [[[strong:3]]] in both of these places:" },
+		{ "Text": "[[[strong:Downloader -> Playlist Editor:]]] Open your key and check [[[strong:YT_dlp_args]]]." },
+		{ "Text": "[[[strong:Downloader -> Settings:]]] This is where the Spotify options are. Check [[[strong:YT_dlp_args]]] there too." },
+		{ "Text": "[[[warning:Note:]]] The profile numbers start counting from [[[strong:zero]]], so the list is 0, 1, 2, 3." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Which profile should I choose?" },
+		{
+			"Table": {
+				"headers": ["Profile", "Type", "Use it?"],
+				"rows": [
+					["[[[strong:0]]]", "Direct download", "[[[warning:Advanced]]]"],
+					["[[[strong:1]]]", "Generic", "[[[strong:Recommended]]]"],
+					["[[[strong:2]]]", "Direct download", "[[[warning:Advanced]]]"],
+					["[[[strong:3]]]", "Generic", "[[[strong:Recommended]]]"]
+				]
+			}
+		},
+		{ "Text": "[[[strong:Profile 1]]] is called [[[strong:downloads best audio then converts to format (slower)]]]." },
+		{ "Text": "[[[strong:Profile 3]]] is called [[[strong:downloads best audio then converts to format (slower) without embedding thumbnails]]]." },
+		{ "Text": "These two basically do the same thing, one just without thumbnails. They are generic, so they will take any input and convert it to the output you choose." },
+		{ "Spacer": 10.0 },
+
+		{ "Header3": "Why not profile 0 or 2?" },
+		{ "Text": "Profiles 0 and 2 are [[[strong:direct downloads]]]. The website must support that exact codec and container for them to download anything." },
+		{ "Text": "They are faster, but they require the user to be a bit more advanced, so if you are unsure, use profile 1 or 3." },
+		{ "Text": "For more information on args, see the [[[button:Advanced args page][/Main Window/Downloader/Playlist Editor/YT_dlp_args]]] page." }
+	]
+}
